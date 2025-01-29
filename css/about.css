@@ -1,0 +1,46 @@
+/* About page client section style */
+
+.about-clients {
+  background-color: #012f34;
+  width: 100%;
+  height: 437px;
+  margin: 0;
+  padding: 0;
+}
+/* About page client section patern image */
+
+.about-clients__img {
+  width: 200px;
+  height: 200px;
+}
+/* About page client section header */
+
+.about-clients__header > h2 {
+  box-sizing: border-box;
+  width: 920px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+/* About page client section logos list */
+
+.about-clients__logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-top: 50px;
+}
+/* About page client section logos list items */
+
+.about-clients__logos > li {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 165 px;
+  height: 28px;
+}
