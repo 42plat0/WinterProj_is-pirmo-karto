@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="./css/base.css" />
-        <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
+    <title>Home</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+          <!-- Navbar links -->
+          <div class="header__primary">
+            <img
+            src="assets/images/logo.svg"
+            alt="Header logo"
+            class="header__logo"/>
+            <a class="header__link" href="index.html">home</a>
+            <a class="header__link" href="pages/about.html">about</a>
+            <!-- Contact us button --> 
+          </div>
+          <div class="header__secondary">
+            <a class="btn--contact btn--contact__text"
+              href="./pages/contact.html">contact us</a>
+            </div>
+      </header>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <footer></footer>
+    </main>
+  </body>
         <title>Home</title>
     </head>
     <body>
         <main>
             <header></header>
-            <article></article>
+            <!-- Home page first article-->
+            <article class="home-hero">
+                <div class="home-hero__content">
+                    <!--Heading left collumn-->
+                    <div class="home-hero__heading">
+                        <h1>Find the best <span class="home-hero--coraltext">talent</span></h1>
+                    </div>
+                    <!--Paragraph right collumn-->
+                    <div class="home-hero__text">
+                        <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>
+                </div>
+                <!--Pattern images-->
+                <img 
+                src="./assets/images/bg-pattern-home-1.svg" 
+                alt="Background pattern image for home, first article"
+                class="home-hero-leftside__img">
+                <img 
+                src="./assets/images/bg-pattern-home-2.svg" 
+                alt="Backgroung pattern image for home, first article"
+                class="home-hero-rightside__img">
+            </article>
             <article></article>
             <article></article>
             <!-- Contact Us section -->
@@ -36,6 +84,43 @@
                         </a>
                     </div>
                 </div>
+            </article>
+            <article class="home-2nd-head">
+                <div>
+                  <h2 class="head-2nd-title">
+                    Build & manage distributed teams like no one else.
+                  </h2>
+                </div>
+                <div>
+                  <div>
+                    <img src="assets/images/icon-person.svg" alt="tranparent-male-person-outside-circle"/>
+                    <h3 class="home-2nd-headings">Experienced Individuals</h3>
+                    <p>
+                      Our network is made up of highly experienced professionals who are
+                      passionate about what they do.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="assets/images/icon-cog.svg" alt="transparent-gear-outside-circle"/>
+                    <h3 class="home-2nd-headings">Easy to Implement</h3>
+                    <p>
+                      Our processes have been refined over years of implementation,
+                      meaning our teams always deliver.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="assets/images/icon-chart.svg" alt="transparent-chart-outside-circle">
+                    <h3 class="home-2nd-headings">Enhanced Productivity</h3>
+                    <p>
+                      Our customized platform with in-built analytics helps you manage
+                      your distributed teams.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="assets/images/bg-pattern-home-3.svg"
+                  alt="Home 2nd Image for down right corner"
+                />
             </article>
             <footer></footer>
         </main>
