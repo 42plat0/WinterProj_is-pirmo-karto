@@ -6,12 +6,15 @@
   height: 437px;
   margin: 0;
   padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 /* About page client section patern image */
 
 .about-clients__img {
   width: 200px;
   height: 200px;
+  position: absolute;
 }
 /* About page client section header */
 
@@ -39,8 +42,15 @@
 
 .about-clients__logos > li {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; row yra default settingas, redundant */
   list-style-type: none;
   width: 165 px;
   height: 28px;
+}
+
+.about-clients__content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
