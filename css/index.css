@@ -1,0 +1,56 @@
+
+/* Home page header style*/
+header {
+  background-color: #014e56;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header__primary {
+  display: inline-block;
+}
+
+/* Home page header logo*/
+.header__logo {
+  width: 160px;
+  height: 40px;
+  margin: 40px 60px 40px 165px;
+}
+
+/* Home page header navigation */
+.header__link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-family: Livvic;
+  font-size: 18px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 20px;
+  bottom: 50px;
+}
+
+/* Home page header "contact us" button */
+.header__secondary {
+  float: right;
+}
+
+.header__btn {
+  position: relative;
+  top: 45px;
+  right: 145px;
+  width: 153px;
+  height: 48px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 9px 33px 11px 32px;
+}
