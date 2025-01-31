@@ -9,13 +9,13 @@ body {
   color: #000; 
 }
 
-h1.large {
+h1--lg {
   font-size: 100px;
   line-height: 100px;
   font-weight: 700; 
 }
 
-h1.small {
+h1--sm {
   font-size: 64px;
   line-height: 56px;
   font-weight: 700;
@@ -33,14 +33,101 @@ h3 {
   font-weight: 700;
 }
 
-.body-1 {
+.body--primary {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
 }
 
-.body-2 {
+.body--secondary {
   font-size: 15px;
   line-height: 25px;
   font-weight: 600;
+}
+
+.button {
+  width: 153px;
+  height: 48px;
+  border-radius: 25px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  background-color: transparent;
+}
+
+/* --- primary --- */
+
+/* light theme */
+.button.primary-light {
+  color: #FFFFFF; 
+  border-color: #F67E7E;
+}
+
+.button.primary-light:hover {
+  background: #014E56; 
+  border-color: #014E56;
+}
+
+.button.primary-light:disabled {
+  background: rgba(246, 126, 126, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+/* dark theme */
+.button.primary-dark {
+  color: #FFFFFF; 
+  border-color: #014E56;
+}
+
+.button.primary-dark:hover {
+  color: #FFFFFF;
+  border-color: #F67E7E;
+}
+
+.button.primary-dark:disabled {
+  background: rgba(1, 78, 86, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+/* --- secondary --- */
+
+.button.secondary-light {
+  color: #002529; 
+  border-color: #79C8C7;
+}
+
+.button.secondary-light:hover {
+  color: #FFFFFF;
+  border-color: #2C6269;
+}
+
+.button.secondary-light:disabled {
+  color: rgba(0, 37, 41, 0.5);
+  cursor: not-allowed;
+}
+
+
+.button.secondary-dark {
+  color: #FFFFFF;
+  border-color: #012F34;
+}
+
+.button.secondary-dark:hover {
+  color: #002529;
+  border-color: #79C8C7;
+}
+
+.button.secondary-dark:disabled {
+  background: rgba(1, 47, 52, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
 }
