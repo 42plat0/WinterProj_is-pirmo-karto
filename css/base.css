@@ -141,4 +141,5 @@ h3 {
 }
 .btn--light--secondary:disabled{
   background-color: var(--btn--secondary--disabled); 
+  cursor: not-allowed;
 }
