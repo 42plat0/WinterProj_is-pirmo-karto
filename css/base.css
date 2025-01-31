@@ -3,17 +3,17 @@
 
 /* Color variables */
 :root{
-  /* Primary */
-  --mid-green--primary: #014E56;
-  --l-coral--primary: #F67E7E;
-  --white--primary: #FFFFFF;
-
-  /* Secondary */
-  --rap-blue--sec: #2C6269;
-  --pol-blue--sec: #004047;
-  --d-jungle-green--sec: #004047;
-  --sac-st-green--sec: #012F34;
-  --dark-green--sec: #002529;
+    /* Primary Colors */
+    --color-midnight-green--primary: #014E56;
+    --color-light-coral--primary: #F67E7E;
+    --color-white--primary: #FFFFFF;
+  
+    /* Secondary Colors */
+    --color-rapture-blue--secondary: #79C8C7;
+    --color-police-blue--secondary: #2C6269;
+    --color-deep-jungle-green--secondary: #004047;
+    --color-sacramento-state-green--secondary: #012F34;
+    --color-dark-green--secondary: #002529;
 }
 
 body {
@@ -81,13 +81,13 @@ h3 {
 
 /* light theme */
 .btn.primary-light {
-  color: #FFFFFF; 
-  border-color: #F67E7E;
+  color: var(--color-white--primary); 
+  border-color: var(--color-light-coral--primary);
 }
 
 .btn.primary-light:hover {
-  background: #014E56; 
-  border-color: #014E56;
+  background: var(--color-midnight-green--primary); 
+  border-color: var(--color-midnight-green--primary);
 }
 
 .btn.primary-light:disabled {
@@ -98,13 +98,13 @@ h3 {
 
 /* dark theme */
 .btn.primary-dark {
-  color: #FFFFFF; 
-  border-color: #014E56;
+  color: var(--color-white--primary); 
+  border-color: var(--color-midnight-green--primary);
 }
 
 .btn.primary-dark:hover {
-  color: #FFFFFF;
-  border-color: #F67E7E;
+  color: var(--color-white--primary);
+  border-color: var(--color-light-coral--primary);
 }
 
 .btn.primary-dark:disabled {
@@ -116,13 +116,13 @@ h3 {
 /* --- secondary --- */
 
 .btn.secondary-light {
-  color: #002529; 
-  border-color: #79C8C7;
+  color: var(--color-dark-green--secondary); 
+  border-color: var(--color-rapture-blue--secondary);
 }
 
 .btn.secondary-light:hover {
-  color: #FFFFFF;
-  border-color: #2C6269;
+  color: var(--color-white--primary);
+  border-color: var(--color-police-blue--secondary);
 }
 
 .btn.secondary-light:disabled {
@@ -132,13 +132,13 @@ h3 {
 
 
 .btn.secondary-dark {
-  color: #FFFFFF;
-  border-color: #012F34;
+  color: var(--color-white--primary);
+  border-color: var(--color-sacramento-state-green--secondary);
 }
 
 .btn.secondary-dark:hover {
-  color: #002529;
-  border-color: #79C8C7;
+  color: var(--color-dark-green--secondary);
+  border-color: var(--color-rapture-blue--secondary);
 }
 
 .btn.secondary-dark:disabled {
