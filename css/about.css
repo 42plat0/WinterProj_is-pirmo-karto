@@ -20,7 +20,6 @@
 
 .about-clients__header > h2 {
   box-sizing: border-box;
-  width: 920px;
   margin: auto;
   color: #fff;
   text-align: center;
@@ -32,23 +31,74 @@
 }
 /* About page client section logos list */
 
+.about-clients__content {
+  height: 100%;
+  margin-top: 140px;
+}
+
 .about-clients__logos {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
+  list-style-type: none;
   margin-top: 50px;
 }
 /* About page client section logos list items */
 
-.about-clients__logos > li {
-  display: flex;
-  /* flex-direction: row; row yra default settingas, redundant */
-  list-style-type: none;
-  width: 165 px;
+.about-clients__logo {
+  width: 165px;
   height: 28px;
+  margin: auto;
+}
+/* For tablets */
+
+@media (max-width: 768px) {
+  .about-clients {
+    width: 768px;
+    height: 308px;
+  }
+  .about-clients__content {
+    margin-top: 100px;
+  }
+  .about-clients__logo {
+    height: 17px;
+    width: 107px;
+  }
+  .about-clients__img {
+    top: -100px;
+  }
+  .about-clients__header > h2 {
+    font-size: 32px;
+  }
 }
 
-.about-clients__content{
+/* For mobile */
+@media (max-width: 376px) {
+  .about-clients {
+    width: 375px;
+    height: 632px;
+  }
+  .about-clients__content {
+    margin-top: 88px;
+  }
+  .about-clients__img {
+    top: -100px;
+    left: -100px;
+  }
+  .about-clients__logos {
+    display: block;
+    margin: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+  .about-clients__logo {
+    margin: 26px;
+    height: 24px;
+    width: 147px;
+  }
+}
+
+.about-clients__content {
   display: flex;
   height: 100%;
   flex-direction: column;
