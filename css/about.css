@@ -52,13 +52,13 @@
 }
 /* For tablets */
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .about-clients {
     width: 768px;
     height: 308px;
   }
   .about-clients__content {
-    margin-top: 100px;
+    margin: 10px;
   }
   .about-clients__logo {
     height: 17px;
@@ -67,7 +67,11 @@
   .about-clients__img {
     top: -100px;
   }
-  .about-clients__header > h2 {
+  .about-clients__header {
+    margin-top: 100px;
+    margin-left: 155px;
+    height: 32px;
+    width: 457px;
     font-size: 32px;
   }
 }
@@ -77,6 +81,15 @@
   .about-clients {
     width: 375px;
     height: 632px;
+  }
+  .about-clients__header {
+    margin: 0 24px;
+  }
+  .about-clients__header > h2 {
+    width: 327px;
+    height: 32px;
+    font-size: 32px;
+    margin: 0 24px;
   }
   .about-clients__content {
     margin-top: 88px;
