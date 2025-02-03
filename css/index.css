@@ -1,0 +1,76 @@
+/* Main container */
+.home-2nd-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00252e;
+  padding: 5rem 4rem;
+  position: relative;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Left section: Title */
+.head-2nd-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+  max-width: 450px;
+  margin: 0;
+}
+
+/* Right section: Features container */
+.home-2nd-head > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* Space between feature items */
+  max-width: 600px;
+}
+
+/* Individual feature item */
+.home-2nd-head > div:nth-child(2) > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem; /* Space between icon and text */
+}
+
+/* Feature icons */
+.home-2nd-head > div:nth-child(2) img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0; /* Prevent resizing of icons */
+}
+
+/* Feature heading */
+.home-2nd-headings {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f15d51; /* Accent color for headings */
+  margin: 0 0 0.5rem;
+}
+
+/* Feature description */
+.home-2nd-head > div:nth-child(2) p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d1d1; /* Light gray text */
+  margin: 0;
+}
+
+/* Decorative corner image */
+.corner-img {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 250px;
+  height: auto;
+  opacity: 0.8;
+}
+
+
+  
+  
+  
