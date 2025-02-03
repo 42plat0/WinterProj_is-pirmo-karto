@@ -12,6 +12,116 @@
     <body>
         <main>
             <header></header>
+            <article class="contact">
+                <img
+                    class="contact__pattern--right pattern-img"
+                    src="../assets/images/bg-pattern-about-2-contact-1.svg"
+                    alt="Pattern of circles, lines and squares"
+                />
+                <div class="contact__info">
+                    <h1 class="contact__heading heading--sm">Contact</h1>
+                    <p class="contact__subheading">Ask us about</p>
+                    <!-- subheading of 32px /-->
+                    <div class="contact__ask-about">
+                        <!-- First item (person) -->
+                        <div class="contact__ask-about__item">
+                            <div class="contact__ask-about-icon">
+                                <img
+                                    src="../assets/images/icon-person.svg"
+                                    alt="Icon displaying young man with hoodie"
+                                />
+                            </div>
+                            <div class="contact__ask-about-text">
+                                The quality of our talent network
+                            </div>
+                        </div>
+                        <!-- Second item (cog) -->
+                        <div class="contact__ask-about__item">
+                            <div class="contact__ask-about-icon">
+                                <img
+                                    src="../assets/images/icon-cog.svg"
+                                    alt="Icon displaying cog with check mark inside it"
+                                />
+                            </div>
+                            <div class="contact__ask-about-text">
+                                Usage & implementation of our software 
+                            </div>
+                        </div>
+                        <!-- Third item (chart) -->
+                        <div class="contact__ask-about__item">
+                            <div class="contact__ask-about-icon">
+                                <img
+                                    src="../assets/images/icon-chart.svg"
+                                    alt="Icon displaying chart of data proceeding going up and down"
+                                />
+                            </div>
+                            <div class="contact__ask-about-text">
+                                How we help drive innovation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <!-- Name -->
+                    <input type="text" id="name" placeholder="Name" required />
+                    <!-- Warning message that appears after focus -->
+                    <!-- Required by design and can be found in active state requirements for page -->
+                    <span class="warning-message">This field is required</span>
+
+                    <!-- Email -->
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required
+                    />
+                    <!-- Warning message that appears after focus -->
+                    <!-- Required by design and can be found in active state requirements for page -->
+                    <span class="warning-message">This field is required</span>
+
+                    <!-- Company name-->
+                    <input
+                        type="text"
+                        id="comp-name"
+                        placeholder="Company Name"
+                        required
+                    />
+                    <!-- Warning message that appears after focus -->
+                    <!-- Required by design and can be found in active state requirements for page -->
+                    <span class="warning-message">This field is required</span>
+
+                    <!-- Title -->
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Title"
+                        required
+                    />
+                    <!-- Warning message that appears after focus -->
+                    <!-- Required by design and can be found in active state requirements for page -->
+                    <span class="warning-message">This field is required</span>
+
+                    <!-- Message -->
+                    <textarea
+                        name=""
+                        id="message"
+                        placeholder="Message"
+                        required
+                    ></textarea>
+                    <!-- Warning message that appears after focus -->
+                    <!-- Required by design and can be found in active state requirements for page -->
+                    <span class="warning-message">This field is required</span>
+
+                    <!-- Submit btn -->
+                    <input type="submit" value="submit" />
+                </form>
+                <img
+                    class="contact__pattern--left pattern-img"
+                    src="../assets/images/bg-pattern-contact-2.svg"
+                    alt="Circle looking like a donut and a square presented in captivating way"
+                />
+            </article>
             <article></article>
             <footer></footer>
         </main>
