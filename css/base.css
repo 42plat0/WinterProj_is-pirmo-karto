@@ -1,1 +1,149 @@
 /* Pasikartojantys stiliai naudojami per kelis dokumentus */
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700;900&display=swap");
+
+/* Color variables */
+:root {
+    /* Primary Colors */
+    --color-midnight-green--primary: rgb(1, 78, 86);
+    --color-light-coral--primary: rgb(246, 126, 126);
+    --color-white--primary: rgb(255, 255, 255);
+
+    /* Secondary Colors */
+    --color-rapture-blue--secondary: rgb(121, 200, 199);
+    --color-police-blue--secondary: rgb(44, 98, 105);
+    --color-deep-jungle-green--secondary: rgb(0, 64, 71);
+    --color-sacramento-state-green--secondary: rgb(1, 47, 52);
+    --color-dark-green--secondary: rgb(0, 37, 41);
+
+    /* Colors for (in)active states */
+    --btn--primary--disabled: rgba(
+        1,
+        47,
+        52,
+        0.25
+    ); /* sacramento-state-green */
+    --btn--secondary--disabled: rgb(65, 99, 103);
+    --btn--secondary--hover: var(--color-rapture-blue--secondary);
+}
+
+body {
+    font-family: "Livvic", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-color: var(--color-midnight-green--primary);
+}
+
+.h1--lg {
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 700;
+}
+
+.h1--sm {
+    font-size: 64px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.body--primary {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.body--secondary {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+/* Button class for all buttons */
+
+.btn {
+    /* width: 153px; SUBM ir CONT mygtuku plociai nesutampa :( */
+    height: 48px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* --- Button styling --- */
+
+/* Primary*/
+
+/* Light */
+.btn--light--primary {
+    color: var(--color-white--primary);
+    /* background-color: var(--color-sacramento-state-green--secondary); */
+    border-color: var(--color-white--primary);
+}
+
+.btn--light--primary:hover {
+    color: var(--color-sacramento-state-green--secondary);
+    background-color: var(--color-white--primary);
+}
+
+.btn--light--primary:disabled {
+    color: var(--btn--primary--disabled);
+    border-color: var(--btn--primary--disabled);
+    cursor: not-allowed;
+}
+
+/* Dark */
+.btn--dark--primary {
+    color: var(--color-sacramento-state-green--secondary);
+    /* background-color: var(--color-white--primary); */
+    border-color: var(--color-sacramento-state-green--secondary);
+}
+
+.btn--dark--primary:hover {
+    color: var(--color-white--primary);
+    background-color: var(--color-sacramento-state-green--secondary);
+    border-color: var(--color-white--primary);
+}
+
+.btn--dark--primary:disabled {
+    color: var(--btn--primary--disabled);
+    border-color: var(--btn--primary--disabled);
+    cursor: not-allowed;
+}
+
+/* Secondary */
+
+/* Light*/
+
+.btn--light--secondary {
+    /* Same as .btn--white--primary:hover */
+    color: var(--color-sacramento-state-green--secondary);
+    background-color: var(--color-white--primary);
+}
+.btn--light--secondary:hover {
+    background-color: var(--btn--secondary--hover);
+}
+.btn--light--secondary:disabled {
+    background-color: var(--btn--secondary--disabled);
+    cursor: not-allowed;
+}
