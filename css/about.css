@@ -33,7 +33,7 @@
 
 .about-clients__content {
   height: 100%;
-  margin-top: 140px;
+  margin-top: 50px;
 }
 
 .about-clients__logos {
@@ -52,7 +52,7 @@
 }
 /* For tablets */
 
-@media (max-width: 769px) {
+@media (max-width: 770px) {
   .about-clients {
     width: 768px;
     height: 308px;
@@ -68,7 +68,7 @@
     top: -100px;
   }
   .about-clients__header {
-    margin-top: 100px;
+    margin-top: 88px;
     margin-left: 155px;
     height: 32px;
     width: 457px;
@@ -77,7 +77,7 @@
 }
 
 /* For mobile */
-@media (max-width: 376px) {
+@media (max-width: 425px) {
   .about-clients {
     width: 375px;
     height: 632px;
@@ -89,10 +89,11 @@
     width: 327px;
     height: 32px;
     font-size: 32px;
-    margin: 0 24px;
+    margin: 0 24px 90px 0;
   }
   .about-clients__content {
-    margin-top: 88px;
+    margin-bottom: 30px;
+
   }
   .about-clients__img {
     top: -100px;
@@ -103,14 +104,14 @@
     margin: auto;
     padding-left: 0;
     text-align: center;
+    margin-top: 30px;
   }
   .about-clients__logo {
-    margin: 26px;
+    margin: 30px;
     height: 24px;
     width: 147px;
   }
 }
-
 .about-clients__content {
   display: flex;
   height: 100%;
