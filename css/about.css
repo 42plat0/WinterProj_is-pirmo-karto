@@ -1,0 +1,101 @@
+/* About 2nd article CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Background */
+.about-directors {
+    background-color: var(--color-deep-jungle-green--secondary);
+    height: 1002px;
+    position:relative;
+}
+
+/* Meet the directors */
+.about-directors__header{
+    color: var(--color-white--primary);
+    text-align: center;
+    padding-top:140px;
+}
+
+/* Directors container */
+
+.about-directors__container {
+    display: flex;
+    width: 1110px;
+    height: 610px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap:30px;
+    margin-top: 64px;
+}
+
+.about-directors__container > div {
+    text-align: center;
+    width: 350px;
+    height: 253px;
+    background-color: var(--color-sacramento-state-green--secondary);
+}
+
+/* Card image */
+
+.about-directors__img {
+    width: 96px;
+    height: 96px;
+    border-radius: 96px;
+    border: 2px solid #C4FFFE;
+    margin-top: 32px;
+}
+
+/* Card content, heading, paragraph */
+
+.director-card--name {
+    color: var(--color-rapture-blue--secondary);
+    text-align: center;
+    margin-top: 12px;
+}
+
+.director-card--role {
+    font-style: italic;
+    color: var(--color-white--primary);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+ 
+/* Button style */
+
+.director-card__btn {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border: none;
+    background-color: var(--color-light-coral--primary);
+    border-radius: 50%;
+    margin-top: 28px;
+}
+
+.director-card__btn:hover {
+    background-color: var(--color-rapture-blue--secondary);
+    cursor: url('/assets/images/pointer.svg'), auto;
+}
+
+.btn--directors {
+    margin-top: 4px;
+}
+
+/* Background images */
+
+.about-directors-bckgrnd__img1 {
+    position: absolute;
+    transform: translateX(-100px);
+} 
+
+.about-directors-bckgrnd__img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} 
+
+/* --------------- */
