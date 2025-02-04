@@ -1,5 +1,8 @@
 /* About 2nd article CSS */
-
+* {
+    margin: 0;
+    padding: 0;
+}
 /* Background */
 .about-directors {
     background-color: var(--color-deep-jungle-green--secondary);
