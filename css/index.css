@@ -1,0 +1,101 @@
+/* Home page header style*/
+header {
+  background-color: #014e56;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header__primary {
+  display: inline-block;
+}
+
+/* Home page header logo*/
+.header__logo {
+  width: 160px;
+  height: 40px;
+  margin: 40px 60px 40px 165px;
+}
+
+/* Home page header navigation */
+.header__link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-family: Livvic;
+  font-size: 18px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 20px;
+  bottom: 50px;
+}
+.header__link:hover {
+  color: #f67e7e;
+}
+
+/* Home page header "contact us" button */
+.header__secondary {
+  float: right;
+}
+
+.header__btn {
+  position: relative;
+  top: 45px;
+  right: 145px;
+  width: 153px;
+  height: 48px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 9px 33px 11px 32px;
+}
+.header__btn:hover {
+  color: #002529;
+  background-color: #fff;
+}
+.header__hamburger {
+  display: none;
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .header__logo {
+    width: 128px;
+    height: 32px;
+    top: 72px;
+    margin: 40px;
+  }
+  .header__btn {
+    top: 40px;
+    right: 60px;
+  }
+  .header__hamburger {
+    display: none;
+  }
+}
+/* For mobile */
+@media (max-width: 500px) {
+  .header__btn {
+    display: none;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__hamburger {
+    position: absolute;
+    background-color: #014e56;
+    border: 0;
+    display: inline;
+    width: 20px;
+    height: 17px;
+    top: 55px;
+    right: 30px;
+  }
+}
