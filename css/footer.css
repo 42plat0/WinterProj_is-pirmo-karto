@@ -81,9 +81,9 @@
   
   .footer-social a:hover img {
     transform: scale(1.1);
-  }
-  
-
+    filter: brightness(0) saturate(100%) invert(62%) sepia(84%) saturate(364%) hue-rotate(320deg) brightness(101%) contrast(101%);
+    cursor: grab;
+}
   .footer-copyright {
     margin-top: auto; 
     color: rgba(255, 255, 255, 0.6);
