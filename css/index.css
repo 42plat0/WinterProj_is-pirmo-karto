@@ -1,32 +1,37 @@
-/* Main container */
+.red-line {
+  width: 50px;
+  height: 6px;
+  background-color: #F67E7E;
+  margin: 10px 0; 
+
+}
 .home-2nd-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00252e;
-  padding: 5rem 4rem;
+  background-color: #012F34;
+  padding: 15rem 15rem;
   position: relative;
   color: #ffffff;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  font-family: Livvic;
 }
 
-/* Left section: Title */
+
 .head-2nd-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #ffffff;
-  max-width: 450px;
+  max-width: 620px;
   margin: 0;
 }
 
-/* Right section: Features container */
+
+
 .home-2nd-head > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem; /* Space between feature items */
+  gap: 4rem;
   max-width: 600px;
 }
 
@@ -34,21 +39,21 @@
 .home-2nd-head > div:nth-child(2) > div {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem; /* Space between icon and text */
+  gap: 1.5rem; /
 }
 
 /* Feature icons */
 .home-2nd-head > div:nth-child(2) img {
   width: 64px;
   height: 64px;
-  flex-shrink: 0; /* Prevent resizing of icons */
+  flex-shrink: 0; 
 }
 
 /* Feature heading */
 .home-2nd-headings {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #f15d51; /* Accent color for headings */
+  color: #F67E7E;
   margin: 0 0 0.5rem;
 }
 
@@ -56,11 +61,11 @@
 .home-2nd-head > div:nth-child(2) p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #d1d1d1; /* Light gray text */
+  color: #d1d1d1;
   margin: 0;
 }
 
-/* Decorative corner image */
+
 .corner-img {
   position: absolute;
   bottom: -40px;
