@@ -177,3 +177,63 @@ header {
         flex-grow: 1;
     }
 }
+
+
+/* Home 1st Article CSS */
+
+/* Background */
+
+.home-hero {
+  height: 572px;
+  position:relative;
+}
+
+.home-hero__content {
+  width: 1110px;
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  margin: 0 auto;
+  padding-top: 122px;
+}
+
+/* Home-hero content */
+
+.home-hero__content > div {
+  width: 445px;
+}
+
+/* Heading-left collumn */
+
+.home-hero__heading {
+  color: var(--color-white--primary);
+  flex-basis: 635px;
+}
+
+.home-hero--coraltext {
+  color: var(--color-light-coral--primary)
+}
+
+/* Paragraph-right collumn */
+
+.home-hero__text {
+  color: var(--color-white--primary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/* Background images */
+
+.home-hero-leftside__img {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100px);
+} 
+
+.home-hero-rightside__img {
+  position: absolute;
+  right: 165;
+  bottom: 0;
+} 
