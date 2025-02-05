@@ -1,264 +1,345 @@
 /* About page first article header */
 .about-hero--heading {
-  color: var(--color-white--primary);
-  position: relative;
-  width: 350px;
-  height: 100px;
-  top: 140px;
-  left: 165px;
+    color: var(--color-white--primary);
+    position: relative;
+    width: 350px;
+    height: 100px;
+    top: 140px;
+    left: 165px;
 }
 
 /* Pink bar over the text*/
 
 .rectangle {
-  position: relative;
-  width: 50px;
-  height: 4px;
-  background-color: var(--color-light-coral--primary);
-  left: 545px;
-  top: 35px;
+    position: relative;
+    width: 50px;
+    height: 4px;
+    background-color: var(--color-light-coral--primary);
+    left: 545px;
+    top: 35px;
 }
 
 /* About page first article text */
 
 .about-hero__text > p {
-  position: relative;
-  color: var(--color-white--primary);
-  font-family: Livvic;
-  font-size: 18px;
-  width: 730px;
-  height: 112px;
-  left: 545px;
-  top: 45px;
+    position: relative;
+    color: var(--color-white--primary);
+    font-family: Livvic;
+    font-size: 18px;
+    width: 730px;
+    height: 112px;
+    left: 545px;
+    top: 45px;
 }
 
 /* About page first article patern img */
 
 .about-hero-rightside__img {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  left: 1420px;
-  right: -100px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 1420px;
+    right: -100px;
 }
 
 /* About page client section style */
 
 .about-clients {
-  background-color: #012f34;
-  width: 100%;
-  height: 437px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
+    background-color: #012f34;
+    width: 100%;
+    height: 437px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 }
 /* About page client section patern image */
 
 .about-clients__img {
-  width: 200px;
-  height: 200px;
-  position: absolute;
+    width: 200px;
+    height: 200px;
+    position: absolute;
 }
 /* About page client section header */
 
 .about-clients__header > h2 {
-  box-sizing: border-box;
-  margin: auto;
-  color: #fff;
-  text-align: center;
-  font-family: Livvic;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
+    box-sizing: border-box;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
 }
 /* About page client section logos list */
 
 .about-clients__content {
-  height: 100%;
-  margin-top: 50px;
+    height: 100%;
+    margin-top: 50px;
 }
 
 .about-clients__logos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  list-style-type: none;
-  margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    list-style-type: none;
+    margin-top: 50px;
 }
 /* About page client section logos list items */
 
 .about-clients__logo {
-  width: 165px;
-  height: 28px;
-  margin: auto;
+    width: 165px;
+    height: 28px;
+    margin: auto;
 }
+
+/* ************************ */
+/* Ready to get started section */
+/* ************************ */
+
+/* heading and button to contact page */
+.contact-sect {
+    background: var(--color-light-coral--primary);
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.contact-sect__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    height: 100%;
+}
+
+/* Ready to get... heading */
+.heading--contact {
+    color: var(--color-sacramento-state-green--secondary);
+    text-align: center;
+}
+
+/* button to contact page */
+.btn--contact {
+    padding: 9px 32.5px 11px;
+    height: 100%;
+}
+
+/* img at left bottom of ready to get.. sect */
+.contact-sect__img {
+    position: absolute;
+    bottom: 0;
+}
+
 /* For tablets */
 
 @media (max-width: 770px) {
-  .about-clients {
-    width: 768px;
-    height: 308px;
-  }
-  .about-clients__content {
-    margin: 10px;
-  }
-  .about-clients__logo {
-    height: 17px;
-    width: 107px;
-  }
-  .about-clients__img {
-    top: -100px;
-  }
-  .about-clients__header {
-    margin-top: 88px;
-    margin-left: 155px;
-    height: 32px;
-    width: 457px;
-    font-size: 32px;
-  }
+    .about-clients {
+        width: 768px;
+        height: 308px;
+    }
+    .about-clients__content {
+        margin: 10px;
+    }
+    .about-clients__logo {
+        height: 17px;
+        width: 107px;
+    }
+    .about-clients__img {
+        top: -100px;
+    }
+    .about-clients__header {
+        margin-top: 88px;
+        margin-left: 155px;
+        height: 32px;
+        width: 457px;
+        font-size: 32px;
+    }
+    /* ************************ */
+    /* Ready to get started section */
+    /* ************************ */
+
+    /* Ready to get... heading */
+    .heading--contact {
+        font-size: 32px;
+        line-height: 32px; /* 100% */
+    }
+
+    /* button to contact page */
+    .btn--contact {
+        border-radius: 24px;
+        height: 100%;
+    }
+
+    /* img at left bottom of ready to get.. sect */
+    .contact-sect__img {
+        transform: translateY(15%);
+    }
 }
 
 /* For mobile */
 @media (max-width: 425px) {
-  .about-clients {
-    width: 375px;
-    height: 632px;
-  }
-  .about-clients__header {
-    margin: 0 24px;
-  }
-  .about-clients__header > h2 {
-    width: 327px;
-    height: 32px;
-    font-size: 32px;
-    margin: 0 24px 90px 0;
-  }
-  .about-clients__content {
-    margin-bottom: 30px;
-  }
-  .about-clients__img {
-    top: -100px;
-    left: -100px;
-  }
-  .about-clients__logos {
-    display: block;
-    margin: auto;
-    padding-left: 0;
-    text-align: center;
-    margin-top: 30px;
-  }
-  .about-clients__logo {
-    margin: 30px;
-    height: 24px;
-    width: 147px;
-  }
+    .about-clients {
+        width: 375px;
+        height: 632px;
+    }
+    .about-clients__header {
+        margin: 0 24px;
+    }
+    .about-clients__header > h2 {
+        width: 327px;
+        height: 32px;
+        font-size: 32px;
+        margin: 0 24px 90px 0;
+    }
+    .about-clients__content {
+        margin-bottom: 30px;
+    }
+    .about-clients__img {
+        top: -100px;
+        left: -100px;
+    }
+    .about-clients__logos {
+        display: block;
+        margin: auto;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about-clients__logo {
+        margin: 30px;
+        height: 24px;
+        width: 147px;
+    }
+    /* ************************ */
+    /* Ready to get started section */
+    /* ************************ */
+
+    .contact-sect{
+      height: 302px;
+    }
+    .heading--contact {
+        max-width: 200px;
+        word-break: break-word;
+        display: flex;
+        align-items: end;
+    }
+
+    .contact-sect__content {
+        flex-direction: column;
+        gap: 24px;
+        height: 100%;
+    }
+    .contact-sect__content > * {
+        flex-grow: 1;
+    }
 }
 .about-clients__content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
 /* About 2nd article CSS */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 /* Background */
 .about-directors {
-  background-color: var(--color-deep-jungle-green--secondary);
-  height: 1002px;
-  position: relative;
+    background-color: var(--color-deep-jungle-green--secondary);
+    height: 1002px;
+    position: relative;
 }
 
 /* Meet the directors */
 .about-directors__header {
-  color: var(--color-white--primary);
-  text-align: center;
-  padding-top: 140px;
+    color: var(--color-white--primary);
+    text-align: center;
+    padding-top: 140px;
 }
 
 /* Directors container */
 
 .about-directors__container {
-  display: flex;
-  width: 1110px;
-  height: 610px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 30px;
-  margin-top: 64px;
+    display: flex;
+    width: 1110px;
+    height: 610px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 64px;
 }
 
 .about-directors__container > div {
-  text-align: center;
-  width: 350px;
-  height: 253px;
-  background-color: var(--color-sacramento-state-green--secondary);
+    text-align: center;
+    width: 350px;
+    height: 253px;
+    background-color: var(--color-sacramento-state-green--secondary);
 }
 
 /* Card image */
 
 .about-directors__img {
-  width: 96px;
-  height: 96px;
-  border-radius: 96px;
-  border: 2px solid #c4fffe;
-  margin-top: 32px;
+    width: 96px;
+    height: 96px;
+    border-radius: 96px;
+    border: 2px solid #c4fffe;
+    margin-top: 32px;
 }
 
 /* Card content, heading, paragraph */
 
 .director-card--name {
-  color: var(--color-rapture-blue--secondary);
-  text-align: center;
-  margin-top: 12px;
+    color: var(--color-rapture-blue--secondary);
+    text-align: center;
+    margin-top: 12px;
 }
 
 .director-card--role {
-  font-style: italic;
-  color: var(--color-white--primary);
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 25px;
+    font-style: italic;
+    color: var(--color-white--primary);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
 }
 
 /* Button style */
 
 .director-card__btn {
-  width: 56px;
-  height: 56px;
-  flex-shrink: 0;
-  border: none;
-  background-color: var(--color-light-coral--primary);
-  border-radius: 50%;
-  margin-top: 28px;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border: none;
+    background-color: var(--color-light-coral--primary);
+    border-radius: 50%;
+    margin-top: 28px;
 }
 
 .director-card__btn:hover {
-  background-color: var(--color-rapture-blue--secondary);
-  cursor: url("/assets/images/pointer.svg"), auto;
+    background-color: var(--color-rapture-blue--secondary);
+    cursor: url("/assets/images/pointer.svg"), auto;
 }
 
 .btn--directors {
-  margin-top: 4px;
+    margin-top: 4px;
 }
 
 /* Background images */
 
 .about-directors-bckgrnd__img1 {
-  position: absolute;
-  transform: translateX(-100px);
+    position: absolute;
+    transform: translateX(-100px);
 }
 
 .about-directors-bckgrnd__img2 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /* --------------- */
