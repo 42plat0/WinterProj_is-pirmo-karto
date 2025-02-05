@@ -237,3 +237,80 @@ header {
   right: 165;
   bottom: 0;
 } 
+
+.red-line {
+    width: 50px;
+    height: 6px;
+    background-color: #F67E7E;
+    margin: 10px 0; 
+  
+  }
+  .home-2nd-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #012F34;
+    padding: 15rem 15rem;
+    position: relative;
+    color: #ffffff;
+    font-family: Livvic;
+  }
+  
+  
+  .head-2nd-title {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #ffffff;
+    max-width: 620px;
+    margin: 0;
+  }
+  
+  
+  
+  .home-2nd-head > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 600px;
+  }
+  
+  /* Individual feature item */
+  .home-2nd-head > div:nth-child(2) > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem; /
+  }
+  
+  /* Feature icons */
+  .home-2nd-head > div:nth-child(2) img {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0; 
+  }
+  
+  /* Feature heading */
+  .home-2nd-headings {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #F67E7E;
+    margin: 0 0 0.5rem;
+  }
+  
+  /* Feature description */
+  .home-2nd-head > div:nth-child(2) p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin: 0;
+  }
+  
+  
+  .corner-img {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 250px;
+    height: auto;
+    opacity: 0.8;
+  }
