@@ -238,79 +238,82 @@ header {
   bottom: 0;
 } 
 
-.red-line {
-    width: 50px;
-    height: 6px;
-    background-color: #F67E7E;
-    margin: 10px 0; 
-  
-  }
-  .home-2nd-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #012F34;
-    padding: 15rem 15rem;
-    position: relative;
-    color: #ffffff;
-    font-family: Livvic;
-  }
-  
-  
-  .head-2nd-title {
-    font-size: 4rem;
-    font-weight: bold;
-    line-height: 1.4;
-    color: #ffffff;
-    max-width: 620px;
-    margin: 0;
-  }
-  
-  
-  
-  .home-2nd-head > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    max-width: 600px;
-  }
-  
-  /* Individual feature item */
-  .home-2nd-head > div:nth-child(2) > div {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem; /
-  }
-  
-  /* Feature icons */
-  .home-2nd-head > div:nth-child(2) img {
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0; 
-  }
-  
-  /* Feature heading */
-  .home-2nd-headings {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #F67E7E;
-    margin: 0 0 0.5rem;
-  }
-  
-  /* Feature description */
-  .home-2nd-head > div:nth-child(2) p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #d1d1d1;
-    margin: 0;
-  }
-  
-  
-  .corner-img {
-    position: absolute;
-    bottom: -40px;
-    right: -40px;
-    width: 250px;
-    height: auto;
-    opacity: 0.8;
-  }
+.home-2nd-head {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: #012F34;
+  position: relative;
+  color: #ffffff;
+  padding: 165px 140px;
+  height: 684px;
+}
+
+.head-2nd-title {
+  position: relative;
+  padding-top: 54px; /* Tarpas nuo linijos iki teksto */
+  color: #ffffff;
+  max-width: 445px;
+}
+
+.head-2nd-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; 
+  height: 5px; 
+  background: linear-gradient(to right, #F67E7E 0%, #F67E7E 30%,transparent 30%, transparent 100%); 
+}
+
+
+
+.home-2nd-head > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  padding-top: 54px;
+}
+
+/* Individual feature item */
+.home-2nd-head > div:nth-child(2) > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem; /
+}
+
+/* Feature icons */
+.home-2nd-head > div:nth-child(2) img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0; 
+}
+
+/* Feature heading */
+.home-2nd-headings {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #F67E7E;
+  margin: 0 0 0.5rem;
+}
+
+/* Feature description */
+.home-2nd-head > div:nth-child(2) p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+  margin: 0;
+}
+
+
+.corner-img {
+  position: absolute;
+  bottom: 0px;
+  /* right: -190px;
+  width: 250px; */
+  height: auto;
+  opacity: 0.8;
+  right: 0;
+  transform: translateX(50%);
+}
