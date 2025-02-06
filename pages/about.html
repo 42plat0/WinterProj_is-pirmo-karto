@@ -6,32 +6,63 @@
 
         <link rel="stylesheet" href="../css/base.css" />
         <link rel="stylesheet" href="../css/about.css" />
-        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/header.css" />
         <title>About</title>
     </head>
     <body>
         <main>
-            <header></header>
+            <header class="header">
+                <!-- Navbar links -->
+                <div class="header__primary">
+                    <img
+                        src="../assets/images/logo.svg"
+                        alt="Header logo"
+                        class="header__logo"
+                    />
+                    <a class="header__link body--primary" href="../index.html"
+                        >home</a
+                    >
+                    <a class="header__link body--primary" href="./about.html"
+                        >about</a
+                    >
+                    <!-- Contact us button -->
+                </div>
+                <div class="header__secondary">
+                    <a
+                        class="btn btn--light--primary header__btn body--primary"
+                        href="./contact.html"
+                        >contact us</a
+                    >
+                </div>
+            </header>
             <!-- About 1st Article -->
             <article class="about-hero">
                 <div class="about__content">
                     <!-- Heading -->
-                     <div class="about-hero__header">
+                    <div class="about-hero__header">
                         <h2 class="about-hero--heading h1--sm">About</h2>
-                     </div>
-                     <div class="rectangle"></div>
-                
-                     <!-- Paragraph Text  -->
-                     <div class="about-hero__text">
-                        <p>We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
-                     </div>
+                    </div>
+                    <div class="rectangle"></div>
 
-                     <!-- Pattern image  -->
-                      <img 
-                      src="../assets/images/bg-pattern-about-1-mobile-nav-1.svg" 
-                      alt="Background image for About 1st article "
-                      class="about-hero-rightside__img"
-                      />
+                    <!-- Paragraph Text  -->
+                    <div class="about-hero__text">
+                        <p>
+                            We help companies build dynamic teams made up of top
+                            global talent. Using our network of passionate
+                            professionals we drive innovation and deliver
+                            incredible outcomes. Talented, diverse teams shape
+                            the best products and experiences. We’ll bring those
+                            teams to you.
+                        </p>
+                    </div>
+
+                    <!-- Pattern image  -->
+                    <img
+                        src="../assets/images/bg-pattern-about-1-mobile-nav-1.svg"
+                        alt="Background image for About 1st article "
+                        class="about-hero-rightside__img"
+                    />
                 </div>
             </article>
             <!-- About page 2nd article directors section -->
@@ -58,7 +89,9 @@
                                 alt="Director Nikita Marks image for about page, Meet the directors section"
                                 class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Nikita Marks</h3>
+                                <h3 class="director-card--name">
+                                    Nikita Marks
+                                </h3>
                                 <p class="director-card--role">Founder & CEO</p>
                                 <button class="director-card__btn">
                                     <img 
@@ -69,11 +102,17 @@
                                 </button>
                             </div>
                             <!--Director card active-->
-                            <div class="director-card--active" hidden> 
-                                <h3 class="director-card--name">Nikita Marks</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                            <div class="director-card--active" hidden>
+                                <h3 class="director-card--name">
+                                    Nikita Marks
+                                </h3>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-twitter.svg" 
@@ -82,7 +121,7 @@
                                         >
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-linkedin.svg" 
@@ -102,8 +141,12 @@
                                 alt="Director Christian Duncan image for about page, Meet the directors section"
                                 class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Christian Durcan</h3>
-                                <p class="director-card--role">Co-founder & COO</p>
+                                <h3 class="director-card--name">
+                                    Christian Durcan
+                                </h3>
+                                <p class="director-card--role">
+                                    Co-founder & COO
+                                </p>
                                 <button class="director-card__btn">
                                     <img 
                                     src="../assets/images/icon-cross.svg" 
@@ -114,10 +157,16 @@
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
-                                <h3 class="director-card--name">Christian Durcan</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <h3 class="director-card--name">
+                                    Christian Durcan
+                                </h3>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-twitter.svg" 
@@ -126,7 +175,7 @@
                                         >
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-linkedin.svg" 
@@ -147,7 +196,9 @@
                                 class="about-directors__img"
                                 />
                                 <h3 class="director-card--name">Cruz Hamer</h3>
-                                <p class="director-card--role">Co-founder & CTO</p>
+                                <p class="director-card--role">
+                                    Co-founder & CTO
+                                </p>
                                 <button class="director-card__btn">
                                     <img 
                                     src="../assets/images/icon-cross.svg" 
@@ -156,13 +207,17 @@
                                     >
                                 </button>
                             </div>
-                            
+
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
                                 <h3 class="director-card--name">Cruz Hamer</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-twitter.svg" 
@@ -171,7 +226,7 @@
                                         >
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-linkedin.svg" 
@@ -191,8 +246,12 @@
                                 alt="Director Drake Heaton image for about page, Meet the directors section"
                                 class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Drake Heaton</h3>
-                                <p class="director-card--role">Business Development Lead</p>
+                                <h3 class="director-card--name">
+                                    Drake Heaton
+                                </h3>
+                                <p class="director-card--role">
+                                    Business Development Lead
+                                </p>
                                 <button class="director-card__btn">
                                     <img 
                                     src="../assets/images/icon-cross.svg" 
@@ -203,10 +262,16 @@
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
-                                <h3 class="director-card--name">Drake Heaton</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <h3 class="director-card--name">
+                                    Drake Heaton
+                                </h3>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-twitter.svg" 
@@ -215,7 +280,7 @@
                                         >
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-linkedin.svg" 
@@ -235,8 +300,12 @@
                                 alt="Director Griffin Wise image for about page, Meet the directors section"
                                 class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Griffin Wise</h3>
-                                <p class="director-card--role">Lead Marketing</p>
+                                <h3 class="director-card--name">
+                                    Griffin Wise
+                                </h3>
+                                <p class="director-card--role">
+                                    Lead Marketing
+                                </p>
                                 <button class="director-card__btn">
                                     <img 
                                     src="../assets/images/icon-cross.svg" 
@@ -247,10 +316,16 @@
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
-                                <h3 class="director-card--name">Griffin Wise</h3>
-                                <p>“Unique perspectives shape unique products, which is what you need to survive these days.”</p>
+                                <h3 class="director-card--name">
+                                    Griffin Wise
+                                </h3>
+                                <p>
+                                    “Unique perspectives shape unique products,
+                                    which is what you need to survive these
+                                    days.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-twitter.svg" 
@@ -259,7 +334,7 @@
                                         >
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-linkedin.svg" 
@@ -280,7 +355,9 @@
                                 class="about-directors__img"
                                 />
                                 <h3 class="director-card--name">Aden Allan</h3>
-                                <p class="director-card--role">Head of Talent</p>
+                                <p class="director-card--role">
+                                    Head of Talent
+                                </p>
                                 <button class="director-card__btn">
                                     <img 
                                     src="../assets/images/icon-cross.svg" 
@@ -292,9 +369,13 @@
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
                                 <h3 class="director-card--name">Aden Allan</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-twitter.svg" 
@@ -303,7 +384,7 @@
                                         >
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
                                         <img 
                                         src="../assets/images/icon-linkedin.svg" 
@@ -317,14 +398,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Pattern image-->
                 <img 
                 src="../assets/images/bg-pattern-home-4-about-3.svg" 
                 alt="Background pattern image for about, second atricle"
                 class="about-directors-bckgrnd__img2"
                 />
-            </article>    
+            </article>
 
             <!-- About page clients section -->
             <article class="about-clients">
@@ -340,7 +421,7 @@
                         <h2>Some of our clients</h2>
                     </div>
                     <!-- Clients logos -->
-                    <div class="about-clients__list" >
+                    <div class="about-clients__list">
                         <ul class="about-clients__logos">
                             <li>
                                 <img
@@ -414,37 +495,53 @@
             </article>
             <footer class="footer">
                 <div class="footer-container">
-    
                     <div class="footer-left">
-                    <img src="../assets/images/myteam.png" alt="MyTeam Logo" class="footer-logo" />
-                    <nav class="footer-nav">
-                        <a href="index.html" class="footer-nav-button">home</a>
-                        <a href="Pages/About.html" class="footer-nav-button">about</a>
-                    </nav>
+                        <img
+                            src="../assets/images/myteam.png"
+                            alt="MyTeam Logo"
+                            class="footer-logo"
+                        />
+                        <nav class="footer-nav">
+                            <a href="index.html" class="footer-nav-button"
+                                >home</a
+                            >
+                            <a href="Pages/About.html" class="footer-nav-button"
+                                >about</a
+                            >
+                        </nav>
                     </div>
-                
+
                     <div class="footer-contact">
-                    987 Hillcrest Lane<br />
-                    Irvine, CA<br />
-                    California 92714<br />
-                    Call Us: 949-833-7432
+                        987 Hillcrest Lane<br />
+                        Irvine, CA<br />
+                        California 92714<br />
+                        Call Us: 949-833-7432
                     </div>
-                
+
                     <div class="footer-right">
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com" target="_blank">
-                        <img src="../assets/images/icon-facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="https://www.pinterest.com" target="_blank">
-                        <img src="../assets/images/icon-pinterest.svg" alt="Pinterest">
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                        <img src="../assets/images/icon-twitter.svg" alt="Twitter">
-                        </a>
-                    </div>
-                    <div class="footer-copyright">
-                        Copyright 2020. All Rights Reserved
-                    </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-facebook.svg"
+                                    alt="Facebook"
+                                />
+                            </a>
+                            <a href="https://www.pinterest.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-pinterest.svg"
+                                    alt="Pinterest"
+                                />
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </a>
+                        </div>
+                        <div class="footer-copyright">
+                            Copyright 2020. All Rights Reserved
+                        </div>
                     </div>
                 </div>
             </footer>
