@@ -241,16 +241,21 @@
 }
 
 .director-card__btn:hover {
-  background-color: var(--color-rapture-blue--secondary);
   cursor: pointer;
 }
 
+/* Style for front of the card */
+.director-card__btn--front:hover{
+  background-color: var(--color-rapture-blue--secondary);
+}
+
+/* Style for back of the card */
 .director-card__btn--flipped{
-  
+  background-color: var(--color-rapture-blue--secondary);
 }
 
 .director-card__btn--flipped:hover{
-
+  background-color: var(--color-light-coral--primary);
 }
 
 .btn--directors {
