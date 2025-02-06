@@ -43,7 +43,7 @@ cards.forEach((card) => {
                     svgList.style.display = "none";
                     
                     // Remove padding from card after going back
-                    currentCard.classList.remove("card--after-click-padding");
+                    currentCard.classList.remove("director-card__flipped__padding");
                     
                     // Change to other pic
                     child.firstElementChild.src = "../assets/images/icon-cross.svg";
@@ -69,7 +69,7 @@ cards.forEach((card) => {
                     svgList.style.display = "flex";
 
                     // Add padding
-                    currentCard.classList.add("card--after-click-padding");
+                    currentCard.classList.add("director-card__flipped__padding");
                     
                     // Change to same pic
                     child.firstElementChild.src = "../assets/images/icon-close.svg";
