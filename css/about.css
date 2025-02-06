@@ -276,30 +276,24 @@
 }
 
 /* --------------- */
+/* Meet the directors card section */
 
-/* About section for js */
-
-/* include this to js */
-/* .director-card--normal{
-  display: flex;
-  flex-direction: column;
-  padding: 35px 24px 63px;
-  align-items: center;
-} */
-
+/* Text of flipped card */
 .director-card--normal .director-card--text{
   color: var(--color-white--primary);
   max-width: 254px;
   margin-top: 8px;
 }
 
-.director-card--normal ul{
+/* Links to linkedin and twittah */
+.director-card--normal .director-card--links{
   list-style-type: none;
-  display: flex;
+  display: none; /* hidden-element class doesn't work for links, this works */
   width: 60px;
   margin-top: 24px;
 }
 
+/* Very normal and citizen-like card styles */
 .director-card--normal{
   display: flex;
   position: relative;
@@ -309,26 +303,25 @@
   align-items: center;
 }
 
-.director-card--normal ul {
-  display: none;
-}
-
-.director-card--normal ul > li{
+/* Grow links - twittah and linkedin, my children! */
+.director-card--normal .director-card--links > li{
   flex-grow: 1;
 }
 
-.director-card--normal ul li svg{
+/* Link svg stylez */
+.director-card--normal .director-card--links li svg{
   fill: var(--color-white--primary);
 }
-
-.director-card--normal ul li svg:hover{
+.director-card--normal .director-card--links li svg:hover{
   fill: var(--color-light-coral--primary);
 }
 
-.card--after-click-padding{
+/* Flipped card content padding adjustments */
+.director-card__flipped__padding{
   padding: 35px 24px 63px;
 }
 
+/* Class for hidden elements */
 .hidden-element{
   display: none;
 }
