@@ -6,7 +6,10 @@
 
         <link rel="stylesheet" href="../css/base.css" />
         <link rel="stylesheet" href="../css/about.css" />
-        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/footer.css" />
+
+        <script src="../js/script.js" defer></script>
+
         <title>About</title>
     </head>
     <body>
@@ -16,29 +19,36 @@
             <article class="about-hero">
                 <div class="about__content">
                     <!-- Heading -->
-                     <div class="about-hero__header">
+                    <div class="about-hero__header">
                         <h2 class="about-hero--heading h1--sm">About</h2>
-                     </div>
-                     <div class="rectangle"></div>
-                
-                     <!-- Paragraph Text  -->
-                     <div class="about-hero__text">
-                        <p>We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
-                     </div>
+                    </div>
+                    <div class="rectangle"></div>
 
-                     <!-- Pattern image  -->
-                      <img 
-                      src="../assets/images/bg-pattern-about-1-mobile-nav-1.svg" 
-                      alt="Background image for About 1st article "
-                      class="about-hero-rightside__img"
-                      />
+                    <!-- Paragraph Text  -->
+                    <div class="about-hero__text">
+                        <p>
+                            We help companies build dynamic teams made up of top
+                            global talent. Using our network of passionate
+                            professionals we drive innovation and deliver
+                            incredible outcomes. Talented, diverse teams shape
+                            the best products and experiences. We’ll bring those
+                            teams to you.
+                        </p>
+                    </div>
+
+                    <!-- Pattern image  -->
+                    <img
+                        src="../assets/images/bg-pattern-about-1-mobile-nav-1.svg"
+                        alt="Background image for About 1st article "
+                        class="about-hero-rightside__img"
+                    />
                 </div>
             </article>
             <!-- About page 2nd article directors section -->
             <article class="about-directors">
                 <!-- Pattern image -->
-                <img 
-                    src="/assets/images/bg-pattern-about-2-contact-1.svg" 
+                <img
+                    src="/assets/images/bg-pattern-about-2-contact-1.svg"
                     alt="Background pattern image for about, second atricle"
                     class="about-directors-bckgrnd__img1"
                 />
@@ -52,132 +62,196 @@
                     <div class="about-directors__container">
                         <div class="director-card">
                             <!--Director card normal state-->
-                            <div class="director-card--normal">
-                                <img 
-                                src="/assets/images/avatar-nikita.jpg" 
-                                alt="Director Nikita Marks image for about page, Meet the directors section"
-                                class="about-directors__img"
+                            <div class="director-card--normal  body--secondary" >
+                                <img
+                                    src="/assets/images/avatar-nikita.jpg"
+                                    alt="Director Nikita Marks image for about page, Meet the directors section"
+                                    class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Nikita Marks</h3>
+                                <h3 class="director-card--name">
+                                    Nikita Marks
+                                </h3>
+                                <p class="director-card--text hidden-element">
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <p class="director-card--role">Founder & CEO</p>
-                                <button class="director-card__btn">
-                                    <img 
-                                    src="/assets/images/icon-cross.svg" 
-                                    alt="Button icon cross, normal state for about page, Meet the directors section"
-                                    class="btn--directors btn--directors__normal"
-                                    >
-                                </button>
-                            </div>
-                            <!--Director card active-->
-                            <div class="director-card--active" hidden> 
-                                <h3 class="director-card--name">Nikita Marks</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
-                                <ul class="about-directors__logo">
-                                    <li> 
+         <ul >
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-twitter.svg" 
-                                        alt="Twitter icon for about page, Meet the directors section"
-                                        class="about-directors__twt-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="20"
+                                                title="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            >
+                                                <path
+                                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-linkedin.svg" 
-                                        alt="LinkedIn icon for about page, Meet the directors section"
-                                        class="about-directors__linkedIn-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                title="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            >
+                                                <path
+                                                    d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
+
+
+                                <button class="director-card__btn">
+                                    <img
+                                        src="/assets/images/icon-cross.svg"
+                                        alt="Button icon cross, normal state for about page, Meet the directors section"
+                                        class="btn--directors btn--directors__normal"
+                                    />
+                                </button>
                             </div>
+                            <!--Director card active-->
+                            <div class="director-card--active">
+                                <!-- <h3 class="director-card--name">
+                                    Nikita Marks
+                                </h3> -->
+                                                   </div>
                         </div>
                         <div class="director-card">
                             <!--Director card normal state-->
                             <div class="director-card--normal">
-                                <img 
-                                src="/assets/images/avatar-christian.jpg" 
-                                alt="Director Christian Duncan image for about page, Meet the directors section"
-                                class="about-directors__img"
+                                <img
+                                    src="/assets/images/avatar-christian.jpg"
+                                    alt="Director Christian Duncan image for about page, Meet the directors section"
+                                    class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Christian Durcan</h3>
-                                <p class="director-card--role">Co-founder & COO</p>
+                                <h3 class="director-card--name">
+                                    Christian Durcan
+                                </h3>
+                                <p class="director-card--role">
+                                    Co-founder & COO
+                                </p>
                                 <button class="director-card__btn">
-                                    <img 
-                                    src="/assets/images/icon-cross.svg" 
-                                    alt="Button icon cross, normal state for about page, Meet the directors section"
-                                    class="btn--directors btn--directors__normal"
-                                    >
+                                    <img
+                                        src="/assets/images/icon-cross.svg"
+                                        alt="Button icon cross, normal state for about page, Meet the directors section"
+                                        class="btn--directors btn--directors__normal"
+                                    />
                                 </button>
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
-                                <h3 class="director-card--name">Christian Durcan</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <h3 class="director-card--name">
+                                    Christian Durcan
+                                </h3>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
+                                
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-twitter.svg" 
-                                        alt="Twitter icon for about page, Meet the directors section"
-                                        class="about-directors__twt-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="20"
+                                                title="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            >
+                                                <path
+                                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-linkedin.svg" 
-                                        alt="LinkedIn icon for about page, Meet the directors section"
-                                        class="about-directors__linkedIn-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                title="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            >
+                                                <path
+                                                    d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
+
                             </div>
                         </div>
                         <div class="director-card">
                             <!--Director card normal state-->
                             <div class="director-card--normal">
-                                <img 
-                                src="/assets/images/avatar-cruz.jpg" 
-                                alt="Director Cruz Hamer image for about page, Meet the directors section"
-                                class="about-directors__img"
+                                <img
+                                    src="/assets/images/avatar-cruz.jpg"
+                                    alt="Director Cruz Hamer image for about page, Meet the directors section"
+                                    class="about-directors__img"
                                 />
                                 <h3 class="director-card--name">Cruz Hamer</h3>
-                                <p class="director-card--role">Co-founder & CTO</p>
+                                <p class="director-card--role">
+                                    Co-founder & CTO
+                                </p>
                                 <button class="director-card__btn">
-                                    <img 
-                                    src="/assets/images/icon-cross.svg" 
-                                    alt="Button icon cross, normal state for about page, Meet the directors section"
-                                    class="btn--directors btn--directors__normal"
-                                    >
+                                    <img
+                                        src="/assets/images/icon-cross.svg"
+                                        alt="Button icon cross, normal state for about page, Meet the directors section"
+                                        class="btn--directors btn--directors__normal"
+                                    />
                                 </button>
                             </div>
-                            
+
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
                                 <h3 class="director-card--name">Cruz Hamer</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-twitter.svg" 
-                                        alt="Twitter icon for about page, Meet the directors section"
-                                        class="about-directors__twt-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="20"
+                                                title="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            >
+                                                <path
+                                                     d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-linkedin.svg" 
-                                        alt="LinkedIn icon for about page, Meet the directors section"
-                                        class="about-directors__linkedIn-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                title="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            >
+                                                <path
+                                                    d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
@@ -186,42 +260,65 @@
                         <div class="director-card">
                             <!--Director card normal state-->
                             <div class="director-card--normal">
-                                <img 
-                                src="/assets/images/avatar-drake.jpg" 
-                                alt="Director Drake Heaton image for about page, Meet the directors section"
-                                class="about-directors__img"
+                                <img
+                                    src="/assets/images/avatar-drake.jpg"
+                                    alt="Director Drake Heaton image for about page, Meet the directors section"
+                                    class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Drake Heaton</h3>
-                                <p class="director-card--role">Business Development Lead</p>
+                                <h3 class="director-card--name">
+                                    Drake Heaton
+                                </h3>
+                                <p class="director-card--role">
+                                    Business Development Lead
+                                </p>
                                 <button class="director-card__btn">
-                                    <img 
-                                    src="/assets/images/icon-cross.svg" 
-                                    alt="Button icon cross, normal state for about page, Meet the directors section"
-                                    class="btn--directors btn--directors__normal"
-                                    >
+                                    <img
+                                        src="/assets/images/icon-cross.svg"
+                                        alt="Button icon cross, normal state for about page, Meet the directors section"
+                                        class="btn--directors btn--directors__normal"
+                                    />
                                 </button>
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
-                                <h3 class="director-card--name">Drake Heaton</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <h3 class="director-card--name">
+                                    Drake Heaton
+                                </h3>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-twitter.svg" 
-                                        alt="Twitter icon for about page, Meet the directors section"
-                                        class="about-directors__twt-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="20"
+                                                title="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            >
+                                                <path
+                                                    fill="#FFF"
+                                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-linkedin.svg" 
-                                        alt="LinkedIn icon for about page, Meet the directors section"
-                                        class="about-directors__linkedIn-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                title="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            >
+                                                <path
+                                                    d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
@@ -230,42 +327,65 @@
                         <div class="director-card">
                             <!--Director card normal state-->
                             <div class="director-card--normal">
-                                <img 
-                                src="/assets/images/avatar-griffin.jpg" 
-                                alt="Director Griffin Wise image for about page, Meet the directors section"
-                                class="about-directors__img"
+                                <img
+                                    src="/assets/images/avatar-griffin.jpg"
+                                    alt="Director Griffin Wise image for about page, Meet the directors section"
+                                    class="about-directors__img"
                                 />
-                                <h3 class="director-card--name">Griffin Wise</h3>
-                                <p class="director-card--role">Lead Marketing</p>
+                                <h3 class="director-card--name">
+                                    Griffin Wise
+                                </h3>
+                                <p class="director-card--role">
+                                    Lead Marketing
+                                </p>
                                 <button class="director-card__btn">
-                                    <img 
-                                    src="/assets/images/icon-cross.svg" 
-                                    alt="Button icon cross, normal state for about page, Meet the directors section"
-                                    class="btn--directors btn--directors__normal"
-                                    >
+                                    <img
+                                        src="/assets/images/icon-cross.svg"
+                                        alt="Button icon cross, normal state for about page, Meet the directors section"
+                                        class="btn--directors btn--directors__normal"
+                                    />
                                 </button>
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
-                                <h3 class="director-card--name">Griffin Wise</h3>
-                                <p>“Unique perspectives shape unique products, which is what you need to survive these days.”</p>
+                                <h3 class="director-card--name">
+                                    Griffin Wise
+                                </h3>
+                                <p>
+                                    “Unique perspectives shape unique products,
+                                    which is what you need to survive these
+                                    days.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-twitter.svg" 
-                                        alt="Twitter icon for about page, Meet the directors section"
-                                        class="about-directors__twt-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="20"
+                                                title="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            >
+                                                <path
+                                                    fill="#FFF"
+                                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-linkedin.svg" 
-                                        alt="LinkedIn icon for about page, Meet the directors section"
-                                        class="about-directors__linkedIn-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                title="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            >
+                                                <path
+                                                    d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
@@ -274,42 +394,80 @@
                         <div class="director-card">
                             <!--Director card normal state-->
                             <div class="director-card--normal">
-                                <img 
-                                src="/assets/images/avatar-aden.jpg" 
-                                alt="Director Aden Allan image for about page, Meet the directors section"
-                                class="about-directors__img"
+                                <img
+                                    src="/assets/images/avatar-aden.jpg"
+                                    alt="Director Aden Allan image for about page, Meet the directors section"
+                                    class="about-directors__img"
                                 />
                                 <h3 class="director-card--name">Aden Allan</h3>
-                                <p class="director-card--role">Head of Talent</p>
+                                <p class="director-card--role">
+                                    Head of Talent
+                                </p>
                                 <button class="director-card__btn">
-                                    <img 
-                                    src="/assets/images/icon-cross.svg" 
-                                    alt="Button icon cross, normal state for about page, Meet the directors section"
-                                    class="btn--directors btn--directors__normal"
-                                    >
+                                    <img
+                                        src="/assets/images/icon-cross.svg"
+                                        alt="Button icon cross, normal state for about page, Meet the directors section"
+                                        class="btn--directors btn--directors__normal"
+                                    />
                                 </button>
                             </div>
                             <!--Director card active-->
                             <div class="director-card--active" hidden>
                                 <h3 class="director-card--name">Aden Allan</h3>
-                                <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                                <p>
+                                    “Empowered teams create truly amazing
+                                    products. Set the north star and let them
+                                    follow it.”
+                                </p>
                                 <ul class="about-directors__logo">
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-twitter.svg" 
-                                        alt="Twitter icon for about page, Meet the directors section"
-                                        class="about-directors__twt-icon"
-                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="20"
+                                                title="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            >
+                                                <path
+                                                    f<ul class="about-directors__logo">
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="/assets/images/icon-twitter.svg"
+                                                alt="Twitter icon for about page, Meet the directors section"
+                                                class="about-directors__twt-icon"
+                                            />
                                         </a>
                                     </li>
-                                    <li> 
+                                    <li>
                                         <a href="#">
-                                        <img 
-                                        src="/assets/images/icon-linkedin.svg" 
-                                        alt="LinkedIn icon for about page, Meet the directors section"
-                                        class="about-directors__linkedIn-icon"
-                                        >
+                                            <img
+                                                src="/assets/images/icon-linkedin.svg"
+                                                alt="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>ill="#FFF"
+                                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                title="LinkedIn icon for about page, Meet the directors section"
+                                                class="about-directors__linkedIn-icon"
+                                            >
+                                                <path
+                                                    d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                                                />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
@@ -317,14 +475,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Pattern image-->
-                <img 
-                src="/assets/images/bg-pattern-home-4-about-3.svg" 
-                alt="Background pattern image for about, second atricle"
-                class="about-directors-bckgrnd__img2"
+                <img
+                    src="/assets/images/bg-pattern-home-4-about-3.svg"
+                    alt="Background pattern image for about, second atricle"
+                    class="about-directors-bckgrnd__img2"
                 />
-            </article>    
+            </article>
 
             <!-- About page clients section -->
             <article class="about-clients">
@@ -340,7 +498,7 @@
                         <h2>Some of our clients</h2>
                     </div>
                     <!-- Clients logos -->
-                    <div class="about-clients__list" >
+                    <div class="about-clients__list">
                         <ul class="about-clients__logos">
                             <li>
                                 <img
@@ -418,37 +576,53 @@
             </article>
             <footer class="footer">
                 <div class="footer-container">
-    
                     <div class="footer-left">
-                    <img src="../assets/images/myteam.png" alt="MyTeam Logo" class="footer-logo" />
-                    <nav class="footer-nav">
-                        <a href="index.html" class="footer-nav-button">home</a>
-                        <a href="Pages/About.html" class="footer-nav-button">about</a>
-                    </nav>
+                        <img
+                            src="../assets/images/myteam.png"
+                            alt="MyTeam Logo"
+                            class="footer-logo"
+                        />
+                        <nav class="footer-nav">
+                            <a href="index.html" class="footer-nav-button"
+                                >home</a
+                            >
+                            <a href="Pages/About.html" class="footer-nav-button"
+                                >about</a
+                            >
+                        </nav>
                     </div>
-                
+
                     <div class="footer-contact">
-                    987 Hillcrest Lane<br />
-                    Irvine, CA<br />
-                    California 92714<br />
-                    Call Us: 949-833-7432
+                        987 Hillcrest Lane<br />
+                        Irvine, CA<br />
+                        California 92714<br />
+                        Call Us: 949-833-7432
                     </div>
-                
+
                     <div class="footer-right">
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com" target="_blank">
-                        <img src="../assets/images/icon-facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="https://www.pinterest.com" target="_blank">
-                        <img src="../assets/images/icon-pinterest.svg" alt="Pinterest">
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                        <img src="../assets/images/icon-twitter.svg" alt="Twitter">
-                        </a>
-                    </div>
-                    <div class="footer-copyright">
-                        Copyright 2020. All Rights Reserved
-                    </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-facebook.svg"
+                                    alt="Facebook"
+                                />
+                            </a>
+                            <a href="https://www.pinterest.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-pinterest.svg"
+                                    alt="Pinterest"
+                                />
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </a>
+                        </div>
+                        <div class="footer-copyright">
+                            Copyright 2020. All Rights Reserved
+                        </div>
                     </div>
                 </div>
             </footer>

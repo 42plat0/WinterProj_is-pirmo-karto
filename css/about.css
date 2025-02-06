@@ -232,16 +232,25 @@
 .director-card__btn {
   width: 56px;
   height: 56px;
-  flex-shrink: 0;
   border: none;
   background-color: var(--color-light-coral--primary);
   border-radius: 50%;
-  margin-top: 28px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
 }
 
 .director-card__btn:hover {
   background-color: var(--color-rapture-blue--secondary);
-  cursor: url("/assets/images/pointer.svg"), auto;
+  cursor: pointer;
+}
+
+.director-card__btn--flipped{
+  
+}
+
+.director-card__btn--flipped:hover{
+
 }
 
 .btn--directors {
@@ -262,3 +271,59 @@
 }
 
 /* --------------- */
+
+/* About section for js */
+
+/* include this to js */
+/* .director-card--normal{
+  display: flex;
+  flex-direction: column;
+  padding: 35px 24px 63px;
+  align-items: center;
+} */
+
+.director-card--normal .director-card--text{
+  color: var(--color-white--primary);
+  max-width: 254px;
+  margin-top: 8px;
+}
+
+.director-card--normal ul{
+  list-style-type: none;
+  display: flex;
+  width: 60px;
+  margin-top: 24px;
+}
+
+.director-card--normal{
+  display: flex;
+  position: relative;
+  height: 253px;
+  width: 350px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.director-card--normal ul {
+  display: none;
+}
+
+.director-card--normal ul > li{
+  flex-grow: 1;
+}
+
+.director-card--normal ul li svg{
+  fill: var(--color-white--primary);
+}
+
+.director-card--normal ul li svg:hover{
+  fill: var(--color-light-coral--primary);
+}
+
+.card--after-click-padding{
+  padding: 35px 24px 63px;
+}
+
+.hidden-element{
+  display: none;
+}
