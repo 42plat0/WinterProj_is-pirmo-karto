@@ -116,6 +116,36 @@ header {
     .header__hamburger {
         display: none;
     }
+    .home-2nd-head {
+      height: 710px !important;
+      flex-direction: column;
+      padding: 100px 98px 100px !important;
+      justify-content: center !important;
+    }
+    .corner-img {
+      top: 0;
+    }
+    .head-2nd-title {
+      max-width: 445px;
+      word-break: break-word;
+      display: flex;
+      align-items: end;
+      padding-top: 32px !important;
+      font-size: 32px;
+      line-height: 32px;
+    }
+    .home-2nd-head > div {
+      gap: 32px !important;
+    }
+    .home-2nd-head > div img {
+      height: 72px !important;
+      width: 72px !important;
+    }
+    .home-2nd-head > div > div > div {
+      display: flex; 
+      flex-direction: column;
+      gap: 16px;
+    }
 
     /* ************************ */
     /* Ready to get started section */
@@ -157,6 +187,7 @@ header {
         top: 55px;
         right: 30px;
     }
+
     /* ************************ */
     /* Ready to get started section */
     /* ************************ */
