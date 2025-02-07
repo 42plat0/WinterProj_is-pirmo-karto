@@ -274,10 +274,10 @@ header {
       font-size: 32px;
       line-height: 32px;
     }
-    .home-2nd-head > div {
+    .div-container {
       gap: 32px !important;
     }
-    .home-2nd-head > div img {
+    .div-2nd img {
       height: 72px !important;
       width: 72px !important;
     }
@@ -357,19 +357,16 @@ header {
     .head-2nd-title {
       max-width: 240px !important;
     }
-    .home-2nd-head > div {
+    .div-2nd {
       gap: 48px !important;
     }
-    .home-2nd-head > div > div > div {
-      gap: 8px;
-    }
-    .home-2nd-head > div > div {
+    .div-container * {
       flex-direction: column;
       text-align: center;
       justify-content: center ;
       align-items: center !important;
     }
-    .home-2nd-head > div > div {
+    .div-2nd {
       gap: 16px !important;
     }
   }
