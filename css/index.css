@@ -1,75 +1,10 @@
-/* Home page header style*/
-header {
-    background-color: #014e56;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.header__primary {
-    display: inline-block;
-}
-
-/* Home page header logo*/
-.header__logo {
-    width: 160px;
-    height: 40px;
-    margin: 40px 60px 40px 165px;
-}
-
-/* Home page header navigation */
-.header__link {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    font-family: Livvic;
-    font-size: 18px;
-    line-height: 28px;
-    font-style: normal;
-    font-weight: 600;
-    margin: 20px;
-    bottom: 50px;
-}
-.header__link:hover {
-    color: #f67e7e;
-}
-
-/* Home page header "contact us" button */
-.header__secondary {
-    float: right;
-}
-
-.header__btn {
-    position: relative;
-    top: 45px;
-    right: 145px;
-    width: 153px;
-    height: 48px;
-    box-sizing: border-box;
-    color: #fff;
-    text-decoration: none;
-    font-family: Livvic;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    border: 2px solid #fff;
-    border-radius: 24px;
-    padding: 9px 33px 11px 32px;
-}
-.header__btn:hover {
-    color: #002529;
-    background-color: #fff;
-}
-.header__hamburger {
-    display: none;
-}
-
 /* ************************ */
 /* Ready to get started section */
 /* ************************ */
 
 /* heading and button to contact page */
 .contact-sect {
+    height: 200px;
     background: var(--color-light-coral--primary);
     position: relative;
     overflow: hidden;
@@ -216,12 +151,22 @@ header {
 
 /* Paragraph-right collumn */
 
+.about__rectangle {
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-rapture-blue--secondary);
+}
+
 .home-hero__text {
   color: var(--color-white--primary);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+}
+
+.lower__paragraph {
+  margin-top: 79px;
 }
 
 /* Background images */

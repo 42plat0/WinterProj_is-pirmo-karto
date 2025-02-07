@@ -6,12 +6,36 @@
 
         <link rel="stylesheet" href="../css/base.css" />
         <link rel="stylesheet" href="../css/contact.css" />
-        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/header.css" />
         <title>Contact</title>
     </head>
     <body>
         <main>
-            <header></header>
+            <header class="header">
+                <!-- Navbar links -->
+                <div class="header__primary">
+                    <img
+                        src="../assets/images/logo.svg"
+                        alt="Header logo"
+                        class="header__logo"
+                    />
+                    <a class="header__link body--primary" href="../index.html"
+                        >home</a
+                    >
+                    <a class="header__link body--primary" href="./about.html"
+                        >about</a
+                    >
+                    <!-- Contact us button -->
+                </div>
+                <div class="header__secondary">
+                    <a
+                        class="btn btn--light--primary header__btn body--primary"
+                        href="./contact.html"
+                        >contact us</a
+                    >
+                </div>
+            </header>
             <article class="contact">
                 <img
                     class="contact__pattern--right pattern-img"
@@ -44,7 +68,7 @@
                                 />
                             </div>
                             <div class="contact__ask-about-text">
-                                Usage & implementation of our software 
+                                Usage & implementation of our software
                             </div>
                         </div>
                         <!-- Third item (chart) -->
@@ -125,37 +149,55 @@
             <article></article>
             <footer class="footer">
                 <div class="footer-container">
-    
                     <div class="footer-left">
-                    <img src="../assets/images/myteam.png" alt="MyTeam Logo" class="footer-logo" />
-                    <nav class="footer-nav">
-                        <a href="../index.html" class="footer-nav-button">home</a>
-                        <a href="../Pages/About.html" class="footer-nav-button">about</a>
-                    </nav>
+                        <img
+                            src="../assets/images/myteam.png"
+                            alt="MyTeam Logo"
+                            class="footer-logo"
+                        />
+                        <nav class="footer-nav">
+                            <a href="../index.html" class="footer-nav-button"
+                                >home</a
+                            >
+                            <a
+                                href="../Pages/About.html"
+                                class="footer-nav-button"
+                                >about</a
+                            >
+                        </nav>
                     </div>
-                
+
                     <div class="footer-contact">
-                    987 Hillcrest Lane<br />
-                    Irvine, CA<br />
-                    California 92714<br />
-                    Call Us: 949-833-7432
+                        987 Hillcrest Lane<br />
+                        Irvine, CA<br />
+                        California 92714<br />
+                        Call Us: 949-833-7432
                     </div>
-                
+
                     <div class="footer-right">
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com" target="_blank">
-                        <img src="../assets/images/icon-facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="https://www.pinterest.com" target="_blank">
-                        <img src="../assets/images/icon-pinterest.svg" alt="Pinterest">
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                        <img src="../assets/images/icon-twitter.svg" alt="Twitter">
-                        </a>
-                    </div>
-                    <div class="footer-copyright">
-                        Copyright 2020. All Rights Reserved
-                    </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-facebook.svg"
+                                    alt="Facebook"
+                                />
+                            </a>
+                            <a href="https://www.pinterest.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-pinterest.svg"
+                                    alt="Pinterest"
+                                />
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <img
+                                    src="../assets/images/icon-twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </a>
+                        </div>
+                        <div class="footer-copyright">
+                            Copyright 2020. All Rights Reserved
+                        </div>
                     </div>
                 </div>
             </footer>
