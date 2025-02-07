@@ -115,6 +115,7 @@
   color: #ffffff;
   padding: 165px 140px;
   height: 684px;
+  overflow: hidden;
 }
 
 .head-2nd-title {
