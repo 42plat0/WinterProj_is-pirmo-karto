@@ -122,21 +122,21 @@ main {
     border-bottom: 1px solid #fff;
 }
 
-.contact__form > input[type="email"]:focus {
+/* .contact__form > input[type="email"]:focus {
     border-bottom: 1px solid #f67e7e;
-}
+} */
 
-.contact__form > input:not([type="submit"]):focus,
+/* .contact__form > input:not([type="submit"]):focus,
 .contact__form > textarea:focus,
 .contact__form > input[type="email"]:focus + .warning-message {
     color: #f67e7e;
-}
+} */
 
-.contact__form > input:not([type="submit"]):focus + .warning-message,
+/* .contact__form > input:not([type="submit"]):focus + .warning-message,
 .contact__form > textarea:focus + .warning-message,
 .contact__form > input[type="email"]:focus + .warning-message {
     display: block;
-}
+} */
 
 .warning-message {
     display: none;
