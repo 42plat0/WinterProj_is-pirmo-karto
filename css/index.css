@@ -151,12 +151,22 @@
 
 /* Paragraph-right collumn */
 
+.about__rectangle {
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-rapture-blue--secondary);
+}
+
 .home-hero__text {
   color: var(--color-white--primary);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+}
+
+.lower__paragraph {
+  margin-top: 79px;
 }
 
 /* Background images */
