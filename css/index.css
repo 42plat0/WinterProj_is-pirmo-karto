@@ -36,83 +36,6 @@
     bottom: 0;
 }
 
-/* For tablets */
-@media (max-width: 768px) {
-    .header__logo {
-        width: 128px;
-        height: 32px;
-        top: 72px;
-        margin: 40px;
-    }
-    .header__btn {
-        top: 40px;
-        right: 60px;
-    }
-    .header__hamburger {
-        display: none;
-    }
-
-    /* ************************ */
-    /* Ready to get started section */
-    /* ************************ */
-
-    /* Ready to get... heading */
-    .heading--contact {
-        font-size: 32px;
-        line-height: 32px; /* 100% */
-    }
-
-    /* button to contact page */
-    .btn--contact {
-        border-radius: 24px;
-        height: 100%;
-    }
-
-    /* img at left bottom of ready to get.. sect */
-    .contact-sect__img {
-        transform: translateY(15%);
-    }
-}
-
-/* For mobile */
-@media (max-width: 500px) {
-    .header__btn {
-        display: none;
-    }
-    .header__link {
-        display: none;
-    }
-    .header__hamburger {
-        position: absolute;
-        background-color: #014e56;
-        border: 0;
-        display: inline;
-        width: 20px;
-        height: 17px;
-        top: 55px;
-        right: 30px;
-    }
-    /* ************************ */
-    /* Ready to get started section */
-    /* ************************ */
-
-    .heading--contact {
-        max-width: 200px;
-        word-break: break-word;
-        display: flex;
-        align-items: end;
-    }
-
-    .contact-sect__content {
-        flex-direction: column;
-        gap: 24px;
-        height: 100%;
-    }
-    .contact-sect__content > * {
-        flex-grow: 1;
-    }
-}
-
 
 /* Home 1st Article CSS */
 
@@ -192,6 +115,7 @@
   color: #ffffff;
   padding: 165px 140px;
   height: 684px;
+  overflow: hidden;
 }
 
 .head-2nd-title {
@@ -262,3 +186,134 @@
   right: 0;
   transform: translateX(50%);
 }
+
+/* For tablets */
+@media (max-width: 768px) {
+    .header__logo {
+        width: 128px;
+        height: 32px;
+        top: 72px;
+        margin: 40px;
+    }
+    .header__btn {
+        top: 40px;
+        right: 60px;
+    }
+    .header__hamburger {
+        display: none;
+    }
+    .home-2nd-head {
+      height: 710px !important;
+      flex-direction: column;
+      padding: 100px 98px 100px !important;
+      justify-content: center !important;
+    }
+    .corner-img {
+      top: 0;
+    }
+    .head-2nd-title {
+      max-width: 445px;
+      word-break: break-word;
+      display: flex;
+      align-items: end;
+      padding-top: 32px !important;
+      font-size: 32px;
+      line-height: 32px;
+    }
+    .home-2nd-content-container {
+      gap: 32px !important;
+    }
+    .div img {
+      height: 72px !important;
+      width: 72px !important;
+    }
+    .home-2nd-head > div > div > div {
+      display: flex; 
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* ************************ */
+    /* Ready to get started section */
+    /* ************************ */
+
+    /* Ready to get... heading */
+    .heading--contact {
+        font-size: 32px;
+        line-height: 32px; /* 100% */
+    }
+
+    /* button to contact page */
+    .btn--contact {
+        border-radius: 24px;
+        height: 100%;
+    }
+
+    /* img at left bottom of ready to get.. sect */
+    .contact-sect__img {
+        transform: translateY(15%);
+    }
+}
+
+/* For mobile */
+@media (max-width: 500px) {
+    .header__btn {
+        display: none;
+    }
+    .header__link {
+        display: none;
+    }
+    .header__hamburger {
+        position: absolute;
+        background-color: #014e56;
+        border: 0;
+        display: inline;
+        width: 20px;
+        height: 17px;
+        top: 55px;
+        right: 30px;
+    }
+
+    /* ************************ */
+    /* Ready to get started section */
+    /* ************************ */
+
+    .heading--contact {
+        max-width: 200px;
+        word-break: break-word;
+        display: flex;
+        align-items: end;
+    }
+
+    .contact-sect__content {
+        flex-direction: column;
+        gap: 24px;
+        height: 100%;
+    }
+    .contact-sect__content > * {
+        flex-grow: 1;
+    }
+    .home-2nd-head {
+      justify-content: start !important;
+      height: 1073px !important;
+      padding: 64px 24px 64px !important;
+      width: 100vw !important;
+    }
+    /* HOME 2ND ARTICLE */
+    .head-2nd-title {
+      max-width: 240px !important;
+    }
+    .home-2nd-card {
+      gap: 48px !important;
+    }
+    .home-2nd-content-container * {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center ;
+      align-items: center !important;
+    }
+    .home-2nd-card {
+      gap: 16px !important;
+    }
+  }
+ 
