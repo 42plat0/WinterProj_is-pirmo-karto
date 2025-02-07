@@ -1,0 +1,45 @@
+
+/* Home page header style*/
+header {
+    background-color: var(--color-midnight-green--primary);
+}
+
+.header__primary {
+    display: inline-block;
+}
+
+/* Home page header logo*/
+.header__logo {
+    width: 160px;
+    height: 40px;
+    margin: 40px 60px 40px 165px;
+}
+
+/* Home page header navigation */
+.header__link {
+    position: relative;
+    color: var(--color-white--primary);
+    text-decoration: none;
+    margin: 20px;
+    bottom: 50px;
+}
+.header__link:hover {
+    color: var(--color-light-coral--primary);
+}
+
+/* Home page header "contact us" button */
+.header__secondary {
+    float: right;
+}
+
+.header__btn {
+    position: relative;
+    top: 45px;
+    right: 145px;
+    width: 153px;
+    padding: 9px 33px 11px 32px;
+}
+
+.header__hamburger {
+    display: none;
+}
