@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../css/contact.css" />
         <link rel="stylesheet" href="../css/footer.css" />
         <link rel="stylesheet" href="../css/header.css" />
+
+        <script src="../js/contact_form.js" defer></script>
         <title>Contact</title>
     </head>
     <body>
@@ -86,9 +88,9 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form">
+                <form action="" class="contact__form" id="contact-us-form" novalidate>
                     <!-- Name -->
-                    <input type="text" id="name" placeholder="Name" required />
+                    <input type="text" id="name" placeholder="Name" name="name" />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
                     <span class="warning-message">This field is required</span>
@@ -98,7 +100,7 @@
                         type="email"
                         id="email"
                         placeholder="Email Address"
-                        required
+                        name="email"
                     />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
@@ -109,7 +111,7 @@
                         type="text"
                         id="comp-name"
                         placeholder="Company Name"
-                        required
+                        name="comp-name"
                     />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
@@ -120,7 +122,7 @@
                         type="text"
                         id="title"
                         placeholder="Title"
-                        required
+                        name="title"
                     />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
@@ -131,7 +133,7 @@
                         name=""
                         id="message"
                         placeholder="Message"
-                        required
+                        name="message"
                     ></textarea>
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
