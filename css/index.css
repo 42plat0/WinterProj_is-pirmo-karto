@@ -36,21 +36,7 @@
     bottom: 0;
 }
 
-/* For tablets */
-@media (max-width: 768px) {
-    .header__logo {
-        width: 128px;
-        height: 32px;
-        top: 72px;
-        margin: 40px;
-    }
-    .header__btn {
-        top: 40px;
-        right: 60px;
-    }
-    .header__hamburger {
-        display: none;
-    }
+
 
     /* ************************ */
     /* Ready to get started section */
@@ -72,26 +58,9 @@
     .contact-sect__img {
         transform: translateY(15%);
     }
-}
 
-/* For mobile */
-@media (max-width: 500px) {
-    .header__btn {
-        display: none;
-    }
-    .header__link {
-        display: none;
-    }
-    .header__hamburger {
-        position: absolute;
-        background-color: #014e56;
-        border: 0;
-        display: inline;
-        width: 20px;
-        height: 17px;
-        top: 55px;
-        right: 30px;
-    }
+
+
     /* ************************ */
     /* Ready to get started section */
     /* ************************ */
@@ -111,7 +80,7 @@
     .contact-sect__content > * {
         flex-grow: 1;
     }
-}
+
 
 
 /* Home 1st Article CSS */
