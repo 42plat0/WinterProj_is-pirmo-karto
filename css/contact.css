@@ -108,6 +108,12 @@ main {
     outline: none;
     border-bottom: 1px solid #fff;
 }
+.contact__form > input[type="text"]::placeholder,
+.contact__form > input[type="email"]::placeholder,
+.contact__form > textarea::placeholder {
+    color: var(--color-white--primary);
+    opacity: 0.6;
+}
 
 /* Warning message underneath fields */
 .warning-message {
