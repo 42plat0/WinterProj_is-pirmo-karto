@@ -5,22 +5,7 @@ main {
     background: #014e56;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.heading--contact {
-    color: #012f34;
-    font-family: Livvic;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px; /* 100% */
-    height: 500px;
-}
-
+/* Container for contact headings and form */
 .contact {
     display: flex;
     position: relative;
@@ -30,83 +15,84 @@ main {
     padding: 10% 165px 0;
 }
 
+/* Contact form */
 .contact__form {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     width: 100%;
 }
+
+/* Text of contact container */
 .contact__info {
     flex-grow: 1;
     width: 100%;
 }
+
+/* Both images */
 .pattern-img {
     position: absolute;
 }
 
+/* Right image */
 .contact__pattern--right {
     left: 0;
     transform: translateX(-50%);
 }
 
+/* Left image */
 .contact__pattern--left {
     right: 0;
     bottom: 0;
     transform: translateX(50%);
 }
 
+/* Headings underneath "ask us about" */
+/* "Contact" heading */
+.contact__ask-about__item > h3,
+.contact__heading{
+    color: var(--color-white--primary);
+}
+
+/* Heading "ask us about" */
+.contact__subheading {
+    color: var(--color-light-coral--primary);
+    font-size: 32px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+/* Container for imgs and text */
+.contact__ask-about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Container for icon and heading */
 .contact__ask-about__item {
     display: flex;
     align-items: center;
     gap: 23px;
 }
 
-.contact__heading {
-    color: #fff;
-    font-family: Livvic;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100px; /* 156.25% */
-}
 
-.contact__subheading {
-    color: #f67e7e;
-    font-family: Livvic;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px; /* 150% */
-    margin-bottom: 32px;
-}
-
-.contact__ask-about-text {
-    color: #fff;
-    font-family: Livvic;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px; /* 155.556% */
-}
-
+/* Icons underneath "ask us about" sect */
 .contact__ask-about-icon {
     width: 72px;
     height: 72px;
 }
 
+/* Input fields except button */
 .contact__form > input[type="text"],
 .contact__form > input[type="email"],
-.contact__form > textarea {
+.contact__form > textarea 
+{
     border: none;
     background-color: #014e56;
     border-bottom: 1px solid #79c8c7;
     margin-top: 24px;
-    color: #fff;
-    font-family: Livvic;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px; /* 166.667% */
+    color: var(--color-white--primary);
     letter-spacing: -0.115px;
     width: 100%;
     padding-left: 14px;
@@ -116,32 +102,17 @@ main {
     resize: none;
 }
 
+/* Input fields on focus */
 .contact__form > input[type="text"]:focus,
 .contact__form > textarea:focus {
     outline: none;
     border-bottom: 1px solid #fff;
 }
 
-/* .contact__form > input[type="email"]:focus {
-    border-bottom: 1px solid #f67e7e;
-} */
-
-/* .contact__form > input:not([type="submit"]):focus,
-.contact__form > textarea:focus,
-.contact__form > input[type="email"]:focus + .warning-message {
-    color: #f67e7e;
-} */
-
-/* .contact__form > input:not([type="submit"]):focus + .warning-message,
-.contact__form > textarea:focus + .warning-message,
-.contact__form > input[type="email"]:focus + .warning-message {
-    display: block;
-} */
-
+/* Warning message underneath fields */
 .warning-message {
     display: none;
-    color: #f67e7e;
-    font-family: Livvic;
+    color: var(--color-light-coral--primary);
     font-size: 10px;
     font-style: italic;
     font-weight: 700;
@@ -151,37 +122,9 @@ main {
     text-decoration: none;
 }
 
+/* Submit button */
 .contact__form > [type="submit"] {
-    border-radius: 24px;
-    border: 2px solid #fff;
-    background: #fff;
     width: 123px;
-    height: 48px;
-    flex-shrink: 0;
-
     margin-top: 24px;
-    color: #004047;
-    font-family: Livvic;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 155.556% */
     cursor: pointer;
-}
-
-.contact__form > [type="submit"]:hover{
-    background-color: var(--btn--secondary--hover);
-    border: 2px solid transparent;
-}
-
-.contact__ask-about {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.error {
-    border-bottom: 1px solid #f67e7e;
-    color: #f67e7e;
-    background-color: red;
 }
