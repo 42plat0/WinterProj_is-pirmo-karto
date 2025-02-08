@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../css/contact.css" />
         <link rel="stylesheet" href="../css/footer.css" />
         <link rel="stylesheet" href="../css/header.css" />
+
+        <script src="../js/contact_form.js" defer></script>
         <title>Contact</title>
     </head>
     <body>
@@ -43,9 +45,11 @@
                     alt="Pattern of circles, lines and squares"
                 />
                 <div class="contact__info">
-                    <h1 class="contact__heading heading--sm">Contact</h1>
-                    <p class="contact__subheading">Ask us about</p>
+                    <h1 class="contact__heading h1--sm">Contact</h1>
                     <!-- subheading of 32px /-->
+                    <h2 class="contact__subheading">Ask us about</h2>
+
+                    <!-- Icons and questions -->
                     <div class="contact__ask-about">
                         <!-- First item (person) -->
                         <div class="contact__ask-about__item">
@@ -55,9 +59,7 @@
                                     alt="Icon displaying young man with hoodie"
                                 />
                             </div>
-                            <div class="contact__ask-about-text">
-                                The quality of our talent network
-                            </div>
+                            <h3>The quality of our talent network</h3>
                         </div>
                         <!-- Second item (cog) -->
                         <div class="contact__ask-about__item">
@@ -67,9 +69,7 @@
                                     alt="Icon displaying cog with check mark inside it"
                                 />
                             </div>
-                            <div class="contact__ask-about-text">
-                                Usage & implementation of our software
-                            </div>
+                            <h3>Usage & implementation of our software</h3>
                         </div>
                         <!-- Third item (chart) -->
                         <div class="contact__ask-about__item">
@@ -79,16 +79,25 @@
                                     alt="Icon displaying chart of data proceeding going up and down"
                                 />
                             </div>
-                            <div class="contact__ask-about-text">
-                                How we help drive innovation
-                            </div>
+                            <h3>How we help drive innovation</h3>
                         </div>
                     </div>
                 </div>
 
-                <form action="" class="contact__form">
+                <form
+                    action=""
+                    class="contact__form"
+                    id="contact-us-form"
+                    novalidate
+                >
                     <!-- Name -->
-                    <input type="text" id="name" placeholder="Name" required />
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Name"
+                        name="name"
+                        class="body--secondary"
+                    />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
                     <span class="warning-message">This field is required</span>
@@ -98,7 +107,8 @@
                         type="email"
                         id="email"
                         placeholder="Email Address"
-                        required
+                        name="email"
+                        class="body--secondary"
                     />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
@@ -109,7 +119,8 @@
                         type="text"
                         id="comp-name"
                         placeholder="Company Name"
-                        required
+                        name="comp-name"
+                        class="body--secondary"
                     />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
@@ -120,7 +131,8 @@
                         type="text"
                         id="title"
                         placeholder="Title"
-                        required
+                        name="title"
+                        class="body--secondary"
                     />
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
@@ -131,14 +143,19 @@
                         name=""
                         id="message"
                         placeholder="Message"
-                        required
+                        name="message"
+                        class="body--secondary"
                     ></textarea>
                     <!-- Warning message that appears after focus -->
                     <!-- Required by design and can be found in active state requirements for page -->
                     <span class="warning-message">This field is required</span>
 
                     <!-- Submit btn -->
-                    <input type="submit" value="submit" />
+                    <input
+                        type="submit"
+                        value="submit"
+                        class="btn btn--light--secondary body--primary"
+                    />
                 </form>
                 <img
                     class="contact__pattern--left pattern-img"
