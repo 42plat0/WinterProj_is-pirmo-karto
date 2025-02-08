@@ -1,3 +1,8 @@
+/* About page first article container */
+.about__content{
+    overflow: hidden;
+}
+
 /* About page first article header */
 .about-hero--heading {
     color: var(--color-white--primary);
@@ -24,8 +29,6 @@
 .about-hero__text > p {
     position: relative;
     color: var(--color-white--primary);
-    font-family: Livvic;
-    font-size: 18px;
     width: 730px;
     height: 112px;
     left: 545px;
@@ -38,8 +41,7 @@
     position: relative;
     width: 200px;
     height: 200px;
-    left: 1420px;
-    right: -100px;
+    left: 1350px;
 }
 
 /* About page client section style */
@@ -217,8 +219,8 @@
     /* Ready to get started section */
     /* ************************ */
 
-    .contact-sect{
-      height: 302px;
+    .contact-sect {
+        height: 302px;
     }
     .heading--contact {
         max-width: 200px;
@@ -313,16 +315,30 @@
 .director-card__btn {
     width: 56px;
     height: 56px;
-    flex-shrink: 0;
     border: none;
     background-color: var(--color-light-coral--primary);
     border-radius: 50%;
-    margin-top: 28px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
 }
 
 .director-card__btn:hover {
+    cursor: pointer;
+}
+
+/* Style for front of the card */
+.director-card__btn--front:hover {
     background-color: var(--color-rapture-blue--secondary);
-    cursor: url("/assets/images/pointer.svg"), auto;
+}
+
+/* Style for back of the card */
+.director-card__btn--flipped {
+    background-color: var(--color-rapture-blue--secondary);
+}
+
+.director-card__btn--flipped:hover {
+    background-color: var(--color-light-coral--primary);
 }
 
 .btn--directors {
@@ -343,3 +359,52 @@
 }
 
 /* --------------- */
+/* Meet the directors card section */
+
+/* Text of flipped card */
+.director-card--normal .director-card--text {
+    color: var(--color-white--primary);
+    max-width: 254px;
+    margin-top: 8px;
+}
+
+/* Links to linkedin and twittah */
+.director-card--normal .director-card--links {
+    list-style-type: none;
+    display: none; /* hidden-element class doesn't work for links, this works */
+    width: 60px;
+    margin-top: 24px;
+}
+
+/* Very normal and citizen-like card styles */
+.director-card--normal {
+    display: flex;
+    position: relative;
+    height: 253px;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grow links - twittah and linkedin, my children! */
+.director-card--normal .director-card--links > li {
+    flex-grow: 1;
+}
+
+/* Link svg stylez */
+.director-card--normal .director-card--links li svg {
+    fill: var(--color-white--primary);
+}
+.director-card--normal .director-card--links li svg:hover {
+    fill: var(--color-light-coral--primary);
+}
+
+/* Flipped card content padding adjustments */
+.director-card__flipped__padding {
+    padding: 35px 24px 63px;
+}
+
+/* Class for hidden elements */
+.hidden-element {
+    display: none;
+}
