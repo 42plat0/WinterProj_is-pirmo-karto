@@ -20,18 +20,39 @@
                         alt="Header logo"
                         class="header__logo"
                     />
-                    <a class="header__link body--primary" href="../index.html"
+                    <a class="header__link body--primary hideOnMobile" href="../index.html"
                         >home</a
                     >
-                    <a class="header__link body--primary" href="./about.html"
+                    <a class="header__link body--primary hideOnMobile" href="./about.html"
                         >about</a
                     >
-                    <!-- Contact us button -->
+                     <!-- Hamburger menu icon -->
+          <div class="header__hamburger">
+            <a href="#">
+              <img  src="/assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
+            </a>
+          </div> 
                 </div>
+
+                <!-- Header side menu for mobile -->
+        <aside class="sidebar">
+            <div> <a class="sidebar__link body--primary" href="../index.html">home</a></div>
+            <div><a class="sidebar__link body--primary" href="../pages/about.html">about</a</div>
+            <div><a class="btn btn--light--primary sidebar__btn body--primary"
+                href="../pages/contact.html">contact us</a></div>
+            <div class="sidebar__logo"><img src="../assets/images/bg-pattern-about-1-mobile-nav-1.svg" alt="mobile navigation patern image">
+            </div>
+            <div class="sidebar__close" onclick=hideSidebar()>
+                <img src="../assets/images/icon-close.svg" alt="close icon">
+            </div>
+
+        </aside>
+                 <!-- Contact us button -->
+
                 <div class="header__secondary">
                     <a
-                        class="btn btn--light--primary header__btn body--primary"
-                        href="./contact.html"
+                        class="btn btn--light--primary header__btn body--primary hideOnMobile"
+                        href="../pages/contact.html"
                         >contact us</a
                     >
                 </div>
@@ -546,5 +567,6 @@
                 </div>
             </footer>
         </main>
+        <script src="../header.js"></script>
     </body>
 </html>
