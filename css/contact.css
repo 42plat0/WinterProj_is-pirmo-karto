@@ -166,10 +166,22 @@ main {
     font-style: normal;
     font-weight: 600;
     line-height: 28px; /* 155.556% */
+    cursor: pointer;
+}
+
+.contact__form > [type="submit"]:hover{
+    background-color: var(--btn--secondary--hover);
+    border: 2px solid transparent;
 }
 
 .contact__ask-about {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.error {
+    border-bottom: 1px solid #f67e7e;
+    color: #f67e7e;
+    background-color: red;
 }
