@@ -1,47 +1,102 @@
 /* About page first article container */
-.about__content{
+.about-hero{
+    height: 389px;
+    position: relative;
     overflow: hidden;
 }
 
-/* About page first article header */
+.about__content {
+    max-width: 1110px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    margin: 0 auto;
+    padding-top: 113px;
+}
+
+.about__content > div:first-child {
+    flex-basis: 350px;
+}
+
+/* About page first article heading */
+.about__content > div {
+    width: 730px; 
+}
+
 .about-hero--heading {
     color: var(--color-white--primary);
-    position: relative;
-    width: 350px;
-    height: 100px;
-    top: 140px;
-    left: 165px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
 }
 
 /* Pink bar over the text*/
 
 .rectangle {
-    position: relative;
     width: 50px;
     height: 4px;
     background-color: var(--color-light-coral--primary);
-    left: 545px;
-    top: 35px;
 }
 
 /* About page first article text */
 
-.about-hero__text > p {
-    position: relative;
+.about-hero__lower-paragraph {
+    margin-top: 40px;
     color: var(--color-white--primary);
-    width: 730px;
-    height: 112px;
-    left: 545px;
-    top: 45px;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 /* About page first article patern img */
 
 .about-hero-rightside__img {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    left: 1350px;
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    /* transform: translateX(100px); */
+}
+
+/* For tablet about first article*/
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        overflow: hidden;
+        height: 359px;
+    }
+
+    .about__content {
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 0;
+        margin-top: 7px;
+    }
+
+    .about__content > div {
+        margin: 0 auto;
+        max-width: 457px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-hero--heading {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+    }
+
+    .about-hero__lower-paragraph {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .rectangle {
+        display: none;
+    }
 }
 
 /* About page client section style */
@@ -267,7 +322,8 @@
 
 .about-directors__container {
     display: flex;
-    width: 1110px;
+    width: 100%;
+    max-width:1110px;
     height: 610px;
     flex-wrap: wrap;
     justify-content: center;
@@ -407,4 +463,42 @@
 /* Class for hidden elements */
 .hidden-element {
     display: none;
+}
+
+/* For tablet "Meet the directors" section */
+
+@media (max-width: 768px) {
+    .about-directors {
+        max-width: 768px;
+        height: 1219px;
+    }
+
+    .about-directors__header > h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .about-directors__header {
+        padding-top: 100px;
+    }
+
+    .about-directors__container {
+        gap: 11px;
+        row-gap: 78px;
+        margin-top: 48px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .about-directors__container > div {
+        text-align: center;
+        width: 281px;
+        height: 253px;
+    }
+    
+    .director-card--normal {
+        height: 253px;
+        width: 281px;
+    }
 }
