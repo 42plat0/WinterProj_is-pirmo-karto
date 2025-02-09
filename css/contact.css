@@ -140,13 +140,13 @@ main {
 /* Tablet view */
 @media (max-width: 768px) {
     main {
-        height: 1204px;
+        height: 1475px;
     }
     .contact {
         flex-direction: column;
         padding: 7px 129px 115px 115px;
         gap: 40px;
-        height: 990px;
+        height: 987px;
     }
     .contact__heading {
         padding-left: 3px;
@@ -160,9 +160,7 @@ main {
 
     /* Left image */
     .contact__pattern--left {
-        right: 0;
-        bottom: 0;
-        transform: translateX(50%);
+        transform: translateX(50%) translateY(1%);
     }
 
     .contact__info {
@@ -195,7 +193,7 @@ main {
     /* submit button */
     .contact__form > [type="submit"] {
         position: absolute;
-        bottom: 0;
+        bottom: -3px;
         left: -2px;
     }
 }
