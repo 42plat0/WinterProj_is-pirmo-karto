@@ -36,7 +36,6 @@
     bottom: 0;
 }
 
-<<<<<<< HEAD
 
 
     /* ************************ */
@@ -59,32 +58,6 @@
     .contact-sect__img {
         transform: translateY(15%);
     }
-
-
-
-    /* ************************ */
-    /* Ready to get started section */
-    /* ************************ */
-
-    .heading--contact {
-        max-width: 200px;
-        word-break: break-word;
-        display: flex;
-        align-items: end;
-    }
-
-    .contact-sect__content {
-        flex-direction: column;
-        gap: 24px;
-        height: 100%;
-    }
-    .contact-sect__content > * {
-        flex-grow: 1;
-    }
-
-
-=======
->>>>>>> main
 
 /* Home 1st Article CSS */
 
@@ -237,20 +210,8 @@
 }
 
 /* For tablets */
-@media (max-width: 768px) {
-    .header__logo {
-        width: 128px;
-        height: 32px;
-        top: 72px;
-        margin: 40px;
-    }
-    .header__btn {
-        top: 40px;
-        right: 60px;
-    }
-    .header__hamburger {
-        display: none;
-    }
+@media (max-width: 769px) {
+    
     .home-2nd-head {
       height: 710px !important;
       flex-direction: column;
@@ -305,23 +266,8 @@
 }
 
 /* For mobile */
-@media (max-width: 500px) {
-    .header__btn {
-        display: none;
-    }
-    .header__link {
-        display: none;
-    }
-    .header__hamburger {
-        position: absolute;
-        background-color: #014e56;
-        border: 0;
-        display: inline;
-        width: 20px;
-        height: 17px;
-        top: 55px;
-        right: 30px;
-    }
+@media (max-width: 376px) {
+    
 
     /* ************************ */
     /* Ready to get started section */
