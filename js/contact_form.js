@@ -2,13 +2,20 @@ const form = document.getElementById("contact-us-form");
 
 // Loop through form elements except button
 for (let i = 0; i < form.length - 1; i++) {
-    form[i].addEventListener("focus", () => {
+    let inputField = form[i];
+    inputField.addEventListener("focus", () => {
         // Restore fields's styles
-        form[i].style.color = "#FFF";
-        form[i].style["border-bottom"] = "1px solid #79c8c7";
+        inputField.style.color = "#FFF";
+        inputField.style["border-bottom"] = "1px solid #79c8c7";
         // Stop displaying err text
-        form[i].nextElementSibling.style.display = "none";
+        inputField.nextElementSibling.style.display = "none";
     });
+    // Change field border to original color if text wasnt entered after focusing
+    inputField.addEventListener("blur", () => {
+        if (inputField.value === ""){
+            inputField.style["border-bottom"] = "1px solid #fff";
+        }
+    })
 }
 
 // Use standart event listener
@@ -43,13 +50,17 @@ form.addEventListener("submit", (event) => {
             // Restore fields's styles
             form.children[i].style.color = "#FFF";
             form.children[i].style["border-bottom"] = "1px solid #79c8c7";
-
+            // Change css variable property
+            form.children[i].style.setProperty("--c", "--color-light-coral-primary")
             // Remove text under field
             form.children[i + 1].style.display = "none";
         }
+        // Set button to disabled state after submiting valid form
+        form.children[form.children.length - 1].disabled = true;
     } else {
         indexesOfInvalidInp.forEach((ind) => {
             form.children[ind].style.color = "#f67e7e";
+            console.log(form.children[ind])
             form.children[ind].style["border-bottom"] = "1px solid #f67e7e";
             // Display text under field
             form.children[ind].nextElementSibling.style.display = "block";
