@@ -141,10 +141,6 @@ main {
     cursor: pointer;
 }
 
-/* Mobile view */
-@media (max-width: 375px) {
-}
-
 /* Tablet view */
 @media (max-width: 768px) {
     main {
@@ -203,5 +199,58 @@ main {
         position: absolute;
         bottom: -3px;
         left: -2px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 375px) {
+    main{
+        overflow: hidden;
+    }
+    .contact{
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .contact__info{
+        width: 375px;
+        margin:0;
+        flex-grow: 1;
+    }
+    .contact__heading{
+    }
+    .contact__subheading{
+        margin-top: 48px;
+        margin-bottom: 40px;
+    }
+    .contact__ask-about{
+        text-align: left;
+        gap: 24px;
+    }
+    .contact__ask-about__item{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .contact__ask-about h3{
+        width: 232px;
+    }
+    
+    .contact__pattern--right{
+        display: none;
+    }
+    /* Left image */
+    .contact__pattern--left {
+        transform: translateX(50%) translateY(50%);
+    }
+    .contact__form{
+        width: 325px;
+        align-items: start;
+        position: static;
+    }
+    /* submit button */
+    .contact__form > [type="submit"] {
+        /* margin: 0; */
+        position: static;
     }
 }
