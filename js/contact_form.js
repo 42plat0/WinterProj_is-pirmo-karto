@@ -43,13 +43,15 @@ form.addEventListener("submit", (event) => {
             // Restore fields's styles
             form.children[i].style.color = "#FFF";
             form.children[i].style["border-bottom"] = "1px solid #79c8c7";
-
+            // Change css variable property
+            form.children[i].style.setProperty("--c", "--color-light-coral-primary")
             // Remove text under field
             form.children[i + 1].style.display = "none";
         }
     } else {
         indexesOfInvalidInp.forEach((ind) => {
             form.children[ind].style.color = "#f67e7e";
+            console.log(form.children[ind])
             form.children[ind].style["border-bottom"] = "1px solid #f67e7e";
             // Display text under field
             form.children[ind].nextElementSibling.style.display = "block";

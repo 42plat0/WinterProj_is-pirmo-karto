@@ -108,10 +108,18 @@ main {
     outline: none;
     border-bottom: 1px solid #79c8c7;
 }
+
+/* Needed to change placeholder color with a variable */
+/* By setting --c to other value */
+:root{
+    --c: --color-white--primary;
+}
+
+/* Input fields's place holder value styles */
 .contact__form > input[type="text"]::placeholder,
 .contact__form > input[type="email"]::placeholder,
 .contact__form > textarea::placeholder {
-    color: var(--color-white--primary);
+    color: var(--c, --color-white--primary);
     opacity: 0.6;
 }
 
