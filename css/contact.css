@@ -126,7 +126,7 @@ main {
     text-decoration: none;
 }
 
-/* Submit button */
+/* submit button */
 .contact__form > [type="submit"] {
     width: 123px;
     margin-top: 24px;
@@ -144,11 +144,13 @@ main {
     }
     .contact {
         flex-direction: column;
-        padding: 6px 129px 112px 115px;
+        padding: 7px 129px 115px 115px;
         gap: 40px;
         height: 990px;
     }
-
+    .contact__heading {
+        padding-left: 3px;
+    }
     /* Right image */
     .contact__pattern--right {
         left: 0;
@@ -171,8 +173,14 @@ main {
         margin-left: 12px;
     }
 
+    /* Person img little bit to the right */
+    .contact__ask-about__item:first-child img {
+        padding-left: 7px;
+    }
+
     .contact__form {
-       width: 103%; 
+        width: 103%;
+        position: relative;
     }
 
     /* Heading "ask us about" */
@@ -183,5 +191,11 @@ main {
     .contact__form > textarea {
         margin-top: 25px;
         padding-bottom: 32px;
+    }
+    /* submit button */
+    .contact__form > [type="submit"] {
+        position: absolute;
+        bottom: 0;
+        left: -2px;
     }
 }
