@@ -50,7 +50,7 @@ main {
 /* Headings underneath "ask us about" */
 /* "Contact" heading */
 .contact__ask-about__item > h3,
-.contact__heading{
+.contact__heading {
     color: var(--color-white--primary);
 }
 
@@ -76,7 +76,6 @@ main {
     gap: 23px;
 }
 
-
 /* Icons underneath "ask us about" sect */
 .contact__ask-about-icon {
     width: 72px;
@@ -86,8 +85,7 @@ main {
 /* Input fields except button */
 .contact__form > input[type="text"],
 .contact__form > input[type="email"],
-.contact__form > textarea 
-{
+.contact__form > textarea {
     border: none;
     background-color: #014e56;
     border-bottom: 1px solid #79c8c7;
@@ -133,4 +131,57 @@ main {
     width: 123px;
     margin-top: 24px;
     cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 375px) {
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    main {
+        height: 1204px;
+    }
+    .contact {
+        flex-direction: column;
+        padding: 6px 129px 112px 115px;
+        gap: 40px;
+        height: 990px;
+    }
+
+    /* Right image */
+    .contact__pattern--right {
+        left: 0;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
+    /* Left image */
+    .contact__pattern--left {
+        right: 0;
+        bottom: 0;
+        transform: translateX(50%);
+    }
+
+    .contact__info {
+        width: 515px;
+        height: 384px;
+        text-align: center;
+        flex-grow: 0;
+        margin-left: 12px;
+    }
+
+    .contact__form {
+       width: 103%; 
+    }
+
+    /* Heading "ask us about" */
+    .contact__subheading {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .contact__form > textarea {
+        margin-top: 25px;
+        padding-bottom: 32px;
+    }
 }
