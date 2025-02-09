@@ -1,45 +1,93 @@
-
-/* Home page header style*/
-header {
-    background-color: var(--color-midnight-green--primary);
+:root {
+  --icon-size: 24px;
+  --icon-spacing: 16px;
 }
 
-.header__primary {
-    display: inline-block;
+.footer {
+  width: 100%;
+  background: #002529;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
 }
 
-/* Home page header logo*/
-.header__logo {
-    width: 160px;
-    height: 40px;
-    margin: 40px 60px 40px 165px;
+.footer-container {
+  width: 90%;
+  max-width: 1110px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 }
 
-/* Home page header navigation */
-.header__link {
-    position: relative;
-    color: var(--color-white--primary);
-    text-decoration: none;
-    margin: 20px;
-    bottom: 50px;
-}
-.header__link:hover {
-    color: var(--color-light-coral--primary);
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Home page header "contact us" button */
-.header__secondary {
-    float: right;
+.footer-logo {
+  width: 160px;
+  margin-bottom: 10px;
 }
 
-.header__btn {
-    position: relative;
-    top: 45px;
-    right: 145px;
-    width: 153px;
-    padding: 9px 33px 11px 32px;
+.footer-nav {
+  display: flex;
+  gap: 40px;
 }
 
-.header__hamburger {
-    display: none;
+.footer-nav-button {
+  color: #fff;
+  font-family: Livvic, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.footer-nav-button:hover {
+  color: #f67e7e;
+}
+
+.footer-contact {
+  color: #99a8a9;
+  font-size: 15px;
+  flex-grow: 1;
+  text-align: left;
+  max-width: 250px;
+  margin-right: 250px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--icon-spacing);
+  margin-bottom: 10px;
+}
+
+.footer-social img {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) invert(62%) sepia(84%) saturate(364%)
+    hue-rotate(320deg) brightness(101%) contrast(101%);
+  cursor: pointer;
+}
+.footer-copyright {
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  text-align: right;
+}
+
