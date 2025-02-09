@@ -1,4 +1,3 @@
-
 /* Home page header style*/
 header {
     background-color: var(--color-midnight-green--primary);
@@ -38,8 +37,55 @@ header {
     right: 145px;
     width: 153px;
     padding: 9px 33px 11px 32px;
+    display: block;
+    white-space: nowrap;
 }
 
 .header__hamburger {
     display: none;
+}
+
+/* Mobile view */
+@media (max-width: 375px) {
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        height: 112px;
+        align-items: end;
+        margin-bottom: 105px;
+    }
+    
+    .header__primary{
+        flex-grow: 1;
+        display: flex;
+        padding-left: 39px;
+        padding-bottom: 8px;
+    }
+    .header__primary > *{
+        margin: 0;
+    }
+    .header__logo{
+        width: 128px;
+        height: 32px;
+        margin-right: 48px !important;
+        margin: 0;
+    }
+    .header__secondary{
+       flex-grow: 1; 
+       display: flex;
+       justify-content: center;
+       margin-left: 60px;
+    }
+    .header__btn {
+        position: static;
+        padding-left: 30px;
+    }
+    .header__link{
+        position: static;
+        margin-top: 5px;
+        padding-right: 40px;
+    }
 }
