@@ -50,7 +50,6 @@ header {
   top: 55px;
   right: 40px;
   cursor: pointer;
-
 }
 
 /* Side menu for mobile */
@@ -105,29 +104,7 @@ header {
   bottom: 240px;
   cursor: pointer;
 }
-/* Parameters for tablets */
 
-@media (max-width: 769px) {
-    .header__logo {
-      position: relative;
-        width: 128px;
-        height: 32px;
-        top: 41px;
-        left: 39px;
-        margin: 0;
-    }
-    .header__btn {
-        top: 40px;
-        right: 60px;
-        
-    }
-    .header__link{
-      bottom: 0;
-      top: 31px;
-      left:60px;
-    }
-    
-  }
 /* Parameters for mobile screen */
 @media (max-width: 376px) {
   .hideOnMobile {
@@ -138,7 +115,7 @@ header {
     height: 32px;
     margin: 48px 223px 40px 24px;
   }
-  .header__hamburger{
+  .header__hamburger {
     display: block;
   }
 }
