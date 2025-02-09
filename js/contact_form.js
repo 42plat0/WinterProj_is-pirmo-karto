@@ -2,13 +2,20 @@ const form = document.getElementById("contact-us-form");
 
 // Loop through form elements except button
 for (let i = 0; i < form.length - 1; i++) {
-    form[i].addEventListener("focus", () => {
+    let inputField = form[i];
+    inputField.addEventListener("focus", () => {
         // Restore fields's styles
-        form[i].style.color = "#FFF";
-        form[i].style["border-bottom"] = "1px solid #79c8c7";
+        inputField.style.color = "#FFF";
+        inputField.style["border-bottom"] = "1px solid #79c8c7";
         // Stop displaying err text
-        form[i].nextElementSibling.style.display = "none";
+        inputField.nextElementSibling.style.display = "none";
     });
+    // Change field border to original color if text wasnt entered after focusing
+    inputField.addEventListener("blur", () => {
+        if (inputField.value === ""){
+            inputField.style["border-bottom"] = "1px solid #fff";
+        }
+    })
 }
 
 // Use standart event listener
