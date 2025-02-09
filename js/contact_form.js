@@ -48,6 +48,8 @@ form.addEventListener("submit", (event) => {
             // Remove text under field
             form.children[i + 1].style.display = "none";
         }
+        // Set button to disabled state after submiting valid form
+        form.children[form.children.length - 1].disabled = true;
     } else {
         indexesOfInvalidInp.forEach((ind) => {
             form.children[ind].style.color = "#f67e7e";
