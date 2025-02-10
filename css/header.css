@@ -55,7 +55,6 @@ header {
 }
 
 /* Side menu for mobile */
-
 aside {
   overflow: hidden;
   position: absolute;
@@ -67,32 +66,43 @@ aside {
   background-color: var(--color-police-blue--secondary);
   display: none;
 }
+/* Container holding sidebar__content and image */
+/* Needed for image proper styling */
 .sidebar__container{
   position: relative;
   height: 100vh;
 }
+
+/* Container holding buttons and anchors */
 .sidebar__content{
   height: 50%;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  padding: 56px 25px 0 48px;
+  padding-top: 56px;
 }
+
+/* Anchor tags in sidebar */
 .sidebar__link {
   color: var(--color-white--primary);
-  text-decoration: none;
-  top: 112px;
-  left: 48px;
-  padding-bottom: 34px;
+  /* Overwrite header__link styles */
+  position:static;
+  margin: 0;
 }
 
-.sidebar__btn {
+/* Home button */
+.sidebar__content a:first-of-type {
+  margin-bottom: 24px;
+}
+
+/* Contact us side bar button */
+.sidebar__content button:last-child {
   display: block;
   width: 159px;
-  top: 200px;
-  left: 35px;
-  padding: 9px 33px 11px 32px;
+  margin-top: 36px;
 }
 
+/* Pattern image at the bottom of sidebar */
 .sidebar__logo {
   width: 200px;
   height: 200px;
@@ -103,14 +113,11 @@ aside {
 }
 
 /* Side menu close icon*/
-
 .sidebar__close {
-  width: 18px;
-  height: 17px;
-  /* position: relative; */
-  left: 212px;
-  bottom: 240px;
+  display: flex;
+  justify-content: end;
   cursor: pointer;
+  margin-bottom: 39px;
 }
 
 /* Tablet view */
@@ -172,7 +179,6 @@ aside {
   .header__logo {
     width: 128px;
     height: 32px;
-    /* margin: 48px 223px 40px 24px; */
     margin: 0;
     display: block;
   }
