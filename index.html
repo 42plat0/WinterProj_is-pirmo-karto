@@ -13,51 +13,59 @@
     <body>
         <main>
             <header class="header">
-                <!-- Navbar links -->
-                <div class="header__primary">
-                    <img
-                        src="./assets/images/logo.svg"
-                        alt="Header logo"
-                        class="header__logo"
-                    />
-                    <a class="header__link body--primary hideOnMobile" href="./index.html"
-                        >home</a
-                    >
-                    <a class="header__link body--primary hideOnMobile" href="./pages/about.html"
-                        >about</a
-                    >
-                    <!-- Contact us button -->
+              <!-- Navbar links -->
+              <div class="header__primary">
+                  <img
+                      src="../assets/images/logo.svg"
+                      alt="Header logo"
+                      class="header__logo"
+                  />
+                  <a class="header__link body--primary hideOnMobile" href="./index.html"
+                      >home</a
+                  >
+                  <a class="header__link body--primary hideOnMobile" href="./pages/about.html"
+                      >about</a
+                  >
+                   <!-- Hamburger menu icon -->
+                  <div class="header__hamburger">
+                    <a href="#">
+                      <img  src="/assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
+                    </a>
+                  </div> 
+              </div>
+
+              <!-- Header side menu for mobile -->
+              <aside>
+                <div class="sidebar__container">
+                  <div class="sidebar__content">
+                    <div class="sidebar__close" onclick=hideSidebar()>
+                      <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path 
+                        title="close icon"
+                        fill-rule="evenodd" 
+                        clip-rule="evenodd" 
+                        d="M8.99989 6.37869L2.98948 0.368286L0.868164 2.48961L6.87857 8.50001L0.868164 14.5104L2.98948 16.6317L8.99989 10.6213L15.0103 16.6317L17.1316 14.5104L11.1212 8.50001L17.1316 2.48961L15.0103 0.368286L8.99989 6.37869Z" 
+                        fill="white"/>
+                      </svg>
+                    </div>
+                    <a class="sidebar__link header__link body--primary" href="./index.html">home</a>
+                    <a class="sidebar__link header__link body--primary" href="./pages/about.html">about</a>
+                    <a class="btn btn--light--primary body--secondary" href="./pages/contact.html">contact us</a>
+                  </div>
+
+                  <img src="../assets/images/bg-pattern-about-1-mobile-nav-1.svg" class="sidebar__logo" alt="mobile navigation patern image">
                 </div>
+              </aside>
 
-            <!-- Hamburger menu icon -->
-          <div class="header__hamburger">
-            <a href="#">
-              <img  src="./assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
-            </a>
-          </div>
-    
-        </div>
+               <!-- Contact us button -->
 
-        <!-- Header side menu for mobile -->
-        <aside class="sidebar">
-            <div> <a class="sidebar__link body--primary" href="./index.html">home</a></div>
-            <div><a class="sidebar__link body--primary" href="./pages/about.html">about</a</div>
-            <div><a class="btn btn--light--primary sidebar__btn body--primary"
-                href="./pages/contact.html">contact us</a></div>
-            <div class="sidebar__logo"><img src="./assets/images/bg-pattern-about-1-mobile-nav-1.svg" alt="mobile navigation patern image">
-            </div>
-            <div class="sidebar__close" onclick=hideSidebar()>
-                <img src="./assets/images/icon-close.svg" alt="close icon">
-            </div>
-
-        </aside>
-                <div class="header__secondary">
-                    <a
-                        class="btn btn--light--primary header__btn body--primary hideOnMobile"
-                        href="./pages/contact.html"
-                        >contact us</a
-                    >
-                </div>
+              <div class="header__secondary">
+                  <a
+                      class="btn btn--light--primary header__btn body--primary hideOnMobile"
+                      href="./pages/contact.html"
+                      >contact us</a
+                  >
+              </div>
             </header>
             <!-- Home page first article-->
             <article class="home-hero">
@@ -93,37 +101,6 @@
                     class="home-hero-rightside__img"
                 />
             </article>
-
-
-            <!-- Hamburger menu icon -->
-          <div class="header__hamburger">
-            <a href="#">
-              <img  src="./assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
-            </a>
-          </div>
-    
-        </div>
-
-        <!-- Header side menu for mobile -->
-        <aside class="sidebar">
-            <div> <a class="sidebar__link body--primary" href="./index.html">home</a></div>
-            <div><a class="sidebar__link body--primary" href="./pages/about.html">about</a></div>
-            <div><a class="btn btn--light--primary sidebar__btn body--primary"
-                href="./pages/contact.html">contact us</a></div>
-            <div class="sidebar__logo"><img src="./assets/images/bg-pattern-about-1-mobile-nav-1.svg" alt="mobile navigation patern image">
-            </div>
-            <div class="sidebar__close" onclick=hideSidebar()>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path 
-                  title="close icon"
-                  fill-rule="evenodd" 
-                  clip-rule="evenodd" 
-                  d="M8.99989 6.37869L2.98948 0.368286L0.868164 2.48961L6.87857 8.50001L0.868164 14.5104L2.98948 16.6317L8.99989 10.6213L15.0103 16.6317L17.1316 14.5104L11.1212 8.50001L17.1316 2.48961L15.0103 0.368286L8.99989 6.37869Z" 
-                  fill="white"/>
-                </svg>
-            </div>
-
-        </aside>
 
       <!-- Home 2nd article  -->
       <article class="home-2nd-head">
