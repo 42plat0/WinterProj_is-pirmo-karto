@@ -305,7 +305,7 @@
     display: grid;
     gap: 30px;
     justify-content: center;
-    width: 1440px;
+    width: 100%;
     /* height reiktu sumazint turbut, lyginant su kitais section'ais, 
     nors pagal figma tai toks dydis */
     height: 745px;
@@ -402,9 +402,10 @@
     width: 200px;
     height: 100px;
     flex-shrink: 0; 
-
-    top: 656;
-    left: 1240;
+    bottom: 0;
+    right: 0;
+    /* top: 656; */
+    /* left: 1240; */
 }
 
 /*  as sita taisiau net nzn kiek valandu,
