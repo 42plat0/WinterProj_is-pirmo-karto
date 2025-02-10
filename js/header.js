@@ -10,3 +10,9 @@ function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "none";
 }
+
+// Removes sidebar if view is tablet
+window.addEventListener("resize", () => {
+  if (document.body.clientWidth >= 768)
+    hideSidebar();
+})
