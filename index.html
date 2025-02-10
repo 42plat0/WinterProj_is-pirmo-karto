@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/footer.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <title>Home</title>
+        <script src="./js/header.js" defer></script>
     </head>
     <body>
         <main>
@@ -27,6 +28,29 @@
                     >
                     <!-- Contact us button -->
                 </div>
+
+            <!-- Hamburger menu icon -->
+          <div class="header__hamburger">
+            <a href="#">
+              <img  src="./assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
+            </a>
+          </div>
+    
+        </div>
+
+        <!-- Header side menu for mobile -->
+        <aside class="sidebar">
+            <div> <a class="sidebar__link body--primary" href="./index.html">home</a></div>
+            <div><a class="sidebar__link body--primary" href="./pages/about.html">about</a</div>
+            <div><a class="btn btn--light--primary sidebar__btn body--primary"
+                href="./pages/contact.html">contact us</a></div>
+            <div class="sidebar__logo"><img src="./assets/images/bg-pattern-about-1-mobile-nav-1.svg" alt="mobile navigation patern image">
+            </div>
+            <div class="sidebar__close" onclick=hideSidebar()>
+                <img src="./assets/images/icon-close.svg" alt="close icon">
+            </div>
+
+        </aside>
                 <div class="header__secondary">
                     <a
                         class="btn btn--light--primary header__btn body--primary hideOnMobile"
@@ -69,13 +93,7 @@
                     class="home-hero-rightside__img"
                 />
             </article>
-                <!--Pattern image-->
-                <img
-                    src="./assets/images/bg-pattern-home-2.svg"
-                    alt="Backgroung pattern image for home, first article"
-                    class="home-hero-rightside__img"
-                />
-            </article>
+
 
             <!-- Hamburger menu icon -->
           <div class="header__hamburger">
@@ -99,48 +117,6 @@
             </div>
 
         </aside>
-        <!-- Contact us button -->
-        <div class="header__secondary hideOnMobile">
-          <a
-            class="btn btn--light--primary header__btn body--primary hideOnMobile"
-            href="./pages/contact.html"
-            >contact us</a
-          >
-        </div>
-      </header>
-      <!-- Home page first article-->
-      <article class="home-hero">
-        <div class="home-hero__content">
-          <!--Heading left collumn-->
-          <div class="home-hero__heading">
-            <!-- Patetrn image -->
-            <img
-              src="./assets/images/bg-pattern-home-1.svg"
-              alt="Background pattern image for home, first article"
-              class="home-hero-leftside__img"
-            />
-            <h1 class="h1--lg">Find the</h1>
-            <h1 class="h1--lg">
-              best
-              <span class="home-hero--coraltext">talent</span>
-            </h1>
-          </div>
-          <!--Paragraph right collumn-->
-          <div class="home-hero__text">
-            <p>
-              Finding the right people and building high performing teams can be
-              hard. Most companies aren’t tapping into the abundance of global
-              talent. We’re about to change that.
-            </p>
-          </div>
-        </div>
-        <!--Pattern image-->
-        <img
-          src="./assets/images/bg-pattern-home-2.svg"
-          alt="Backgroung pattern image for home, first article"
-          class="home-hero-rightside__img"
-        />
-      </article>
 
       <!-- Home 2nd article  -->
       <article class="home-2nd-head">

@@ -99,12 +99,9 @@
     opacity: 0.6;
 }
 
-/* Mobile view */
-@media (max-width: 375px) {
-}
 
 /* Tablet view */
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     .footer {
         height: 271px;
         /* padding: 0; */
@@ -170,4 +167,8 @@
         padding-top: 15px;
         margin-right: 5px;
     }
+}
+
+/* Mobile view */
+@media (max-width: 375px) {
 }
