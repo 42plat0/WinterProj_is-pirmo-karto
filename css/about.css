@@ -59,7 +59,7 @@
 
 /* For tablet about first article*/
 
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
 
     .about-hero {
         overflow: hidden;
@@ -192,7 +192,7 @@
 
 /* For tablets */
 
-@media (max-width: 770px) {
+@media (min-width: 376px) and (max-width: 768px) {
     .about-clients {
         width: 768px;
         height: 308px;
@@ -237,7 +237,7 @@
 }
 
 /* For mobile */
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     .about-clients {
         width: 375px;
         height: 632px;
@@ -465,9 +465,16 @@
     display: none;
 }
 
+/* Flipped card background color */
+
+.director-card__flipped__color {
+    background-color: var(--color-dark-green--secondary);
+}
+
+
 /* For tablet "Meet the directors" section */
 
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     .about-directors {
         max-width: 768px;
         height: 1219px;

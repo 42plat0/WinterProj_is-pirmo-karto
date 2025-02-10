@@ -107,27 +107,8 @@ header {
   cursor: pointer;
 }
 
-/* Parameters for mobile screen */
-@media (max-width: 376px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .header__logo {
-    width: 128px;
-    height: 32px;
-    margin: 48px 223px 40px 24px;
-  }
-  .header__hamburger {
-    display: block;
-  }
-}
-
-/* Mobile view */
-@media (max-width: 375px) {
-}
-
 /* Tablet view */
-@media (max-width: 768px) {
+@media (min-width: 377px) and (max-width: 768px) {
     header{
         display: flex;
         height: 112px;
@@ -165,4 +146,19 @@ header {
         margin-top: 5px;
         padding-right: 40px;
     }
+}
+
+/* Mobile view */
+@media (max-width: 376px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .header__logo {
+    width: 128px;
+    height: 32px;
+    margin: 48px 223px 40px 24px;
+  }
+  .header__hamburger {
+    display: block;
+  }
 }

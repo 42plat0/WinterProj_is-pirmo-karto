@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/footer.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <title>Home</title>
+        <script src="./js/header.js" defer></script>
     </head>
     <body>
         <main>
@@ -27,6 +28,29 @@
                     >
                     <!-- Contact us button -->
                 </div>
+
+            <!-- Hamburger menu icon -->
+          <div class="header__hamburger">
+            <a href="#">
+              <img  src="./assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
+            </a>
+          </div>
+    
+        </div>
+
+        <!-- Header side menu for mobile -->
+        <aside class="sidebar">
+            <div> <a class="sidebar__link body--primary" href="./index.html">home</a></div>
+            <div><a class="sidebar__link body--primary" href="./pages/about.html">about</a</div>
+            <div><a class="btn btn--light--primary sidebar__btn body--primary"
+                href="./pages/contact.html">contact us</a></div>
+            <div class="sidebar__logo"><img src="./assets/images/bg-pattern-about-1-mobile-nav-1.svg" alt="mobile navigation patern image">
+            </div>
+            <div class="sidebar__close" onclick=hideSidebar()>
+                <img src="./assets/images/icon-close.svg" alt="close icon">
+            </div>
+
+        </aside>
                 <div class="header__secondary">
                     <a
                         class="btn btn--light--primary header__btn body--primary hideOnMobile"
@@ -69,13 +93,7 @@
                     class="home-hero-rightside__img"
                 />
             </article>
-                <!--Pattern image-->
-                <img
-                    src="./assets/images/bg-pattern-home-2.svg"
-                    alt="Backgroung pattern image for home, first article"
-                    class="home-hero-rightside__img"
-                />
-            </article>
+
 
             <!-- Hamburger menu icon -->
           <div class="header__hamburger">
@@ -99,48 +117,6 @@
             </div>
 
         </aside>
-        <!-- Contact us button -->
-        <div class="header__secondary hideOnMobile">
-          <a
-            class="btn btn--light--primary header__btn body--primary hideOnMobile"
-            href="./pages/contact.html"
-            >contact us</a
-          >
-        </div>
-      </header>
-      <!-- Home page first article-->
-      <article class="home-hero">
-        <div class="home-hero__content">
-          <!--Heading left collumn-->
-          <div class="home-hero__heading">
-            <!-- Patetrn image -->
-            <img
-              src="./assets/images/bg-pattern-home-1.svg"
-              alt="Background pattern image for home, first article"
-              class="home-hero-leftside__img"
-            />
-            <h1 class="h1--lg">Find the</h1>
-            <h1 class="h1--lg">
-              best
-              <span class="home-hero--coraltext">talent</span>
-            </h1>
-          </div>
-          <!--Paragraph right collumn-->
-          <div class="home-hero__text">
-            <p>
-              Finding the right people and building high performing teams can be
-              hard. Most companies aren’t tapping into the abundance of global
-              talent. We’re about to change that.
-            </p>
-          </div>
-        </div>
-        <!--Pattern image-->
-        <img
-          src="./assets/images/bg-pattern-home-2.svg"
-          alt="Backgroung pattern image for home, first article"
-          class="home-hero-rightside__img"
-        />
-      </article>
 
       <!-- Home 2nd article  -->
       <article class="home-2nd-head">
@@ -188,19 +164,17 @@
         <!-- Decorative Corner Image -->
         <img
           class="corner-img"
-          src="assets/images/bg-pattern-home-3.svg"
+          src="./assets/images/bg-pattern-home-3.svg"
           alt="Decorative background corner image"
         />
       </article>
 
       <!-- 3rd article "Delivering" -->
-      <article></article>
-
       <!--         home 3rd article          -->
       <article class="testimonial-section">
         <img
           class="testimonial-section__bg-pattern1"
-          src="/assets/images/bg-pattern-home-4-about-3.svg"
+          src="./assets/images/bg-pattern-home-4-about-3.svg"
           alt="background image of a square and some lines"
         />
 
@@ -209,20 +183,19 @@
           Delivering real results for top companies. Some of our
           <span class="success-stories">success stories.</span>
         </h2>
-
         <!--    client feedback ( -page- left to right)    -->
         <div class="testimonial-section__customer-reviews">
           <!--    client 1    -->
           <div class="testimonial-section__review">
             <img
               class="testimonial-section__bg-img-quotes"
-              src="/assets/images/icon-quotes.svg"
+              src="./assets/images/icon-quotes.svg"
               alt="quotation mark background image"
             />
             <p class="testimonial-section__quote">
               “The team perfectly fit the specialized skill set required. They
               focused on the most essential features helping us launch the
-              platform eight months faster than planned>
+              platform eight months faster than planned."
             </p>
             <p class="testimonial-section__name">Kady Baker</p>
             <br />
@@ -231,7 +204,7 @@
             </p>
             <img
               class="testimonial-section__client-img"
-              src="/assets/images/avatar-kady.jpg"
+              src="./assets/images/avatar-kady.jpg"
               alt="image of kady baker"
             />
           </div>
@@ -239,7 +212,7 @@
           <div class="testimonial-section__review">
             <img
               class="testimonial-section__bg-img-quotes"
-              src="/assets/images/icon-quotes.svg"
+              src="./assets/images/icon-quotes.svg"
               alt="quotation mark background image"
             />
             <p class="testimonial-section__quote">
@@ -252,7 +225,7 @@
             <p class="testimonial-section__position">Founder of Manage</p>
             <img
               class="testimonial-section__client-img"
-              src="/assets/images/avatar-aiysha.jpg"
+              src="./assets/images/avatar-aiysha.jpg"
               alt="image of aiysha reese"
             />
           </div>
@@ -260,7 +233,7 @@
           <div class="testimonial-section__review">
             <img
               class="testimonial-section__bg-img-quotes"
-              src="/assets/images/icon-quotes.svg"
+              src="./assets/images/icon-quotes.svg"
               alt="quotation mark background image"
             />
             <p class="testimonial-section__quote">
@@ -273,7 +246,7 @@
             <p class="testimonial-section__position">Co-founder of MyPhysio</p>
             <img
               class="testimonial-section__client-img"
-              src="/assets/images/avatar-arthur.jpg"
+              src="./assets/images/avatar-arthur.jpg"
               alt="image of arthur clarke"
             />
           </div>
@@ -281,7 +254,7 @@
         <!--     bottom right background img     -->
         <img
           class="testimonial-section__bg-pattern2"
-          src="/assets/images/bg-pattern-home-5.svg"
+          src="./assets/images/bg-pattern-home-5.svg"
           alt="background image of a semi circle and some lines"
         />
       </article>
