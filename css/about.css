@@ -465,6 +465,13 @@
     display: none;
 }
 
+/* Flipped card background color */
+
+.director-card__flipped__color {
+    background-color: var(--color-dark-green--secondary);
+}
+
+
 /* For tablet "Meet the directors" section */
 
 @media (min-width: 376px) and (max-width: 768px) {
