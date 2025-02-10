@@ -44,6 +44,10 @@ cards.forEach((card) => {
                     
                     // Remove padding from card after going back
                     currentCard.classList.remove("director-card__flipped__padding");
+
+                    // Remove background color after going back
+
+                    currentCard.classList.remove("director-card__flipped__color");
                     
                     // Change to other pic
                     child.firstElementChild.src = "../assets/images/icon-cross.svg";
@@ -70,6 +74,9 @@ cards.forEach((card) => {
 
                     // Add padding
                     currentCard.classList.add("director-card__flipped__padding");
+
+                    // Add color
+                    currentCard.classList.add("director-card__flipped__color");
                     
                     // Change to same pic
                     child.firstElementChild.src = "../assets/images/icon-close.svg";

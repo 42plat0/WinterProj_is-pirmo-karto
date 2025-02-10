@@ -142,7 +142,7 @@ main {
 }
 
 /* Tablet view */
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     main {
         height: 1475px;
     }
