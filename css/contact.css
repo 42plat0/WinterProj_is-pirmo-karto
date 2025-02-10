@@ -141,12 +141,8 @@ main {
     cursor: pointer;
 }
 
-/* Mobile view */
-@media (max-width: 375px) {
-}
-
 /* Tablet view */
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     main {
         height: 1475px;
     }
@@ -204,4 +200,8 @@ main {
         bottom: -3px;
         left: -2px;
     }
+}
+
+/* Mobile view */
+@media (max-width: 375px) {
 }
