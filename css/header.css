@@ -56,7 +56,8 @@ header {
 
 /* Side menu for mobile */
 
-.sidebar {
+aside {
+  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
@@ -65,13 +66,18 @@ header {
   z-index: 999;
   background-color: var(--color-police-blue--secondary);
   display: none;
+}
+.sidebar__container{
+  position: relative;
+  height: 100vh;
+}
+.sidebar__content{
+  height: 50%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-
 .sidebar__link {
-  position: relative;
   color: var(--color-white--primary);
   text-decoration: none;
   top: 112px;
@@ -80,7 +86,6 @@ header {
 }
 
 .sidebar__btn {
-  position: relative;
   display: block;
   width: 159px;
   top: 200px;
@@ -91,9 +96,10 @@ header {
 .sidebar__logo {
   width: 200px;
   height: 200px;
-  position: relative;
-  top: 285px;
-  left: 155px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%);
 }
 
 /* Side menu close icon*/
@@ -101,7 +107,7 @@ header {
 .sidebar__close {
   width: 18px;
   height: 17px;
-  position: relative;
+  /* position: relative; */
   left: 212px;
   bottom: 240px;
   cursor: pointer;
@@ -174,9 +180,7 @@ header {
     display: block;
     position: static;
   }
-  .sidebar{
-    overflow: hidden;
-  }
+
   .hideOnMobile {
     display: none;
   }

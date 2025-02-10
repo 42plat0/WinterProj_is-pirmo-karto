@@ -1,13 +1,13 @@
 
 /* Function for hamburger menu, when it's clicked the side menu shows up */
 function showSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
+  const sidebar = document.querySelector("aside");
+  sidebar.style.display = "block";
 }
 
 /* Function for slide menu close icon, when it's clicked the side menu disappears */
 function hideSidebar() {
-  const sidebar = document.querySelector(".sidebar");
+  const sidebar = document.querySelector("aside");
   sidebar.style.display = "none";
 }
 
