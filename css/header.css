@@ -96,10 +96,11 @@ aside {
 }
 
 /* Contact us side bar button */
-.sidebar__content button:last-child {
+.sidebar__content a:last-child {
   display: block;
   width: 159px;
   margin-top: 36px;
+  padding-top: 6px;
 }
 
 /* Pattern image at the bottom of sidebar */
