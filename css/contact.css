@@ -212,11 +212,14 @@ main {
         flex-direction: column;
         gap: 0;
         align-items: center;
+        text-align: center;
+        height: 1006px;
     }
     .contact__info {
         width: 375px;
         margin: 0;
         flex-grow: 1;
+        height: 304px;
     }
     .contact__heading {
         font-size: 40px;
