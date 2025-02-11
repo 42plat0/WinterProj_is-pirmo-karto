@@ -212,21 +212,21 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 66px 24px 64px;
+        margin: 64px 24px 64px;
       }
       .footer-copyright {
         width: 255px;
-        padding-top: 16px;
+        padding-top: 20px;
       }
       .footer-social {
         height: 24px;
         margin: auto;
-        padding-top: 40px;
+        padding-top: 50px;
       }
       .footer-nav {
         width: 107px;
         gap: 24px;
-        padding-top: 24px;
+        padding-top: 26px;
       }
       .footer-nav-button {
         width: 42px;
@@ -243,6 +243,6 @@
         height: 100px;
         margin: 0;
         text-align: center;
-        padding: 24px;
+        padding: 23px;
       }
     }
