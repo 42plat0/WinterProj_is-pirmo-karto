@@ -121,6 +121,15 @@ aside {
   margin-bottom: 39px;
 }
 
+/* Desktop view */
+@media (min-width: 768px) {
+  header{
+    height: 117px;;
+    margin-top: 37px;
+    margin-bottom: 87px;
+  }
+}
+
 /* Tablet view */
 @media (min-width: 376px) and (max-width: 768px) {
     header{

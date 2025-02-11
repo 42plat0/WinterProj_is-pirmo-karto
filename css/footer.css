@@ -169,6 +169,13 @@
     }
 }
 
+/* Desktop view */
+@media (min-width: 768px) {
+  .footer{
+    height: 196px;
+  }
+}
+
 /* Mobile view */
 @media (max-width: 375px) {
     .footer {
