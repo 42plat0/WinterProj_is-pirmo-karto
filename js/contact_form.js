@@ -7,7 +7,7 @@ for (let i = 0; i < form.length - 1; i++) {
         inputField.style.color = "#FFF";
         inputField.style["border-bottom"] = "1px solid #79c8c7";
         // Stop displaying err text
-        inputField.nextElementSibling.style.display = "none";
+        inputField.nextElementSibling.firstElementChild.style.display = "none";
     });
     // Change field border to original color if text wasnt entered after focusing
     inputField.addEventListener("blur", () => {
@@ -39,7 +39,6 @@ form.addEventListener("submit", (event) => {
         Boolean(msgVal),
     ];
     let indexesOfInvalidInp = getAllIndexes(input, false);
-    console.log(input);
     if (!indexesOfInvalidInp.length) {
         // Clear fields
         form.reset();
@@ -51,17 +50,16 @@ form.addEventListener("submit", (event) => {
             // Change css variable property
             form.children[i].children[0].style.setProperty("--c", "--color-light-coral-primary")
             // Remove text under field
-            form.children[i].children[1].style.display = "none";
+            form.children[ind].children[1].children[0].style.display = "none";
         }
         // Set button to disabled state after submiting valid form
         form.children[form.children.length - 1].disabled = true;
     } else {
         indexesOfInvalidInp.forEach((ind) => {
             form.children[ind].children[0].style.color = "#f67e7e";
-            console.log(ind)
             form.children[ind].children[0].style["border-bottom"] = "1px solid #f67e7e";
             // Display text under field
-            form.children[ind].children[1].style.display = "block";
+            form.children[ind].children[1].children[0].style.display = "block";
         });
     }
 });
