@@ -155,7 +155,6 @@ main {
         padding-left: 165px;
         padding-top: 0px;
         padding-right: 163px;
-        /* padding-bottom: 3px; */
     }
     .contact__info,
     .contact__form{
@@ -251,6 +250,21 @@ main {
         position: relative;
     }
 
+    .contact__form > .field input[type="text"],
+    .contact__form > .field input[type="email"],
+    .contact__form > .field textarea {
+        height: 42px;
+    }
+
+    .contact__form > .field input[type="email"],
+    .contact__form > .field:nth-of-type(3) input[type="text"],
+    .contact__form > .field:nth-of-type(4) input[type="text"] ,
+    .contact__form > .field:nth-of-type(5) textarea{
+        margin-top: 5px;
+    }
+    .contact__form > .field:nth-of-type(5) textarea{
+        padding-bottom: 83px;
+    }
     /* Heading "ask us about" */
     .contact__subheading {
         margin-top: 24px;
