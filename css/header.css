@@ -122,7 +122,7 @@ aside {
 }
 
 /* Desktop view */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header{
     height: 117px;;
     margin-top: 37px;
