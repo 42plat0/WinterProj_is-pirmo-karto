@@ -70,6 +70,7 @@
     padding: 0;
     gap: 0;
     margin-top: 7px;
+    
   }
 
   .about__content > div {
@@ -102,7 +103,7 @@
 
 @media (max-width: 376px) {
   .about-hero {
-    
+    overflow: hidden;
     height: 400px;
   }
   .about-hero--heading {
@@ -112,6 +113,7 @@
     height: 40px;
   }
   .about-hero__lower-paragraph {
+
     font-size: 15px;
     margin: 0;
   }
@@ -515,6 +517,7 @@
 
 @media (min-width: 376px) and (max-width: 768px) {
   .about-directors {
+    overflow: hidden;
     max-width: 768px;
     height: 1219px;
   }
@@ -552,6 +555,7 @@
 
 @media (min-width: 319px) and (max-width: 376px) {
   .about-directors {
+    overflow: hidden;
     max-width: 375px;
     height: 2062px;
   }
