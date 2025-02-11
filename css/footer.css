@@ -132,14 +132,12 @@
 }
 
 /* Tablet view */
-@media (min-width: 377px) and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 769px) {
     .footer {
         height: 271px;
-        /* padding: 0; */
     }
     .footer-container {
         height: 100%;
-        /* flex-direction: column; */
         flex-wrap: wrap;
     }
     .footer-left {
@@ -174,7 +172,6 @@
     .footer-right {
         flex-direction: row;
         width: 689px;
-        gap: 330px;
         height: 50px;
         justify-content: space-between;
         align-items: center;

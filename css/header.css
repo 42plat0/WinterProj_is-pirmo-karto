@@ -124,7 +124,7 @@ aside {
 /* Desktop view */
 @media (min-width: 769px) {
   header{
-    height: 117px;;
+    height: 117px;
     margin-top: 37px;
     margin-bottom: 87px;
     display: flex;
