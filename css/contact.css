@@ -85,9 +85,9 @@ main {
 }
 
 /* Input fields except button */
-.contact__form > input[type="text"],
-.contact__form > input[type="email"],
-.contact__form > textarea {
+.contact__form > .field input[type="text"],
+.contact__form > .field input[type="email"],
+.contact__form > .field textarea {
     border: none;
     background-color: #014e56;
     border-bottom: 1px solid #fff;
@@ -103,8 +103,8 @@ main {
 }
 
 /* Input fields on focus */
-.contact__form > input[type="text"]:focus,
-.contact__form > textarea:focus {
+.contact__form > .field input[type="text"]:focus,
+.contact__form > .field textarea:focus {
     outline: none;
     border-bottom: 1px solid #79c8c7;
 }
@@ -116,9 +116,9 @@ main {
 }
 
 /* Input fields's place holder value styles */
-.contact__form > input[type="text"]::placeholder,
-.contact__form > input[type="email"]::placeholder,
-.contact__form > textarea::placeholder {
+.contact__form > .field input[type="text"]::placeholder,
+.contact__form > .field input[type="email"]::placeholder,
+.contact__form > .field textarea::placeholder {
     color: var(--c, --color-white--primary);
     opacity: 0.6;
 }
@@ -137,7 +137,7 @@ main {
 }
 
 /* submit button */
-.contact__form > [type="submit"] {
+.contact__form > .field [type="submit"] {
     width: 123px;
     margin-top: 24px;
     cursor: pointer;
@@ -159,7 +159,7 @@ main {
     .contact__info,
     .contact__form{
         height: 100%;
-        height: 421px;
+        /* height: 421px; */
         /* padding-bottom: 11%; */
     }
     .contact__info{
@@ -176,28 +176,31 @@ main {
         padding-left: 7px;
     }
     .contact__form{
-        position: relative;
         gap: 24px;
         margin-left: 27px;
         padding-left: 3px;
     }
+    .contact__form div:last-child{
+        position:relative;
+        height: 48px;
+    }
     /* Input fields except button */
-    .contact__form > input[type="text"],
-    .contact__form > input[type="email"],
-    .contact__form > textarea {
+    .contact__form > .field input[type="text"],
+    .contact__form > .field input[type="email"],
+    .contact__form > .field textarea {
         margin-top: 0;
         padding-left: 14px;
         padding-bottom: 2.95%;
     }
-    .contact__form > textarea{
+    .contact__form > .field textarea{
         padding-bottom: 33px;
     }
-    .contact__form > [type="submit"] {
+    .contact__form > .field [type="submit"] {
         margin:0;
-        /* margin-bottom: 23.5%; */
         position: absolute;
-        left: 1px;
-        bottom:0;
+        left: -2px;
+        bottom: 6px;
+        display: block;
     }
     .contact__pattern--left {
         bottom: 1px;
@@ -254,12 +257,12 @@ main {
         margin-top: 24px;
         margin-bottom: 24px;
     }
-    .contact__form > textarea {
+    .contact__form > .field textarea {
         margin-top: 25px;
         padding-bottom: 32px;
     }
     /* submit button */
-    .contact__form > [type="submit"] {
+    .contact__form > .field [type="submit"] {
         position: absolute;
         bottom: -3px;
         left: -2px;
@@ -318,7 +321,7 @@ main {
         position: static;
     }
     /* submit button */
-    .contact__form > [type="submit"] {
+    .contact__form > .field[type="submit"] {
         /* margin: 0; */
         position: static;
     }

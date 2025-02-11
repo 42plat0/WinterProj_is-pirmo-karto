@@ -1,5 +1,4 @@
 const form = document.getElementById("contact-us-form");
-
 // Loop through form elements except button
 for (let i = 0; i < form.length - 1; i++) {
     let inputField = form[i];
@@ -30,7 +29,6 @@ form.addEventListener("submit", (event) => {
         compNameVal = form["comp-name"].value,
         titleVal = form["title"].value,
         msgVal = form["message"].value;
-
     // Empty fields's index in children array is extracted
     // And used to style them in else clause
     let input = [
@@ -41,29 +39,29 @@ form.addEventListener("submit", (event) => {
         Boolean(msgVal),
     ];
     let indexesOfInvalidInp = getAllIndexes(input, false);
-
+    console.log(input);
     if (!indexesOfInvalidInp.length) {
         // Clear fields
         form.reset();
         // Loop through children except button
         for (let i = 0; i < form.children.length - 1; i += 2) {
             // Restore fields's styles
-            form.children[i].style.color = "#FFF";
-            form.children[i].style["border-bottom"] = "1px solid #79c8c7";
+            form.children[i].children[0].style.color = "#FFF";
+            form.children[i].children[0].style["border-bottom"] = "1px solid #79c8c7";
             // Change css variable property
-            form.children[i].style.setProperty("--c", "--color-light-coral-primary")
+            form.children[i].children[0].style.setProperty("--c", "--color-light-coral-primary")
             // Remove text under field
-            form.children[i + 1].style.display = "none";
+            form.children[i].children[1].style.display = "none";
         }
         // Set button to disabled state after submiting valid form
         form.children[form.children.length - 1].disabled = true;
     } else {
         indexesOfInvalidInp.forEach((ind) => {
-            form.children[ind].style.color = "#f67e7e";
-            console.log(form.children[ind])
-            form.children[ind].style["border-bottom"] = "1px solid #f67e7e";
+            form.children[ind].children[0].style.color = "#f67e7e";
+            console.log(ind)
+            form.children[ind].children[0].style["border-bottom"] = "1px solid #f67e7e";
             // Display text under field
-            form.children[ind].nextElementSibling.style.display = "block";
+            form.children[ind].children[1].style.display = "block";
         });
     }
 });
@@ -71,7 +69,7 @@ form.addEventListener("submit", (event) => {
 function getAllIndexes(inpArr, val) {
     let arr = [];
     for (let i = 0; i < inpArr.length; i++) {
-        if (inpArr[i] === val) arr.push(i * 2);
+        if (inpArr[i] === val) arr.push(i);
     }
     return arr;
 }
