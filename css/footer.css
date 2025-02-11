@@ -170,7 +170,7 @@
 }
 
 /* Mobile view */
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     .footer {
         width: 375px;
         height: 432px;
@@ -216,4 +216,3 @@
         padding: 24px;
       }
     }
-
