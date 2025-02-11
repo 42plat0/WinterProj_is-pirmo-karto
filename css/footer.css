@@ -112,16 +112,16 @@
   }
   .footer-left{
     gap: 16px;
-    padding-top: 18px;
+    padding-top: 1.6%;
   }
   .footer-contact{
-    padding-top: 18px;
-    padding-left: 26px;
+    padding-top: 1.6%;
+    padding-left: 2.35%;
   }
   .footer-right{
     justify-content: space-between;                    
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 1.6%;
+    padding-bottom: 1.6%;
   }
   .footer-nav{
     display: flex;
