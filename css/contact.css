@@ -1,7 +1,7 @@
 html,
 body,
 main {
-    height: 100%;
+    height: 100vh;
     background: #014e56;
 }
 
@@ -10,7 +10,7 @@ main {
     display: flex;
     position: relative;
     justify-content: space-around;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
     padding: 10% 165px 0;
 }
@@ -36,6 +36,8 @@ main {
 
 /* Right image */
 .contact__pattern--right {
+    margin-top: 4px;
+    top: 0;
     left: 0;
     transform: translateX(-50%);
 }
@@ -139,6 +141,59 @@ main {
     width: 123px;
     margin-top: 24px;
     cursor: pointer;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        flex-grow: 1;
+        padding-left: 165px;
+        padding-top: 0px;
+        padding-right: 163px;
+    }
+    .contact__info,
+    .contact__form{
+        height: 76.7%;
+    }
+    .contact__info{
+        margin-top: 22px;
+    } 
+    .contact__subheading{
+        margin-top: 38px;
+    }
+    .contact__ask-about h3{
+        padding-top: 2px;
+    }
+    /* First icon - person */
+    .contact__ask-about__item:first-child .contact__ask-about-icon{
+        padding-left: 7px;
+    }
+    .contact__form{
+        position: relative;
+        gap: 24px;
+        margin-left: 27px;
+        padding-left: 3px;
+    }
+    /* Input fields except button */
+    .contact__form > input[type="text"],
+    .contact__form > input[type="email"],
+    .contact__form > textarea {
+        margin-top: 0;
+        padding-left: 14px;
+    }
+    .contact__form > textarea{
+        padding-bottom: 33px;
+    }
+    .contact__form > [type="submit"] {
+        margin:0;
+        position: absolute;
+        left: 0;
+        bottom:0;
+    }
 }
 
 /* Tablet view */
