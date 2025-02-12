@@ -449,24 +449,36 @@
   /* ABOUT FIRST ARTICLE FOR MOBILE */
   .about-hero {
     overflow: hidden;
-    height: 400px;
-  }
-  .about-hero--heading {
-    width: 327px;
-    font-size: 40px;
-    text-align: center;
-    height: 40px;
-  }
-  .about-hero__lower-paragraph {
-
-    font-size: 15px;
-    margin: 0;
+    height: 420px;
   }
   .about__content {
-    flex-wrap: wrap;
     height: 343px;
     padding: 0;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
     gap: 0;
+  }
+  .about__content > div:first-child {
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .about-hero__text{
+    flex-grow: 1;
+    padding-top: 17px;
+    padding-left: 1px;
+  }
+  .about-hero--heading {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 1px;
+  }
+  .about-hero__lower-paragraph {
+    font-size: 15px;
+    margin: 0;
   }
   .about__content > div {
     text-align: center;
@@ -477,8 +489,8 @@
     display: none;
   }
   .about-hero-rightside__img {
-    margin-right: -10px;
-    margin-bottom: -100px;
+    right: 0;
+    transform: translateX(50%) translateY(50%);
   }
    /* FOR MOBILE "Meet the directors" section */
   .about-directors {
