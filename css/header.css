@@ -228,6 +228,7 @@ aside {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    padding-top: 27px;
   }
   .header__logo {
     width: 128px;
