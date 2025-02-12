@@ -328,6 +328,7 @@
         flex-direction: column;
         gap: 24px;
         height: 100%;
+        flex-wrap: wrap;
     }
     .contact-sect__content > * {
         flex-grow: 1;
