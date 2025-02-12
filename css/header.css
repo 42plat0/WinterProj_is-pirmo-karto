@@ -122,7 +122,7 @@ aside {
 }
 
 /* Desktop view */
-@media (min-width: 769px) {
+@media (min-width: 1440px){
   header{
     height: 117px;
     margin-top: 37px;
@@ -174,7 +174,7 @@ aside {
 }
 
 /* Tablet view */
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 1439px) {
     header{
         display: flex;
         height: 112px;
@@ -215,7 +215,7 @@ aside {
 }
 
 /* Mobile view */
-@media (max-width: 376px) {
+@media (max-width: 767px) and (min-width: 375px) {
   .header{
     height: 100px;
     position: static;

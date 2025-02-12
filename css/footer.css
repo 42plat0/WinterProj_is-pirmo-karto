@@ -100,7 +100,7 @@
 
 
 /* Desktop view */
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
   .footer{
     height: 196px;
   }
@@ -132,7 +132,7 @@
 }
 
 /* Tablet view */
-@media (min-width: 376px) and (max-width: 769px) {
+@media (min-width: 767px) and (max-width: 1439px) {
     .footer {
         height: 271px;
     }
@@ -200,7 +200,7 @@
 
 
 /* Mobile view */
-@media (max-width: 375px) {
+@media (max-width: 767px) and (min-width: 375px) {
     .footer {
         width: 375px;
         height: 432px;

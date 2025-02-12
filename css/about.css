@@ -327,7 +327,7 @@
 
 /* For tablets */
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 1440px) {
   /* For tablet about first article*/
   .about-hero {
     overflow: hidden;
@@ -370,7 +370,6 @@
   /* For tablet "Meet the directors" section */
   .about-directors {
     overflow: hidden;
-    max-width: 768px;
     height: 1219px;
   }
 
@@ -402,7 +401,6 @@
     width: 281px;
   }
   .about-clients {
-    width: 768px;
     height: 308px;
   }
   .about-clients__content {
@@ -445,7 +443,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 767px) and (min-width: 375px) {
   /* ABOUT FIRST ARTICLE FOR MOBILE */
   .about-hero {
     overflow: hidden;
@@ -498,6 +496,12 @@
     max-width: 375px;
     height: 2062px;
   }
+  .about-directors__container{
+    margin-top: 56px;
+  }
+  .about-directors__container > div{
+    width: 327px;
+  }
   .director-card--normal {
     width: 327px;
   }
@@ -512,13 +516,12 @@
     margin: 10px 24px 10px;
   }
   .about-directors__header {
-    padding-top: 80px;
+    padding-top: 70px;
   }
   .about-directors__container {
     gap: 48px;
   }
 
-  
   /* 3rd section CLIENTS logos */
   .about-clients {
     width: 375px;
