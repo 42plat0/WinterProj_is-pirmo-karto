@@ -617,8 +617,12 @@
     word-break: break-word;
     display: flex;
     align-items: end;
+    line-height: 1.0;
+    padding-bottom: 10px;
   }
-
+  .btn--contact{
+    padding: 10px 31px 11px 31px;
+  }
   .contact-sect__content {
     flex-direction: column;
     gap: 24px;
@@ -628,7 +632,8 @@
     flex-grow: 1;
   }
   .contact-sect__img {
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
+    transform: translateY(15%);
   }
  
 }
