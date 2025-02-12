@@ -482,7 +482,6 @@
     text-align: center;
     margin: 0 auto;
     width: 327px;
-    flex-basis: 100%;
   }
 
   .rectangle {
@@ -504,11 +503,11 @@
     width: 327px;
   }
   .director-card--normal {
-    /* padding-top: 5px; */
     width: 327px;
   }
   .director-card--normal > h3 {
-    padding-top: 5px;
+    padding-top: 3px;
+    padding-left: 1px;
   }
   /* Christian and others */
   .about-directors__container .director-card:nth-of-type(2),
@@ -517,6 +516,9 @@
   .about-directors__container .director-card:nth-of-type(5),
   .about-directors__container .director-card:nth-of-type(6){
     margin-top: 4px;
+  }
+  .btn--directors{
+    margin-top: 3px;
   }
   .about-directors-bckgrnd__img1 {
     margin-top: -100px;
@@ -539,10 +541,19 @@
     padding-top: 19px;
   }
   .director-card--normal .director-card--links{
-    margin-top: 23px;
+    margin-top: 24px;
     margin-left: 1.5px;
+    gap: 8px;
   }
-
+  .director-card--role{
+    line-height: 1.6;
+  }
+  .director-card__flipped__padding h3{
+    padding-top: 5px;
+  }
+  .director-card__flipped__padding .director-card--text{
+    margin-top: 7px;
+  }
   /* ************************ */
   /* 3rd section CLIENTS logos */
   .about-clients {
@@ -577,6 +588,11 @@
     text-align: center;
     margin-top: 0px;
     height: 100%;
+  }
+  .about-directors__img{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
   }
   .about-clients__logo {
     margin: 0;
