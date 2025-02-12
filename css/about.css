@@ -315,11 +315,12 @@
   /* ************************ */
 
   .contact-sect {
-    height: 302px;
+    height: 289px;
     width: 100%;
   }
   .heading--contact {
     max-width: 327px;
+    height: 50px;
     font-size: 32px;
     line-height: 32px;
     word-break: break-word;
@@ -328,7 +329,7 @@
   }
   .contact-sect__content {
     flex-direction: column;
-    gap: 24px;
+    gap: 29px;
     height: 100%;
   }
   .contact-sect__content > * {
@@ -336,6 +337,9 @@
   }
   .contact-sect__img {
     margin-bottom: -20px;
+  }
+  .btn--contact{
+    font-size: 15px;
   }
 }
 .about-clients__content {

@@ -5,6 +5,7 @@ header {
 
 .header__primary {
   display: inline-block;
+  padding-top: 27px;
 }
 
 /* Home page header logo*/

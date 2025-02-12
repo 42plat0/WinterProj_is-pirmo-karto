@@ -130,7 +130,7 @@
   top: 0;
   left: 0;
   width: 50%; 
-  height: 5px; 
+  height: 4px; 
   background: linear-gradient(to right, #F67E7E 0%, #F67E7E 30%,transparent 30%, transparent 100%); 
 }
 
@@ -290,8 +290,7 @@
     /* Ready to get started section */
     /* ************************ */
     .contact-sect{
-      max-width: 375px;
-      height: 302px;
+      height: 289px;
       width: 100%;
     }
     .contact-sect__img{
@@ -301,6 +300,7 @@
     .heading--contact {
       font-size: 32px;
       line-height: 32px;
+      height: 50px;
         max-width: 200px;
         word-break: break-word;
         display: flex;
@@ -315,19 +315,76 @@
     .contact-sect__content > * {
         flex-grow: 1;
     }
+    .btn--contact{
+      font-size: 15px;
+    }
 
     /* HOME 2ND ARTICLE */
     .home-2nd-head {
-      justify-content: start !important;
       height: 1073px !important;
-      padding: 64px 24px 64px !important;
-      width: 100vw !important;
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 0;
     }
-    
+    .home-2nd-head > div:nth-child(2) p {
+      font-size: 15px;
+      line-height: 25px;
+      margin: 0;
+      align-items: center;
+      width: 327px;
+      text-align: center;
+    }
+    .home-2nd-head > div:nth-child(2) > div {
+      width: 327px;
+      margin: 0 auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0;
+      gap: 1.3rem;
+    }
+    .home-2nd-headings{
+      font-size: 18px;
+      width: 327px;
+    }
     .head-2nd-title {
       max-width: 240px !important;
+      font-size: 32px;
+      line-height: 32px;
+      justify-self: start !important;
+      padding-top: 108px;
+      margin-left: 25px;
+      
     }
-    .home-2nd-card {
+    .home-2nd-head > div:nth-child(2){
+      padding-top: 0;
+      text-align: center;
+      align-items: center;
+      max-width: 375px;
+
+
+
+    }
+    /*.cards{
+      align-items: center;
+      max-width: 375px;
+      text-align: center;
+      padding-top: 30px;
+    }*/
+    .home-2nd-head > div:nth-child(2) img {
+      width: 72px;
+      height: 72px;
+      margin: 0 151px;
+      flex-wrap: wrap;
+    }
+    .corner-img{
+      top: 0;
+    }
+    .head-2nd-title::before{
+      margin-top: 70px;
+    }
+
+    /*.home-2nd-card {
       gap: 48px !important;
     }
     .home-2nd-content-container * {
@@ -335,10 +392,12 @@
       text-align: center;
       justify-content: center ;
       align-items: center !important;
-    }
+      flex-wrap: wrap;
+    }*/
     .home-2nd-card {
       gap: 16px !important;
     }
+    
   }
  
 
