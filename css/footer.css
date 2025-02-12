@@ -84,8 +84,7 @@
 
 .footer-social a:hover img {
   transform: scale(1.1);
-  filter: brightness(0) saturate(100%) invert(62%) sepia(84%) saturate(364%)
-    hue-rotate(320deg) brightness(101%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(18%) saturate(4158%) hue-rotate(311deg) brightness(104%) contrast(93%);
   cursor: pointer;
 }
 .footer-copyright {
