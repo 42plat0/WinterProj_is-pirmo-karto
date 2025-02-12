@@ -101,13 +101,16 @@
 
 /* ABOUT FIRST ARTICLE FOR MOBILE */
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .about-hero {
     overflow: hidden;
     height: 400px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
   }
   .about-hero--heading {
-    width: 327px;
+    max-width: 327px;
     font-size: 40px;
     text-align: center;
     height: 40px;
@@ -126,7 +129,7 @@
   .about__content > div {
     text-align: center;
     margin: 0 auto;
-    width: 327px;
+    max-width: 327px;
   }
   .rectangle {
     display: none;
@@ -313,16 +316,16 @@
 
   .contact-sect {
     height: 302px;
+    width: 100%;
   }
   .heading--contact {
     max-width: 327px;
-    height: 64px;
     font-size: 32px;
+    line-height: 32px;
     word-break: break-word;
     display: flex;
     align-items: end;
   }
-
   .contact-sect__content {
     flex-direction: column;
     gap: 24px;

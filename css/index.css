@@ -243,14 +243,24 @@
 }
 
 /* For mobile */
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     
 
     /* ************************ */
     /* Ready to get started section */
     /* ************************ */
+    .contact-sect{
+      max-width: 375px;
+      height: 302px;
+      width: 100%;
+    }
+    .contact-sect__img{
+      margin-bottom: -20px;
+    }
 
     .heading--contact {
+      font-size: 32px;
+      line-height: 32px;
         max-width: 200px;
         word-break: break-word;
         display: flex;
@@ -265,13 +275,15 @@
     .contact-sect__content > * {
         flex-grow: 1;
     }
+
+    /* HOME 2ND ARTICLE */
     .home-2nd-head {
       justify-content: start !important;
       height: 1073px !important;
       padding: 64px 24px 64px !important;
       width: 100vw !important;
     }
-    /* HOME 2ND ARTICLE */
+    
     .head-2nd-title {
       max-width: 240px !important;
     }
