@@ -284,9 +284,6 @@ main {
 
 /* Mobile view */
 @media (max-width: 376px) {
-    main {
-        overflow: hidden;
-    }
     .contact {
         padding: 0;
         flex-direction: column;
