@@ -107,7 +107,7 @@
 
 /* Home first article for tablet */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width:1439px){
   .home-hero {
     height: 483px;
     max-width: 768px;
@@ -254,7 +254,7 @@
 }
 
 /* For tablets */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1439px){
     
     .home-2nd-head {
       height: 710px !important;
@@ -577,7 +577,7 @@ gap: 56px;
 
 /* testimonial section for tablet */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1439px){
 
   .testimonial-section {
     max-width: 768px;
