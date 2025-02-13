@@ -580,14 +580,14 @@ gap: 56px;
 @media (min-width: 768px) and (max-width:1439px){
 
   .testimonial-section {
-    max-width: 768px;
+    min-width: 768px;
     height: 1199px;
     overflow: hidden;
   }
 
   .testimonial-section__customer-reviews {
     flex-direction: column;
-    max-width: 768px;
+    width: 768px;
     gap: 53px;
   }
 
@@ -609,7 +609,7 @@ gap: 56px;
   }
 
   .testimonial-section__review {
-    max-width: 768px;
+    width: 768px;
   }
 
   .testimonial__review__content {
