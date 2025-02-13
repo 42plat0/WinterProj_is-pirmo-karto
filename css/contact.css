@@ -145,7 +145,7 @@ main {
     cursor: pointer;
 }
 /* Desktop view */
-@media (min-width: 769px) {
+@media (min-width: 1439px) {
     main {
         display: flex;
         flex-direction: column;
@@ -207,7 +207,7 @@ main {
 }
 
 /* Tablet view */
-@media (min-width: 376px) and (max-width: 769px) {
+@media (min-width: 767px) and (max-width: 1439px) {
     main {
         height: 1475px;
     }
@@ -283,7 +283,7 @@ main {
 }
 
 /* Mobile view */
-@media (max-width: 376px) {
+@media (max-width: 767px) {
     .contact {
         padding: 0;
         flex-direction: column;
