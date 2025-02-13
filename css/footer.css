@@ -84,12 +84,10 @@
 
 .footer-social a:hover img {
   transform: scale(1.1);
-  filter: brightness(0) saturate(100%) invert(62%) sepia(84%) saturate(364%)
-    hue-rotate(320deg) brightness(101%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(18%) saturate(4158%) hue-rotate(311deg) brightness(104%) contrast(93%);
   cursor: pointer;
 }
 .footer-copyright {
-  margin-top: auto;
   color: #fff;
   text-align: right;
   font-size: 15px;
@@ -100,15 +98,45 @@
 }
 
 
+/* Desktop view */
+@media (min-width: 1440px) {
+  .footer{
+    height: 196px;
+  }
+  .footer-container{
+    height: 100%;
+  }
+  .footer-container > *{
+    height: 100%;
+  }
+  .footer-left{
+    gap: 16px;
+    padding-top: 1.6%;
+  }
+  .footer-contact{
+    padding-top: 1.6%;
+    padding-left: 2.35%;
+  }
+  .footer-right{
+    justify-content: space-between;                    
+    padding-top: 1.6%;
+    padding-bottom: 1.6%;
+  }
+  .footer-nav{
+    display: flex;
+  }
+  .footer-nav .footer-nav-button:last-child{
+    padding-left: 1px;
+  }
+}
+
 /* Tablet view */
-@media (min-width: 768px) {
+@media (min-width: 767px) and (max-width: 1439px) {
     .footer {
         height: 271px;
-        /* padding: 0; */
     }
     .footer-container {
         height: 100%;
-        /* flex-direction: column; */
         flex-wrap: wrap;
     }
     .footer-left {
@@ -143,7 +171,6 @@
     .footer-right {
         flex-direction: row;
         width: 689px;
-        gap: 330px;
         height: 50px;
         justify-content: space-between;
         align-items: center;
@@ -169,29 +196,46 @@
     }
 }
 
+
+
 /* Mobile view */
-@media (min-width: 375px) and (max-width:767px) {
+@media (max-width: 767px) and (min-width: 375px) {
     .footer {
-        min-width: 375px;
         height: 432px;
         padding: 0;
       }
       .footer-container {
         width: 327px;
-        height: 302px;
+        height: 304px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 64px 24px 64px;
+        margin: 64px 24px 60px;
+      }
+      .footer-left, 
+      .footer-contact, 
+      .footer-right{
+        width: 100%;
+      }
+      .footer-left img{
+        margin: 0;
+      }
+      .footer-left{
+        align-items: center;
+        padding-top: 1.5px;
+      }
+      .footer-right{
+        justify-content: end;
+        align-items: center;
+        gap: 6px;
       }
       .footer-copyright {
         width: 255px;
-        padding-top: 20px;
       }
       .footer-social {
         height: 24px;
-        margin: auto;
-        padding-top: 50px;
+        width: 100%;
+        justify-content: center;
       }
       .footer-nav {
         width: 107px;
@@ -213,6 +257,7 @@
         height: 100px;
         margin: 0;
         text-align: center;
-        padding: 23px;
+        margin-top: 22px;
       }
+
     }

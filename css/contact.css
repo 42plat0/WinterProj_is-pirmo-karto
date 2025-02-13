@@ -1,7 +1,7 @@
 html,
 body,
 main {
-    height: 100%;
+    height: 100vh;
     background: #014e56;
 }
 
@@ -10,7 +10,6 @@ main {
     display: flex;
     position: relative;
     justify-content: space-around;
-    height: 100%;
     overflow: hidden;
     padding: 10% 165px 0;
 }
@@ -36,6 +35,8 @@ main {
 
 /* Right image */
 .contact__pattern--right {
+    margin-top: 4px;
+    top: 0;
     left: 0;
     transform: translateX(-50%);
 }
@@ -83,9 +84,9 @@ main {
 }
 
 /* Input fields except button */
-.contact__form > input[type="text"],
-.contact__form > input[type="email"],
-.contact__form > textarea {
+.contact__form > .field input[type="text"],
+.contact__form > .field input[type="email"],
+.contact__form > .field textarea {
     border: none;
     background-color: #014e56;
     border-bottom: 1px solid #fff;
@@ -101,8 +102,8 @@ main {
 }
 
 /* Input fields on focus */
-.contact__form > input[type="text"]:focus,
-.contact__form > textarea:focus {
+.contact__form > .field input[type="text"]:focus,
+.contact__form > .field textarea:focus {
     outline: none;
     border-bottom: 1px solid #79c8c7;
 }
@@ -114,35 +115,99 @@ main {
 }
 
 /* Input fields's place holder value styles */
-.contact__form > input[type="text"]::placeholder,
-.contact__form > input[type="email"]::placeholder,
-.contact__form > textarea::placeholder {
+.contact__form > .field input[type="text"]::placeholder,
+.contact__form > .field input[type="email"]::placeholder,
+.contact__form > .field textarea::placeholder {
     color: var(--c, --color-white--primary);
     opacity: 0.6;
 }
-
 /* Warning message underneath fields */
+.warning__container{
+    height: 19px;
+    padding-top: 8px;
+}
 .warning-message {
+    height: 100%;
     display: none;
     color: var(--color-light-coral--primary);
     font-size: 10px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
-    padding-top: 14px;
     padding-left: 14px;
     text-decoration: none;
 }
 
 /* submit button */
-.contact__form > [type="submit"] {
+.contact__form > .field [type="submit"] {
     width: 123px;
     margin-top: 24px;
     cursor: pointer;
 }
+/* Desktop view */
+@media (min-width: 769px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        flex-grow: 1;
+        padding-left: 165px;
+        padding-top: 0px;
+        padding-right: 163px;
+    }
+    .contact__info,
+    .contact__form{
+        height: 100%;
+    }
+    .contact__info{
+        padding-top: 22px;
+    } 
+    .contact__subheading{
+        margin-top: 38px;
+    }
+    .contact__ask-about h3{
+        padding-top: 2px;
+    }
+    /* First icon - person */
+    .contact__ask-about__item:first-child .contact__ask-about-icon{
+        padding-left: 7px;
+    }
+    .contact__form{
+        gap: 5px;
+        margin-left: 27px;
+        padding-left: 3px;
+    }
+    .contact__form .field:last-child{
+        position:relative;
+        height: 48px;
+    }
+    /* Input fields except button */
+    .contact__form > .field input[type="text"],
+    .contact__form > .field input[type="email"],
+    .contact__form > .field textarea {
+        margin-top: 0;
+        padding-left: 14px;
+        padding-bottom: 2.95%;
+    }
+    .contact__form > .field textarea{
+        padding-bottom: 33px;
+    }
+    .contact__form > .field [type="submit"] {
+        margin:0;
+        position: absolute;
+        left: -2px;
+        bottom: 6px;
+        display: block;
+    }
+    .contact__pattern--left {
+        bottom: 1px;
+        transform: translateX(50.3%);
+    }
+}
 
 /* Tablet view */
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 769px) {
     main {
         height: 1475px;
     }
@@ -185,17 +250,32 @@ main {
         position: relative;
     }
 
+    .contact__form > .field input[type="text"],
+    .contact__form > .field input[type="email"],
+    .contact__form > .field textarea {
+        height: 42px;
+    }
+
+    .contact__form > .field input[type="email"],
+    .contact__form > .field:nth-of-type(3) input[type="text"],
+    .contact__form > .field:nth-of-type(4) input[type="text"] ,
+    .contact__form > .field:nth-of-type(5) textarea{
+        margin-top: 5px;
+    }
+    .contact__form > .field:nth-of-type(5) textarea{
+        padding-bottom: 83px;
+    }
     /* Heading "ask us about" */
     .contact__subheading {
         margin-top: 24px;
         margin-bottom: 24px;
     }
-    .contact__form > textarea {
+    .contact__form > .field textarea {
         margin-top: 25px;
         padding-bottom: 32px;
     }
     /* submit button */
-    .contact__form > [type="submit"] {
+    .contact__form > .field [type="submit"] {
         position: absolute;
         bottom: -3px;
         left: -2px;
@@ -203,10 +283,7 @@ main {
 }
 
 /* Mobile view */
-@media (max-width: 375px) {
-    main {
-        overflow: hidden;
-    }
+@media (max-width: 376px) {
     .contact {
         padding: 0;
         flex-direction: column;
@@ -254,7 +331,7 @@ main {
         position: static;
     }
     /* submit button */
-    .contact__form > [type="submit"] {
+    .contact__form > .field[type="submit"] {
         /* margin: 0; */
         position: static;
     }

@@ -31,7 +31,7 @@
                     <!-- Hamburger menu icon -->
           <div class="header__hamburger">
             <a href="#">
-              <img  src="/assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
+              <img  src="../assets/images/icon-hamburger.svg" alt="hamburger icon" onclick=showSidebar()>
             </a>
           </div> 
                 </div>
@@ -119,71 +119,93 @@
                     novalidate
                 >
                     <!-- Name -->
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Name"
-                        name="name"
-                        class="body--secondary"
-                    />
-                    <!-- Warning message that appears after focus -->
-                    <!-- Required by design and can be found in active state requirements for page -->
-                    <span class="warning-message">This field is required</span>
+                    <div class="field">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Name"
+                            name="name"
+                            class="body--secondary"
+                        />
+                        <!-- Warning message that appears after focus -->
+                        <!-- Required by design and can be found in active state requirements for page -->
+                        <div class="warning__container">
+                            <span class="warning-message">This field is required</span>
+                        </div>
+                    </div>
 
                     <!-- Email -->
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Email Address"
-                        name="email"
-                        class="body--secondary"
-                    />
-                    <!-- Warning message that appears after focus -->
-                    <!-- Required by design and can be found in active state requirements for page -->
-                    <span class="warning-message">This field is required</span>
+                    <div class="field">
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email Address"
+                            name="email"
+                            class="body--secondary"
+                        />
+                        <!-- Warning message that appears after focus -->
+                        <!-- Required by design and can be found in active state requirements for page -->
+                        <div class="warning__container">
+                            <span class="warning-message">This field is required</span>
+                        </div>
+                    </div>
 
                     <!-- Company name-->
-                    <input
-                        type="text"
-                        id="comp-name"
-                        placeholder="Company Name"
-                        name="comp-name"
-                        class="body--secondary"
-                    />
-                    <!-- Warning message that appears after focus -->
-                    <!-- Required by design and can be found in active state requirements for page -->
-                    <span class="warning-message">This field is required</span>
+                    <div class="field">
+                        <input
+                            type="text"
+                            id="comp-name"
+                            placeholder="Company Name"
+                            name="comp-name"
+                            class="body--secondary"
+                        />
+                        <!-- Warning message that appears after focus -->
+                        <!-- Required by design and can be found in active state requirements for page -->
+                        <div class="warning__container">
+                            <span class="warning-message">This field is required</span>
+                        </div>
+                    </div>
 
                     <!-- Title -->
-                    <input
-                        type="text"
-                        id="title"
-                        placeholder="Title"
-                        name="title"
-                        class="body--secondary"
-                    />
-                    <!-- Warning message that appears after focus -->
-                    <!-- Required by design and can be found in active state requirements for page -->
-                    <span class="warning-message">This field is required</span>
+                    <div class="field">
+                        <input
+                            type="text"
+                            id="title"
+                            placeholder="Title"
+                            name="title"
+                            class="body--secondary"
+                        />
+                        <!-- Warning message that appears after focus -->
+                        <!-- Required by design and can be found in active state requirements for page -->
+                        <div class="warning__container">
+                            <span class="warning-message">This field is required</span>
+                        </div>
+                    </div>
 
                     <!-- Message -->
-                    <textarea
-                        name=""
-                        id="message"
-                        placeholder="Message"
-                        name="message"
-                        class="body--secondary"
-                    ></textarea>
-                    <!-- Warning message that appears after focus -->
-                    <!-- Required by design and can be found in active state requirements for page -->
-                    <span class="warning-message">This field is required</span>
+                    <div class="field">
+                        <textarea
+                            name=""
+                            id="message"
+                            placeholder="Message"
+                            name="message"
+                            class="body--secondary"
+                        ></textarea>
+                        <!-- Warning message that appears after focus -->
+                        <!-- Required by design and can be found in active state requirements for page -->
+                        <div class="warning__container">
+                            <span class="warning-message">This field is required</span>
+                        </div>
+                    </div>
 
                     <!-- Submit btn -->
-                    <input
-                        type="submit"
-                        value="submit"
-                        class="btn btn--light--secondary body--primary"
-                    />
+                    <div class="field">
+                        <input
+                            type="submit"
+                            value="submit"
+                            class="btn btn--light--secondary body--primary"
+                        />
+                    </div>
                 </form>
                 <img
                     class="contact__pattern--left pattern-img"
@@ -213,10 +235,10 @@
                     </div>
 
                     <div class="footer-contact">
-                        987 Hillcrest Lane<br />
+                        987&nbsp; Hillcrest Lane<br />
                         Irvine, CA<br />
                         California 92714<br />
-                        Call Us: 949-833-7432
+                        Call Us : 949-833-7432
                     </div>
 
                     <div class="footer-right">
