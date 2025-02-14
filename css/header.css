@@ -207,6 +207,7 @@ aside {
     .header__btn {
         position: static;
         padding-left: 30px;
+        padding-top: 8px;
     }
     .header__link{
         position: static;

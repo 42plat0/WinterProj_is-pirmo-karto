@@ -178,21 +178,19 @@
     .footer-social {
         margin: 0;
     }
-    .footer-copyright {
-        margin-bottom: 12px;
-    }
     .footer-social * {
         height: 24px;
+        margin-bottom: 3px;
     }
 
-  .footer-copyright {
-    padding-bottom: 4px;
-  }
+    .footer-copyright {
+      padding-bottom: 4px;
+    }
 
     .footer-contact {
         margin: 0;
         padding-top: 15px;
-        margin-right: 5px;
+        margin-right: 2px;
     }
 }
 
