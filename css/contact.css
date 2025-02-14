@@ -216,6 +216,7 @@ main {
         padding: 7px 129px 115px 115px;
         gap: 40px;
         height: 987px;
+        align-items: center;
     }
     .contact__heading {
         padding-left: 3px;
