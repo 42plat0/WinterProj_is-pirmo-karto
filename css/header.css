@@ -138,6 +138,7 @@ aside {
   .header__primary{
     display: flex;
     flex-grow: 1;
+    padding-top: 0;
   }
 
   .header__logo{
