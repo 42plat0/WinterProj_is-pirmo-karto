@@ -50,10 +50,9 @@ form.addEventListener("submit", (event) => {
             // Change css variable property
             form.children[i].children[0].style.setProperty("--c", "--color-light-coral-primary")
             // Remove text under field
-            form.children[ind].children[1].children[0].style.display = "none";
         }
         // Set button to disabled state after submiting valid form
-        form.children[form.children.length - 1].disabled = true;
+        form.children[form.children.length-1].children[0].disabled = true;
     } else {
         indexesOfInvalidInp.forEach((ind) => {
             form.children[ind].children[0].style.color = "#f67e7e";
