@@ -170,7 +170,7 @@
     }
     .footer-right {
         flex-direction: row;
-        width: 689px;
+        width: 100%;
         height: 50px;
         justify-content: space-between;
         align-items: center;

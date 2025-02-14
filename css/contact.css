@@ -216,6 +216,7 @@ main {
         padding: 7px 129px 115px 115px;
         gap: 40px;
         height: 987px;
+        align-items: center;
     }
     .contact__heading {
         padding-left: 3px;
@@ -359,6 +360,9 @@ main {
     .contact__form > .field textarea {
         padding-left: 15px;
         margin-top: 20px;
+    }
+    .contact__form > .field:nth-of-type(1) input[type="text"]{
+        margin-top: 17px;
     }
     .contact__form > .field:nth-of-type(5) textarea{
         padding-bottom: 33px;
