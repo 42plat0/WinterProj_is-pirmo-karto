@@ -223,7 +223,7 @@ main {
     /* Right image */
     .contact__pattern--right {
         left: 0;
-        top: 0;
+        top: -5px;
         transform: translateX(-50%);
     }
 
