@@ -832,13 +832,11 @@
     margin: 0 auto;
     width: 327px;
   }
-
   .rectangle {
     display: none;
   }
   .about-hero-rightside__img {
-    right: 0;
-    transform: translateX(50%) translateY(50%);
+    margin-right: 0;
   }
    /* FOR MOBILE "Meet the directors" section */
   .about-directors {
@@ -884,6 +882,15 @@
   }
   .about-directors__container {
     gap: 48px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
+    margin-top: 46px;
+  }
+  .about-directors__content{
+    display: flex;
+    flex-direction: column;
   }
   /* Flipped card content padding adjustments */
   .director-card__flipped__padding {
@@ -913,7 +920,7 @@
     font-size: 32px;
   }
   .about-clients__content {
-    gap: 6px;
+    gap: 22px;
     padding-top: 30px;
     justify-content: start;
   }
@@ -987,6 +994,10 @@
   }
   .btn--contact{
     padding: 10px 31px 11px 31px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
   }
   .contact-sect__content {
     flex-direction: column;
@@ -997,7 +1008,7 @@
     flex-grow: 1;
   }
   .contact-sect__img {
-    transform: translateY(15%);
+    transform: translateY(1%);
   }
 }
 
