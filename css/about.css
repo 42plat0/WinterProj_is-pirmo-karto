@@ -189,6 +189,52 @@
   bottom: 0;
 }
 
+/* For tablets */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-clients {
+    width: 768px;
+    height: 308px;
+  }
+  .about-clients__content {
+    margin: 10px;
+  }
+  .about-clients__logo {
+    height: 17px;
+    width: 107px;
+  }
+  .about-clients__img {
+    top: -100px;
+  }
+  .about-clients__header {
+    margin-top: 88px;
+    margin-left: 155px;
+    height: 32px;
+    width: 457px;
+    font-size: 32px;
+  }
+  /* ************************ */
+  /* Ready to get started section */
+  /* ************************ */
+
+  /* Ready to get... heading */
+  .heading--contact {
+    font-size: 32px;
+    line-height: 32px; /* 100% */
+  }
+
+  /* button to contact page */
+  .btn--contact {
+    border-radius: 24px;
+    height: 100%;
+  }
+
+  /* img at left bottom of ready to get.. sect */
+  .contact-sect__img {
+    transform: translateY(15%);
+  }
+}
+
 /* CLIENTS SECTION MOBILE VIEW*/
 
 @media (max-width: 375px) {
