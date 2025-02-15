@@ -320,6 +320,10 @@ gap: 56px;
     padding-top: 9px;
   }
 
+  .home-hero-rightside__img {
+    right: 165px;
+  } 
+
   /* 2nd article */
   .home-2nd-head{
     padding-top: 140px;
