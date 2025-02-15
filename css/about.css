@@ -57,48 +57,6 @@
   /* transform: translateX(100px); */
 }
 
-/* For tablet about first article*/
-
-@media (min-width: 376px) and (max-width: 768px) {
-  .about-hero {
-    overflow: hidden;
-    height: 359px;
-  }
-
-  .about__content {
-    flex-wrap: wrap;
-    padding: 0;
-    gap: 0;
-    margin-top: 7px;
-    
-  }
-
-  .about__content > div {
-    margin: 0 auto;
-    max-width: 457px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .about-hero--heading {
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-  }
-
-  .about-hero__lower-paragraph {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-  }
-
-  .rectangle {
-    display: none;
-  }
-}
-
 /* ABOUT FIRST ARTICLE FOR MOBILE */
 
 @media (max-width: 375px) {
@@ -619,15 +577,15 @@
   background-color: var(--color-dark-green--secondary);
 }
 
-
-
 /* For tablets */
 
-@media (min-width: 767px) and (max-width: 1439px) {
-  /* For tablet about first article*/
+@media (min-width: 768px) and (max-width: 1439px) {
+  
+/* about first article*/
+
   .about-hero {
     overflow: hidden;
-    height: 359px;
+    height: 339px;
   }
 
   .about__content {
@@ -635,7 +593,7 @@
     padding: 0;
     gap: 0;
     margin-top: 7px;
-    
+    width: 768px;
   }
 
   .about__content > div {
@@ -657,13 +615,15 @@
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
+    margin-top: 25px;
   }
 
   .rectangle {
     display: none;
   }
   
-  /* For tablet "Meet the directors" section */
+/* For tablet "Meet the directors" section */
+
   .about-directors {
     overflow: hidden;
     height: 1219px;
@@ -678,12 +638,35 @@
     padding-top: 100px;
   }
 
+  .about-directors__img {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+  }
+
+  .director-card--name {
+    margin-top: 15px;
+  }
+
+  .btn--directors {
+    margin-top: 3px;
+  }
+
+  .director-card__flipped__padding {
+    padding: 22px 24px 63px;
+  }
+
+  .director-card--normal .director-card--links {
+    width: 68px;
+  }
+
   .about-directors__container {
     gap: 11px;
     row-gap: 78px;
     margin-top: 48px;
-    width: 100%;
     height: 100%;
+    width: 768px;
+    row-gap: 76px;
   }
 
   .about-directors__container > div {
@@ -696,25 +679,80 @@
     height: 253px;
     width: 281px;
   }
+
+/* about clients section */
+
   .about-clients {
     height: 308px;
+    width: 100%;
+    margin: 0;
   }
+
+  .about-clients__img {
+    position: absolute;
+    top: -100px;
+  }
+
   .about-clients__content {
-    margin: 10px;
+    margin-top: 0;
+    width: 100%;
+    row-gap: 49px;
   }
   .about-clients__logo {
     height: 17px;
-    width: 107px;
+    width: 100%;
   }
-  .about-clients__img {
-    top: -100px;
+
+  .about-clients__logos {
+    height: 28px;
+    width: 689px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items:center;
   }
+
   .about-clients__header {
-    margin-top: 88px;
-    margin-left: 155px;
-    height: 32px;
+    margin: 0 auto; 
     width: 457px;
+  }
+
+  .about-clients__header h2 { 
+    color: var(--color-white--primary);
+    text-align: center;
+    font-family: Livvic;
     font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+/* logos sizing */
+
+  .about-clients__logos li:first-child img{
+    width: 103px;
+    height: 17px;
+  }
+
+  .about-clients__logos li:nth-child(2) img{
+    width: 114px;
+    height: 14px;
+    margin-bottom: 3px;
+  }
+
+  .about-clients__logos li:nth-child(3) img{
+    width: 112px;
+    height: 17px;
+  }
+
+  .about-clients__logos li:nth-child(4) img{
+    width: 103px;
+    height: 17px;
+  }
+
+  .about-clients__logos li:last-child img{
+    width: 61px;
+    height: 28px;
+    margin-top: 5px;
   }
 
   /* ************************ */
@@ -736,6 +774,24 @@
   /* img at left bottom of ready to get.. sect */
   .contact-sect__img {
     transform: translateY(15%);
+  }
+
+  .contact-sect__content {
+    justify-content: space-between;
+    width: 573px;
+    margin: 0 auto;
+  }
+
+  .btn--contact {
+    padding: 10px 31px 11px;
+    height: 100%;
+  }
+
+   /* footer */
+
+   .footer-social a:last-child img{
+    height: 20px;
+    margin-top: 2px;
   }
 }
 
