@@ -29,7 +29,7 @@ Follow these steps to set up and run the project locally:
 ### Installation
 
 ```bash
-git clone https://github.com/darkeris345/Winter-project-KOUDERIAI.git
+git clone git@github.com:42plat0/WinterProj_is-pirmo-karto.git
 ```
 
 1. Open the project in your preferred code editor.
