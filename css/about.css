@@ -59,7 +59,7 @@
 
 /* ABOUT FIRST ARTICLE FOR MOBILE */
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width:767px) {
   .about-hero {
     overflow: hidden;
     height: 400px;
@@ -234,7 +234,7 @@
 
 /* CLIENTS SECTION MOBILE VIEW*/
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width:767px){
   .about-clients {
     width: 375px;
     height: 632px;
@@ -792,7 +792,7 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 375px) {
+@media screen and (max-width: 767px) and (min-width: 375px) {
   /* ABOUT FIRST ARTICLE FOR MOBILE */
   .about-hero {
     overflow: hidden;
