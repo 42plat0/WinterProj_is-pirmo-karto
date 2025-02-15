@@ -630,7 +630,8 @@ gap: 56px;
   .home-2nd-head {
     height: 1073px !important;
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
     padding: 0;
   }
   .feature-description {
@@ -640,29 +641,42 @@ gap: 56px;
     text-align: center;
     letter-spacing: 0.3px;
   }
-  .feature-content {
+  .feature-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-title{
+    margin: 0;
+  }
+  .home-2nd-features .feature{
     width: 327px;
     margin: 0 auto;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    padding-top: 16px;
-    gap: 1.1rem;
+    gap: 6px;
+    padding-top: 0;
+    /* gap: 1.1rem; */
+  }
+  .home-2nd-features{
+    padding-top: 0;
+    margin-top: 58px;
+    gap: 56px;
   }
   .feature-title{
     font-size: 18px;
     width: 327px;
-    
+  }
+  .feature-content{
+    /* padding-top: 15px; */
   }
   .home-2nd-title {
     max-width: 240px !important;
-    height: 160px;
+    height: fit-content;
     font-size: 32px;
     line-height: 32px;
     justify-self: start !important;
     padding-top: 100px;
-    margin-left: 25px;
-      
+    margin-left: 25px; 
   }
   .feature{
     padding-top: 41px;
@@ -674,9 +688,8 @@ gap: 56px;
   .feature-icon {
     width: 72px;
     height: 72px;
-    margin: 0 151px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
   .corner-img{
     top: 0;
@@ -684,9 +697,6 @@ gap: 56px;
   .home-2nd-title::before{
     margin-top: 65px;
     width: 67%;
-  }
-  .home-2nd-features {
-    gap: 15px !important;
   }
   /* Testimonials */
   .testimonial-section{
