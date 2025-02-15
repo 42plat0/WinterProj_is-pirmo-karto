@@ -120,14 +120,14 @@
   overflow: hidden;
 }
 
-.head-2nd-title {
+.home-2nd-title {
   position: relative;
   padding-top: 54px; /* Tarpas nuo linijos iki teksto */
   color: #ffffff;
   max-width: 445px;
 }
 
-.head-2nd-title::before {
+.home-2nd-title::before {
   content: '';
   position: absolute;
   top: 0;
@@ -137,7 +137,7 @@
   background: linear-gradient(to right, #F67E7E 0%, #F67E7E 30%,transparent 30%, transparent 100%); 
 }
 
-.home-2nd-head > div:nth-child(2) {
+.home-2nd-features {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -146,21 +146,21 @@
 }
 
 /* Individual feature item */
-.home-2nd-head > div:nth-child(2) > div {
+.home-2nd-features .feature {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem; /
 }
 
 /* Feature icons */
-.home-2nd-head > div:nth-child(2) img {
-  width: 64px;
-  height: 64px;
+.feature-icon {
+  width: 72px;
+  height: 72px;
   flex-shrink: 0; 
 }
 
 /* Feature heading */
-.home-2nd-headings {
+.feature-title {
   font-size: 1.25rem;
   font-weight: bold;
   color: #F67E7E;
@@ -168,14 +168,12 @@
 }
 
 /* Feature description */
-.home-2nd-head > div:nth-child(2) p {
+.feature-description {
   font-size: 1rem;
   line-height: 1.6;
   color: #d1d1d1;
   margin: 0;
 }
-
-
 .corner-img {
   position: absolute;
   bottom: 0px;
@@ -313,6 +311,36 @@ gap: 56px;
   margin: 0 auto;
 }
 
+/* For desktop */
+@media (min-width: 1440px){
+  /* 1st article */
+  .home-hero{
+    height: 459px;
+  }
+  .home-hero__content{
+    padding-top: 9px;
+  }
+
+  /* 2nd article */
+  .home-2nd-head{
+    padding-top: 143px;
+    /* padding: 0; */
+    /* padding-left: 104px; */
+    /* justify-content: space-around; */
+  }
+  /* Icons */
+  .home-2nd-head img{
+    height: 72px !important;
+    width: 72px;
+  }
+  .home-2nd-headings{
+    color: #F67E7E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+  }
+}
 
 /* For tablets */
 @media (min-width: 768px) and (max-width:1439px){
@@ -385,7 +413,7 @@ gap: 56px;
   .corner-img {
     top: 0;
   }
-  .head-2nd-title {
+  .home-2nd-title {
     max-width: 445px;
     word-break: break-word;
     display: flex;
@@ -394,14 +422,11 @@ gap: 56px;
     font-size: 32px;
     line-height: 32px;
   }
-  .home-2nd-content-container {
-    gap: 32px !important;
+  /* There is not an element with this class???? */
+  .home-2nd-features{
+    /* gap: 32px !important; */
   }
-  .div img {
-    height: 72px !important;
-    width: 72px !important;
-  }
-  .home-2nd-head > div > div > div {
+  .feature-content {
     display: flex; 
     flex-direction: column;
     gap: 16px;
@@ -477,7 +502,151 @@ gap: 56px;
 }
 
 /* For mobile */
-@media (min-width: 375px) and (max-width:767px){
+@media (min-width: 375px) and (max-width:767px){   
+  /* FIRST ARTICLE MOBILE VIEW */
+  .home-hero{
+    width: 375px;
+    height: 418px;
+      
+  }
+  .home-hero__content{
+    width: 327px;
+    align-items: center;
+    padding: 0;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+  }
+  .home-hero__heading{
+    max-width: 327px;
+    height: 80px;
+  }
+    .heroh1{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+      
+  }
+  .home-hero__text{
+    height: 112px;
+  }
+  .lower__paragraph{
+    margin-top: 0;
+    width: 327px;
+    height: 112px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .home-hero-leftside__img{
+    display: none;
+  }
+  .about__rectangle{
+    display: none;
+  }
+  .home-hero-rightside__img{
+    right: 8px;
+  }
+
+  /* ************************ */
+  /* Ready to get started section */
+  /* ************************ */
+  .contact-sect{
+    height: 300px;
+    width: 100%;
+  }
+  .contact-sect__img{
+    margin-bottom: -22px;
+  }
+
+  .heading--contact {
+    font-size: 32px;
+    line-height: 32px;
+    height: 50px;
+      max-width: 200px;
+      word-break: break-word;
+      display: flex;
+      align-items: end;
+  }
+
+  .contact-sect__content {
+      flex-direction: column;
+      gap: 33px;
+      height: 100%;
+      flex-wrap: wrap;
+      padding-top: 4px;
+  }
+  .contact-sect__content > * {
+      flex-grow: 1;
+  }
+  .btn--contact{
+    font-size: 18px;
+  }
+
+  /* HOME 2ND ARTICLE */
+  .home-2nd-head {
+    height: 1073px !important;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .feature-description {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .feature-content {
+    width: 327px;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 16px;
+    gap: 1.1rem;
+  }
+  .feature-title{
+    font-size: 18px;
+    width: 327px;
+    
+  }
+  .home-2nd-title {
+    max-width: 240px !important;
+    height: 160px;
+    font-size: 32px;
+    line-height: 32px;
+    justify-self: start !important;
+    padding-top: 100px;
+    margin-left: 25px;
+      
+  }
+  .feature{
+    padding-top: 41px;
+    text-align: center;
+    align-items: center;
+    max-width: 375px; 
+    gap: 0rem;
+  }
+  .feature-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 151px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .corner-img{
+    top: 0;
+  }
+  .home-2nd-title::before{
+    margin-top: 65px;
+    width: 67%;
+  }
+  .home-2nd-features {
+    gap: 15px !important;
+  }
+  /* Testimonials */
   .testimonial-section{
     height: 1410px;
   }
@@ -517,150 +686,3 @@ gap: 56px;
   }
 }
 
-/* For mobile */
-@media (min-width: 375px) and (max-width:767px){
-    /* FIRST ARTICLE MOBILE VIEW */
-    .home-hero{
-      width: 375px;
-      height: 418px;
-      
-    }
-    .home-hero__content{
-      width: 327px;
-      align-items: center;
-      padding: 0;
-      margin-top: 50px;
-      flex-wrap: wrap;
-    
-    }
-    .home-hero__heading{
-      max-width: 327px;
-      height: 80px;
-    }
-     .heroh1{
-      position: relative;
-      top: 10px;
-      font-size: 40px;
-      line-height: 40px;
-      text-align: center;
-      
-    }
-    .home-hero__text{
-      height: 112px;
-    }
-    .lower__paragraph{
-      margin-top: 0;
-      width: 327px;
-      height: 112px;
-      text-align: center;
-      font-size: 15px;
-    }
-    .home-hero-leftside__img{
-      display: none;
-    }
-    .about__rectangle{
-      display: none;
-    }
-    .home-hero-rightside__img{
-      right: 8px;
-    }
-
-    /* ************************ */
-    /* Ready to get started section */
-    /* ************************ */
-    .contact-sect{
-      height: 300px;
-      width: 100%;
-    }
-    .contact-sect__img{
-      margin-bottom: -22px;
-    }
-
-    .heading--contact {
-      font-size: 32px;
-      line-height: 32px;
-      height: 50px;
-        max-width: 200px;
-        word-break: break-word;
-        display: flex;
-        align-items: end;
-    }
-
-    .contact-sect__content {
-        flex-direction: column;
-        gap: 33px;
-        height: 100%;
-        flex-wrap: wrap;
-        padding-top: 4px;
-    }
-    .contact-sect__content > * {
-        flex-grow: 1;
-    }
-    .btn--contact{
-      font-size: 18px;
-    }
-
-    /* HOME 2ND ARTICLE */
-    .home-2nd-head {
-      height: 1073px !important;
-      width: 100%;
-      flex-wrap: wrap;
-      padding: 0;
-    }
-    .home-2nd-head > div:nth-child(2) p {
-      font-size: 15px;
-      line-height: 25px;
-      width: 327px;
-      text-align: center;
-      letter-spacing: 0.3px;
-    }
-    .home-2nd-head > div:nth-child(2) > div {
-      width: 327px;
-      margin: 0 auto;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      padding-top: 16px;
-      gap: 1.1rem;
-    }
-    .home-2nd-headings{
-      font-size: 18px;
-      width: 327px;
-    
-    }
-    .head-2nd-title {
-      max-width: 240px !important;
-      height: 160px;
-      font-size: 32px;
-      line-height: 32px;
-      justify-self: start !important;
-      padding-top: 100px;
-      margin-left: 25px;
-      
-    }
-    .home-2nd-head > div:nth-child(2){
-      padding-top: 41px;
-      text-align: center;
-      align-items: center;
-      max-width: 375px; 
-      gap: 0rem;
-    }
-    .home-2nd-head > div:nth-child(2) img {
-      width: 72px;
-      height: 72px;
-      margin: 0 151px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-    .corner-img{
-      top: 0;
-    }
-    .head-2nd-title::before{
-      margin-top: 65px;
-      width: 67%;
-    }
-    .home-2nd-card {
-      gap: 15px !important;
-    }
-     
-  }
