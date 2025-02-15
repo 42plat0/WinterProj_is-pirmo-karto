@@ -313,7 +313,7 @@
 @media (min-width: 375px) and (max-width:767px){
     /* FIRST ARTICLE MOBILE VIEW */
     .home-hero{
-      width: 375px;
+      min-width: 375px;
       height: 410px;
       
     }
@@ -325,8 +325,10 @@
       flex-wrap: wrap;
     }
     .home-hero__heading{
-      max-width: 327px;
+      min-width: 327px;
       height: 80px;
+      
+      
     }
      .heroh1{
       font-size: 40px;
@@ -390,7 +392,7 @@
     /* HOME 2ND ARTICLE */
     .home-2nd-head {
       height: 1073px !important;
-      width: 100%;
+      min-width: 375px;
       flex-wrap: wrap;
       padding: 0;
     }
@@ -410,6 +412,7 @@
       align-items: center;
       padding: 0;
       gap: 1.3rem;
+  
     }
     .home-2nd-headings{
       font-size: 18px;
@@ -428,7 +431,8 @@
       padding-top: 0;
       text-align: center;
       align-items: center;
-      max-width: 375px;
+      min-width: 375px;
+      
     }
     .home-2nd-head > div:nth-child(2) img {
       width: 72px;
