@@ -323,15 +323,28 @@ gap: 56px;
 
   /* 2nd article */
   .home-2nd-head{
-    padding-top: 143px;
+    padding-top: 140px;
     /* padding: 0; */
-    /* padding-left: 104px; */
-    /* justify-content: space-around; */
+    padding-left: 165px;
+  }
+  .home-2nd-title{
+    padding-top: 58px;
+  }
+  .home-2nd-title::before {
+    width: 166px; 
+  }
+  .home-2nd-features{
+    gap: 32px;
   }
   /* Icons */
   .home-2nd-head img{
     height: 72px !important;
     width: 72px;
+  }
+  .feature-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   .home-2nd-headings{
     color: #F67E7E;
