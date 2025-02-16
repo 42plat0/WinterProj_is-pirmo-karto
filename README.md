@@ -40,4 +40,4 @@ git clone git@github.com:42plat0/WinterProj_is-pirmo-karto.git
 ## Acknowledgments
 
 - Special thanks to the contributors who worked on this project.
-- Inspiration: Our motivation is the key to overcome all obsticales.
+- Inspiration: Our motivation is the key to overcome all obstacles.
